@@ -1,44 +1,25 @@
-*This repository acts as a template for all of Oracle’s GitHub repositories. It contains information about the guidelines for those repositories. All files and sections contained in this template are mandatory, and a GitHub app ensures alignment with these guidelines. To get started with a new repository, replace the italic paragraphs with the respective text for your project.*
+# Welcome
 
-# Project name
+[![](https://oracle-livelabs.github.io/common/images/livelabs-banner-formarketplace.png)](https://developer.oracle.com/livelabs)
+---
+LiveLabs is the place to explore Oracle's products and services using workshops designed to enhance your experience building and deploying applications on the Cloud and On-Premises.   Our library of workshops cover everything from how to provision the world's first autonomous database to setting up a webserver on OCI, machine learning and much more.  Use your existing Oracle Cloud account, a Free Tier account, or a LiveLabs Sandbox Reservation to build, test, and deploy applications on Oracle's Cloud.
 
-*Describe your project's features, functionality and target audience*
+### How do I get started?
+Visit [LiveLabs](https://developer.oracle.com/livelabs) now to get started.  Workshops are added weekly, please visit frequently for new content.
 
-## Installation
+[![](https://oracle-livelabs.github.io/common/images/livelabs-new-skin.png)](https://developer.oracle.com/livelabs)
 
-*Provide detailed step-by-step installation instructions. You can name this section **How to Run** or **Getting Started** instead of **Installation** if that's more acceptable for your project*
 
-## Documentation
-
-*Developer-oriented documentation can be published on GitHub, but all product documentation must be published on <https://docs.oracle.com>*
-
-## Examples
-
-*Describe any included examples or provide a link to a demo/tutorial*
-
-## Help
-
-*Inform users on where to get help or how to receive official support from Oracle (if applicable)*
 
 ## Contributing
-
-*If your project has specific contribution requirements, update the CONTRIBUTING.md file to ensure those requirements are clearly explained*
-
-This project welcomes contributions from the community. Before submitting a pull request, please [review our contribution guide](./CONTRIBUTING.md)
-
-## Security
-
-Please consult the [security guide](./SECURITY.md) for our responsible security vulnerability disclosure process
+Pull requests are currently not being accepted. See [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## License
+Copyright (c) 2014, 2022 Oracle and/or its affiliates
+The Universal Permissive License (UPL), Version 1.0
+See [LICENSE](LICENSE.txt) for details.
 
-*The correct copyright notice format for both documentation and software is*
-    "Copyright (c) [year,] year Oracle and/or its affiliates."
-*You must include the year the content was first released (on any platform) and the most recent year in which it was revised*
+## Need Help?
+Please first consult the "Need Help?" lab located at the bottom of your workshop to see if our FAQ can solve your problem.  If you have an issue that is specific to the contents of the workshop, please reach out to the author located in the "Acknowledgements" section at the bottom of each lab via email. Please include your workshop name and lab name. You can also include screenshots and attach files. If you have a more general issue or comment, please [reach out to the LiveLabs team](mailto:livelabs-help_us@oracle.com).   
 
-Copyright (c) 2023 Oracle and/or its affiliates.
-
-*Replace this statement if your project is not licensed under the UPL*
-
-Released under the Universal Permissive License v1.0 as shown at
-<https://oss.oracle.com/licenses/upl/>.
+For workshop reservations you will need to [create an Oracle account](https://profile.oracle.com/myprofile/account/create-account.jspx).
