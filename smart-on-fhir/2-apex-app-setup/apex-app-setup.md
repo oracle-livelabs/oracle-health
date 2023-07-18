@@ -1,94 +1,85 @@
-# Title of the Lab
+# APEX Application Setup
 
 ## Introduction
 
-*Describe the lab in one or two sentences, for example:* This lab walks you through the steps to ...
+This lab walks you through creation and initial setup of Oracle APEX application.
 
-Estimated Time: -- minutes
-
-### About <Product/Technology> (Optional)
-Enter background information here about the technology/feature or product used in this lab - no need to repeat what you covered in the introduction. Keep this section fairly concise. If you find yourself needing more than two sections/paragraphs, please utilize the "Learn More" section.
+Estimated Time: 5 minutes
 
 ### Objectives
 
-*List objectives for this lab using the format below*
-
 In this lab, you will:
-* Objective 1
-* Objective 2
-* Objective 3
+
+* Create a new Oracle APEX Application
+* Create Oracle APEX Pages
 
 ### Prerequisites (Optional)
 
-*List the prerequisites for this lab using the format below. Fill in whatever knowledge, accounts, etc. is needed to complete the lab. Do NOT list each previous lab as a prerequisite.*
-
 This lab assumes you have:
-* An Oracle Cloud account
+
+* An Oracle Cloud account or Free Workspace in apex.oracle.com
 * All previous labs successfully completed
 
+## Task 1: Create an App
 
-*This is the "fold" - below items are collapsed by default*
+1. In the App Builder toolbar, click **App Builder**, and click **Create**.
 
-## Task 1: Concise Task Description
+    ![Click on App Builder](images/app-builder.png)
 
-(optional) Task 1 opening paragraph.
+2. On the Create Application page, click **New Application**.
 
-1. Step 1
+    ![Click on Create](images/new-app.png)
 
-	![Image alt text](images/sample1.png)
+3. On the Create an Application page, for Name, enter **ASCVD Risk Calculator**.
 
-	> **Note:** Use this format for notes, hints, and tips. Only use one "Note" at a time in a step.
+    Click **Create Application**.
 
-2. Step 2
+    ![Click on Create Application](images/app-details.png)
 
-  ![Image alt text](images/sample1.png)
+## Task 2: Use the Create Page Wizard
 
-4. Example with inline navigation icon ![Image alt text](images/sample2.png) click **Navigation**.
+1. Return to the Application Home Page.
 
-5. Example with bold **text**.
+   Click Home Page..
 
-   If you add another paragraph, add 3 spaces before the line.
+   ![Click on Home Page](images/edit-home-page.png)
 
-## Task 2: Concise Task Description
+2. Rename Home Page to Launch Page.
 
-1. Step 1 - tables sample
+    ![Click on Create Application](images/rename-home-page.png)
 
-  Use tables sparingly:
+3. Change page security.
 
-  | Column 1 | Column 2 | Column 3 |
-  | --- | --- | --- |
-  | 1 | Some text or a link | More text  |
-  | 2 |Some text or a link | More text |
-  | 3 | Some text or a link | More text |
+    ![Edit page security](images/page-security.png)
 
-2. You can also include bulleted lists - make sure to indent 4 spaces:
+## Task 3: Use the Create Page Wizard
 
-    - List item 1
-    - List item 2
+1. Return to the Application Home Page.
 
-3. Code examples
+   Click Create Page..
 
-    ```
-    Adding code examples
-  	Indentation is important for the code example to appear inside the step
-    Multiple lines of code
-  	<copy>Enclose the text you want to copy in <copy></copy>.</copy>
-    ```
+   On the Create a Page dialog, click **Blank Page**.
 
-4. Code examples that include variables
+   ![Click on Create](images/create-new-page.png)
 
-	```
-  <copy>ssh -i <ssh-key-file></copy>
-  ```
+2. Create Index Page by clicking on **Create** button.
+
+   ![Click on Create](images/create-index-page.png)
+
+3. Repeat the process for the View Page
+
+   ![Click on Create](images/create-view-page.png)
+
 
 ## Learn More
 
-*(optional - include links to docs, white papers, blogs, etc)*
-
-* [URL text 1](http://docs.oracle.com)
-* [URL text 2](http://docs.oracle.com)
+* [APEX on Autonomous](https://apex.oracle.com/en/platform/apex-oracle-cloud/)
+* [APEX Collateral](https://apex.oracle.com/en/)
+* [Tutorials](https://apex.oracle.com/en/learn/tutorials/)
+* [Community](hhttps://apex.oracle.com/community)
+* [External Site + Slack](http://apex.world/)
 
 ## Acknowledgements
-* **Author** - <Name, Title, Group>
-* **Contributors** -  <Name, Group> -- optional
-* **Last Updated By/Date** - <Name, Month Year>
+
+* **Author** - Basarab Alexandru, Senior Software Engineer, Open Platform
+* **Last Updated By/Date** - Basarab Alexandru, July 2023
