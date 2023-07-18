@@ -36,7 +36,7 @@ This lab assumes you have:
 
     ![Click on Create Application](images/app-details.png)
 
-## Task 2: Rename Home page
+## Task 2: Launch page setup
 
 1. Return to the Application Home Page.
 
