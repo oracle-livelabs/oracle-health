@@ -70,7 +70,6 @@ This lab assumes you have:
 
    ![Click on Create](images/create-view-page.png)
 
-
 ## Learn More
 
 * [APEX on Autonomous](https://apex.oracle.com/en/platform/apex-oracle-cloud/)
