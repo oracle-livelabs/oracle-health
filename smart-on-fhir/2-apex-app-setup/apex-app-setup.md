@@ -13,7 +13,7 @@ In this lab, you will:
 * Create a new Oracle APEX Application
 * Create Oracle APEX Pages
 
-### Prerequisites (Optional)
+### Prerequisites
 
 This lab assumes you have:
 
@@ -36,7 +36,7 @@ This lab assumes you have:
 
     ![Click on Create Application](images/app-details.png)
 
-## Task 2: Use the Create Page Wizard
+## Task 2: Rename Home page
 
 1. Return to the Application Home Page.
 
