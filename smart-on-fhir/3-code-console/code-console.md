@@ -42,5 +42,10 @@ This lab assumes you have:
 
 ## Acknowledgements
 
-* **Author** - Basarab Alexandru, Senior Software Engineer, Open Platform
-* **Last Updated By/Date** - Basarab Alexandru, July 2023
+* **Author**
+  * Mircea Iordache, Software Engineer, Open Platform
+
+* **Contributors**
+  * Alexandru Basarab, Senior Software Engineer, Open Platform
+
+* **Last Updated By/Date** - Mircea Iordache, July 2023

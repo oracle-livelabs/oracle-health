@@ -87,6 +87,11 @@ This lab assumes you have:
 * [URL text 2](http://docs.oracle.com)
 
 ## Acknowledgements
-* **Author** - <Name, Title, Group>
-* **Contributors** -  <Name, Group> -- optional
+
+* **Author**
+  * Alexandru Basarab, Senior Software Engineer, Open Platform
+
+* **Contributors**
+  * Mircea Iordache, Software Engineer, Open Platform
+
 * **Last Updated By/Date** - <Name, Month Year>

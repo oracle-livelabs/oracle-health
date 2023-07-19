@@ -6,7 +6,7 @@ Welcome to the Oracle LiveLabs Workshop: Building an ASCVD Risk Calculator! In t
 
 Estimated time: TBD
 
-### During this workshop, we will cover the following steps:
+### During this workshop, we will cover the following steps
 
 * Introduction: We will provide an overview of the workshop's objectives, discuss the importance of ASCVD risk assessment, and explain the tools and technologies we'll be using.
 * Signing up for an APEX Workspace: Before we dive into application development, we'll walk you through the process of signing up for an APEX workspace, which will serve as your development environment for building the ASCVD Risk Calculator.
@@ -17,9 +17,11 @@ Estimated time: TBD
 ### Prerequisites (Optional)
 
 This lab assumes you have:
+
 * An Oracle account
 
 ### Labs
+
 | # | Module                            | Estimated Time |
 |---|-----------------------------------|----------------|
 | 1 | Signing up for an APEX Workspace  | 10 minutes     |
@@ -27,9 +29,10 @@ This lab assumes you have:
 | 3 | Signing up for Code Console       | 15 minutes     |
 | 4 | Creating an ASCVD Risk Calculator | 60 minutes     |
 
-### Let's get started!
+### Let's get started
 
 ## Learn more - Useful Links
+
 * [fhir.cerner.com](https://fhir.cerner.com/)
 * [hl7 fhir](https://www.hl7.org/fhir/)
 * [authentication/authorization standard](https://fhir.cerner.com/authorization/)
@@ -41,5 +44,11 @@ This lab assumes you have:
 * [External Site + Slack](http://apex.world/)
 
 ## Acknowledgements
-* **Author** - Basarab Alexandru, Iordache Mircea
+
+* **Author**
+  * Mircea Iordache, Software Engineer, Open Platform
+
+* **Contributors**
+  * Alexandru Basarab, Senior Software Engineer, Open Platform
+
 * **Last Updated By/Date** - Iordache Mircea, July 2023
