@@ -29,6 +29,17 @@ This lab assumes you have:
 
 ### Let's get started!
 
+## Learn more - Useful Links
+* [fhir.cerner.com](https://fhir.cerner.com/)
+* [hl7 fhir](https://www.hl7.org/fhir/)
+* [authentication/authorization standard](https://fhir.cerner.com/authorization/)
+* [smart on fhir](https://docs.smarthealthit.org/) official documentation
+* [APEX on Autonomous](https://apex.oracle.com/autonomous)
+* [APEX Collateral](https://apex.oracle.com/)
+* [Tutorials](https://apex.oracle.com/en/learn/tutorials)
+* [Community](https://apex.oracle.com/community)
+* [External Site + Slack](http://apex.world/)
+
 ## Acknowledgements
 * **Author** - Basarab Alexandru, Iordache Mircea
 * **Last Updated By/Date** - Iordache Mircea, July 2023
