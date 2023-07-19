@@ -80,10 +80,8 @@ This lab assumes you have:
 
 ## Acknowledgements
 
-* **Author**
-  * Alexandru Basarab, Senior Software Engineer, Open Platform
+* **Author** - Alexandru Basarab, Senior Software Engineer, Open Platform
 
-* **Contributors**
-  * Mircea Iordache, Software Engineer, Open Platform
+* **Contributors** - Mircea Iordache, Software Engineer, Open Platform
 
 * **Last Updated By/Date** - Basarab Alexandru, July 2023

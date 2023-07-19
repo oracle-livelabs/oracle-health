@@ -39,10 +39,8 @@ Estimated time: TBD
 
 ## Acknowledgements
 
-* **Author**
-  * Mircea Iordache, Software Engineer, Open Platform
+* **Author** - Mircea Iordache, Software Engineer, Open Platform
 
-* **Contributors**
-  * Alexandru Basarab, Senior Software Engineer, Open Platform
+* **Contributors** - Alexandru Basarab, Senior Software Engineer, Open Platform
 
 * **Last Updated By/Date** - Iordache Mircea, July 2023
