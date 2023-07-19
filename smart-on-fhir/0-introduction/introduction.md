@@ -25,12 +25,15 @@ Estimated time: TBD
 
 ### Let's get started
 
+## Downloads
+WIP: All resources needed for the workshop, including the final version of the APEX application.
+
 ## Learn more - Useful Links
 
 * [fhir.cerner.com](https://fhir.cerner.com/)
 * [hl7 fhir](https://www.hl7.org/fhir/)
 * [authentication/authorization standard](https://fhir.cerner.com/authorization/)
-* [smart on fhir](https://docs.smarthealthit.org/) official documentation
+* [smart on fhir](https://docs.smarthealthit.org/)
 * [APEX on Autonomous](https://apex.oracle.com/autonomous)
 * [APEX Collateral](https://apex.oracle.com/)
 * [Tutorials](https://apex.oracle.com/en/learn/tutorials)
