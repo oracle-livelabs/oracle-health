@@ -14,12 +14,6 @@ Estimated time: TBD
 * Signing up for Code Console: The Code Console is a web based application that allows third party developers to register applications and consume Oracle's FHIR API's. We'll show you how to sign up for Code Console and integrate it with your APEX workspace for enhanced development capabilities.
 * Creating an ASCVD Risk Calculator: In this main section of the workshop, we'll guide you step-by-step through building the ASCVD Risk Calculator application. You'll learn how to design the user interface, implement the necessary logic and calculations, and customize the application to meet your specific requirements.
 
-### Prerequisites (Optional)
-
-This lab assumes you have:
-
-* An Oracle account
-
 ### Labs
 
 | # | Module                            | Estimated Time |
