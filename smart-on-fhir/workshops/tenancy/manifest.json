@@ -1,5 +1,5 @@
 {
-    "workshoptitle": "Building an SMART on FHIR App using Oracle Autonomous Cloud Services",
+    "workshoptitle": "Build a SMART on FHIR App using Oracle Autonomous Cloud Services",
     "include": {"starter-file.sql":"../../2-apex-app-setup/files/starter-file.sql",
                 "sample.json":"../../3-code-console/files/sample.json"},
     "help": "livelabs-help-**enterarea**_us@oracle.com",
@@ -22,7 +22,7 @@
             "filename": "../../3-code-console/code-console.md"
         },
         {
-            "title": "Lab 4: Creating an ASCVD Risk Calculator",
+            "title": "Lab 4: Create an ASCVD Risk Calculator",
             "filename": "../../4-apex-logic/apex-logic.md"
         },
         {
