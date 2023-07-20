@@ -6,7 +6,6 @@
     "tutorials": [
         {
             "title": "Introduction",
-            "description": "The Introduction is always first. The title and contents menu title match for the Introduction.",
             "filename": "../../0-introduction/introduction.md"
         },
         {
