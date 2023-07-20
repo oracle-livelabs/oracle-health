@@ -28,7 +28,8 @@ Estimated time: TBD
 If the menu is not displayed, you can open by clicking the menu button (![burger-menu](images/livelabs-burger.png)) at the top of the page.
 
 ## Downloads
-WIP: All resources needed for the workshop, including the final version of the APEX application.
+
+[Click here](files/ASCVDRisk.sql) to download the completed application.
 
 ## Learn more - Useful Links
 
