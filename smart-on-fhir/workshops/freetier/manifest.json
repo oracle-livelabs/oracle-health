@@ -25,6 +25,10 @@
             "filename": "../../4-apex-logic/apex-logic.md"
         },
         {
+            "title": "Lab 5: Run ASCVD Risk Calculator",
+            "filename": "../../5-run-ascvd/run-ascvd.md"
+        },
+        {
             "title": "Need Help?",
             "description": "Solutions to Common Problems and Directions for Receiving Live Help",
             "filename":"https://oracle-livelabs.github.io/common/labs/need-help/need-help-freetier.md"
