@@ -22,9 +22,15 @@ This lab assumes you have:
 
 ## Option 1: Standalone
 
-1. Step 1
+1. Click on App Builder and open your app
 
-  ![Image alt text](images/sample1.png)
+    ![Navigate to APP Builder](images/app-builder.png)
+
+2. Open your app
+
+    ![Run your app](images/run-the-app.png)
+
+3. 
 
 ## Option 2: Code Console
 
