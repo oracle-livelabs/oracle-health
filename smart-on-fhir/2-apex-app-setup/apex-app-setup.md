@@ -20,7 +20,7 @@ This lab assumes you have:
 * An Oracle Cloud account or Free Workspace in apex.oracle.com
 * All previous labs successfully completed
 
-## Task 1: Create an App
+## Task 1: Create the Application
 
 1. In the App Builder toolbar, click **App Builder**, and click **Create**.
 
@@ -36,7 +36,7 @@ This lab assumes you have:
 
     ![Click on Create Application](images/app-details.png)
 
-## Task 2: Launch page setup
+## Task 2: Launch Page
 
 1. Return to the Application Home Page.
 
