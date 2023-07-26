@@ -1,7 +1,8 @@
 {
-    "workshoptitle": "Build a SMART on FHIR App using Oracle Autonomous Cloud Services",
-    "include": {"starter-file.sql":"../../2-apex-app-setup/files/starter-file.sql",
-                "sample.json":"../../3-code-console/files/sample.json"},
+    "workshoptitle": "Build a SMART on FHIR Application with Oracle Autonomous Cloud Services",
+    "include": {"ASCVDRisk.sql":"../../2-introduction/files/ASCVDRisk.sql",
+    "ASCVDRisk.min.js":"../../2-introduction/files/ASCVDRisk.min.js",
+    "fhir-client.min.js":"../../2-introduction/files/fhir-client.min.js"},
     "help": "livelabs-help-**enterarea**_us@oracle.com",
     "tutorials": [
         {
