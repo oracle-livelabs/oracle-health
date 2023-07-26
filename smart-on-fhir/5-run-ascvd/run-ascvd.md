@@ -1,4 +1,4 @@
-# Creating an ASCVD Risk Calculator
+# Run ASCVD Risk Calculator
 
 ## Introduction
 
