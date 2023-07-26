@@ -27,13 +27,13 @@ This lab assumes you have:
 
 ## Task 1: Import supporting objects
 
-  [Click here](files/supporting_objects.sql) to download the supporting objects sql.
-
 1. In the main menu, select SQL Workshop, click SQL Scripts
 
    ![Open SQL Scripts](images/open-sql-scripts.png)
 
 2. Click **Upload** and select previously downloaded supporting objects, then press **Upload**
+
+    [Click here](files/supporting_objects.sql) to download the supporting objects SQL file.
 
     ![Upload supporting objects](images/upload-supporting-objects.png)
 
