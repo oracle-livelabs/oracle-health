@@ -22,24 +22,43 @@ This lab assumes you have:
 
 ## Option 1: Standalone
 
-1. Click on App Builder and open your app
+1. Click on **App Builder** and open your app
 
     ![Navigate to APP Builder](images/app-builder.png)
 
-2. Open your app
+2. Open the application by clicking on the card
 
-    ![Run your app](images/run-the-app.png)
+    ![Open your application](images/open-app.png)
 
-3. 
+3. Run the application
+
+    ![Run your application](images/run-the-app.png)
 
 ## Option 2: Code Console
 
-1. Step 1 - tables sample
+1. Log-in to Code Console
 
-## Learn More
+    ![Run your application](images/log-in-code-console.png)
 
-* [URL text 1](http://docs.oracle.com)
-* [URL text 2](http://docs.oracle.com)
+2. Go to My Applications in Code Console
+
+    ![Code console my applications](images/code-console-apps.png)
+
+3. Click on the application name in Code Console
+
+    ![Open code console application](images/open-code-console-app.png)
+
+4. Click on Test Sandbox
+
+    ![Test in sandbox](images/test-in-sandbox.png)
+
+5. Select a Patient and click **Next**
+
+    ![Select patient and click next](images/select-patient.png)
+
+6. Remember username and password and click on **Launch**
+
+    ![Launch the application](images/launch-app.png)
 
 ## Acknowledgements
 
@@ -47,4 +66,4 @@ This lab assumes you have:
 
 * **Contributors** - Mircea Iordache, Software Engineer, Open Platform
 
-* **Last Updated By/Date** - <Name, Month Year>
+* **Last Updated By/Date** - Basarab Alexandru, July 2023
