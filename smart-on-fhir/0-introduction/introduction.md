@@ -21,7 +21,8 @@ Estimated time: TBD
 | 1 | Signing up for an APEX Workspace  | 10 minutes     |
 | 2 | APEX Application Setup            | 5 minutes      |
 | 3 | Signing up for Code Console       | 15 minutes     |
-| 4 | Creating an ASCVD Risk Calculator | 60 minutes     |
+| 4 | Create ASCVD Risk Calculator      | 60 minutes     |
+| 5 | Run ASCVD Risk Calculator         | 3 minutes      |
 
 ### Let's get started
 
@@ -29,7 +30,11 @@ If the menu is not displayed, you can open by clicking the menu button (![burger
 
 ## Downloads
 
-[Click here](files/ASCVDRisk.sql) to download the completed application.
+[ASCVD Risk Calculator](files/ASCVDRisk.sql) completed application.
+
+[SMART on FHIR](files/fhir-client.min.js) official JavaScript library.
+
+[ASCVD Risk Calculator](files/fhir-client.min.js) JavaScript library.
 
 ## Learn more - Useful Links
 
