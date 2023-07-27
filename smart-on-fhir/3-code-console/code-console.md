@@ -111,9 +111,9 @@ This lab assumes you have:
 
    **Application Privacy**: You can leave it as **Public**,
 
-   **Redirect URI**: If you use [apex.oracle.com](apex.oracle.com), make sure  to update the following link with the required data **https://apex.oracle.com/pls/apex/r/YOUR_WORKSPACE/YOUR_APP_ALIAS/INDEX_PAGE_ALIAS**, it should result in a link like this: **https://apex.oracle.com/pls/apex/r/livelabstutorials/ascvd-risk/index**,
+   **Redirect URI**: If you use [apex.oracle.com](apex.oracle.com), make sure  to update the following link with the required data **[https://apex.oracle.com/pls/apex/r/YOUR_WORKSPACE/YOUR_APP_ALIAS/INDEX_PAGE_ALIAS](https://apex.oracle.com/pls/apex/r/YOUR_WORKSPACE/YOUR_APP_ALIAS/INDEX_PAGE_ALIAS)**, it should result in a link like this: **[https://apex.oracle.com/pls/apex/r/livelabstutorials/ascvd-risk/index](https://apex.oracle.com/pls/apex/r/livelabstutorials/ascvd-risk/index)**,
 
-   **SMART® Launch URI**: If you use [apex.oracle.com](apex.oracle.com), make sure  to update the following link with the required data **https://apex.oracle.com/pls/apex/r/YOUR_WORKSPACE/YOUR_APP_ALIAS/LAUNCH_PAGE_ALIAS**, it should result in a link like this: **https://apex.oracle.com/pls/apex/r/livelabstutorials/ascvd-risk/launch**,
+   **SMART® Launch URI**: If you use [apex.oracle.com](apex.oracle.com), make sure  to update the following link with the required data **[https://apex.oracle.com/pls/apex/r/YOUR_WORKSPACE/YOUR_APP_ALIAS/LAUNCH_PAGE_ALIAS](https://apex.oracle.com/pls/apex/r/YOUR_WORKSPACE/YOUR_APP_ALIAS/LAUNCH_PAGE_ALIAS)**, it should result in a link like this: **[https://apex.oracle.com/pls/apex/r/livelabstutorials/ascvd-risk/launch](https://apex.oracle.com/pls/apex/r/livelabstutorials/ascvd-risk/launch)**,
 
    **Default FHIR® Version**: R4,
 
