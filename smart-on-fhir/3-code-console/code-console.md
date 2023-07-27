@@ -93,21 +93,21 @@ This lab assumes you have:
 
 6. Click on "**My Applications**" tab
 
-![My Apps tab](images/my-apps-tab.png)
+   ![My Apps tab](images/my-apps-tab.png)
 
 7. A pop up "**Authorized Representative of the Company**" will appear where you have to do the following:
 
-Fill out the "**Company Name**",
+   Fill out the "**Company Name**",
 
-Read the terms of use and check the checkbox if you agree,
+   Read the terms of use and check the checkbox if you agree,
 
-Click the "**Save**" button.
+   Click the "**Save**" button.
 
-![Authorized Popup](images/authorized-popup.png)
+   ![Authorized Popup](images/authorized-popup.png)
 
 8. Click on "**+ New Application**" button
 
-![New App](images/new-app.png)
+   ![New App](images/new-app.png)
 
 9. Fill out the form as follows:
 
@@ -125,33 +125,33 @@ Click the "**Save**" button.
 
    **Default FHIR® Version**: R4,
 
-Click **Next**.
+   Click **Next**.
 
-![New App first step](images/new-app-first-step.png)
+   ![New App first step](images/new-app-first-step.png)
 
 10. Fill out the form as follows:
 
-**Select a Product Family**: Millennium,
+   **Select a Product Family**: Millennium,
 
-**Select Products**: Ignite APIs for Millennium: FHIR R4, All,
+   **Select Products**: Ignite APIs for Millennium: FHIR R4, All,
 
-Click **Next**.
+   Click **Next**.
 
-![New App second step](images/new-app-second-step.png)
+   ![New App second step](images/new-app-second-step.png)
 
 11. Check the additional API access you need.
 
-Click **Next**.
+   Click **Next**.
 
-![New App third step](images/new-app-third-step.png)
+   ![New App third step](images/new-app-third-step.png)
 
 12. Confirm everything is looking as expected. Read the **Terms of Use** and check the checkbox if you agree. Click the **Submit** button.
 
-![New App fourth step](images/new-app-fourth-step.png)
+   ![New App fourth step](images/new-app-fourth-step.png)
 
 13. **Congratulations**! You now have your first Code Console application created. After its creation you should be able to see it on t he **My Applications** tab.
 
-![New App created](images/new-app-created.png)
+   ![New App created](images/new-app-created.png)
 
 ## Task 3: Configure ASCVD Risk Calculator
 
