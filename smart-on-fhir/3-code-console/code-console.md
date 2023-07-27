@@ -111,9 +111,9 @@ This lab assumes you have:
 
    **Application Privacy**: You can leave it as **Public**,
 
-   **Redirect URI**: [https://apex.oracle.com/pls/apex/r/livelabstutorials/ascvd-risk/index](https://apex.oracle.com/pls/apex/r/livelabstutorials/ascvd-risk/index),
+   **Redirect URI**: If you use [apex.oracle.com](apex.oracle.com), make sure  to update the following link with the required data **https://apex.oracle.com/pls/apex/r/YOUR_WORKSPACE/YOUR_APP_ALIAS/INDEX_PAGE_ALIAS**, it should result in a link like this: **https://apex.oracle.com/pls/apex/r/livelabstutorials/ascvd-risk/index**,
 
-   **SMART® Launch URI**: [https://apex.oracle.com/pls/apex/r/livelabstutorials/ascvd-risk/launch](https://apex.oracle.com/pls/apex/r/livelabstutorials/ascvd-risk/launch),
+   **SMART® Launch URI**: If you use [apex.oracle.com](apex.oracle.com), make sure  to update the following link with the required data **https://apex.oracle.com/pls/apex/r/YOUR_WORKSPACE/YOUR_APP_ALIAS/LAUNCH_PAGE_ALIAS**, it should result in a link like this: **https://apex.oracle.com/pls/apex/r/livelabstutorials/ascvd-risk/launch**,
 
    **Default FHIR® Version**: R4,
 
@@ -131,7 +131,11 @@ This lab assumes you have:
 
    ![New App second step](images/new-app-second-step.png)
 
-9. Check Patient/Read and Observation/Read endpoints.
+9. Check the following **User Product APIs**: 
+
+   **APIs**: Patient, **Access level**: Read
+
+   **APIs**: Observation; **Access Level**: Read
 
    Click **Next**.
 
@@ -250,11 +254,6 @@ This lab assumes you have:
    ```
 
    ![Edit index page](images/index-page.png)
-
-## Learn More
-
-- [URL text 1](http://docs.oracle.com)
-- [URL text 2](http://docs.oracle.com)
 
 ## Acknowledgements
 
