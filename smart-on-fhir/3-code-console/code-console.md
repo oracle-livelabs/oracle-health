@@ -157,10 +157,6 @@ Click **Next**.
 
 1. Step 1
 
-## Task 4: Run the application
-
-1. TBD
-
 ## Learn More
 
 - [URL text 1](http://docs.oracle.com)
