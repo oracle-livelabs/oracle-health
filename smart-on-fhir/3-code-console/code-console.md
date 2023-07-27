@@ -131,7 +131,7 @@ This lab assumes you have:
 
    ![New App second step](images/new-app-second-step.png)
 
-9. Check the following **User Product APIs**: 
+9. Check the following **User Product APIs**:
 
    **APIs**: Patient, **Access level**: Read
 
@@ -181,9 +181,9 @@ This lab assumes you have:
 
 8. Import the following dependencies:
 
-   [SMART on FHIR](files/fhir-client.min.js) official JavaScript library.
+   [SMART on FHIR](../0-introduction/files/fhir-client.min.js) official JavaScript library.
 
-   [ASCVD Risk Calculator](files/fhir-client.min.js) JavaScript library.
+   [ASCVD Risk Calculator](../0-introduction/files/fhir-client.min.js) JavaScript library.
 
    ![Import dependencies](images/dependencies.png)
 
