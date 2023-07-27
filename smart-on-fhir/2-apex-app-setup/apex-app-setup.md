@@ -70,14 +70,6 @@ This lab assumes you have:
 
    ![Click on Create](images/create-view-page.png)
 
-## Learn More
-
-* [APEX on Autonomous](https://apex.oracle.com/en/platform/apex-oracle-cloud/)
-* [APEX Collateral](https://apex.oracle.com/en/)
-* [Tutorials](https://apex.oracle.com/en/learn/tutorials/)
-* [Community](hhttps://apex.oracle.com/community)
-* [External Site + Slack](http://apex.world/)
-
 ## Acknowledgements
 
 * **Author** - Alexandru Basarab, Senior Software Engineer, Open Platform
