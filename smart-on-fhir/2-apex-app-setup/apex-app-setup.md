@@ -54,19 +54,19 @@ This lab assumes you have:
 
 ## Task 3: Use the Create Page Wizard
 
-1. Return to the Application Home Page.
+1. Return to the Application **Home Page**.
 
-   Click Create Page..
+   Click **Create Page**..
 
    On the Create a Page dialog, click **Blank Page**.
 
    ![Click on Create](images/create-new-page.png)
 
-2. Create Index Page by clicking on **Create** button.
+2. Create **Index Page** by clicking on **Create** button.
 
    ![Click on Create](images/create-index-page.png)
 
-3. Repeat the process for the View Page
+3. Repeat the process for the **View** Page
 
    ![Click on Create](images/create-view-page.png)
 
