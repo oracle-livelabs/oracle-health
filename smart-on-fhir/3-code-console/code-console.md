@@ -43,15 +43,15 @@ This lab assumes you have:
 
    Fill out the form. Make sure to fill out the mandatory fields:
 
-   **Email**: your email with which you will login,
+   **Email**: your email with which you will login
 
-   **Password**: a strong password of 6 characters and at least one number or symbol,
+   **Password**: a strong password of 6 characters and at least one number or symbol
 
-   **Security questions and answes**: pick an appropriate question that you will know the answer to,
+   **Security questions and answers**: pick an appropriate question that you will know the answer to
 
-   Check that you are not a robot,
+   Check that you are not a robot
 
-   Read the **Cerner Terms of Use** and **Cerner Privacy Policy** and check the consent checkbox,
+   Read the **Cerner Terms of Use** and **Cerner Privacy Policy** and check the consent checkbox
 
    Click "**Create Account**" button.
 
@@ -71,9 +71,9 @@ This lab assumes you have:
 
 2. Fill out the login form:
 
-   Enter your email address on which you have an account created,
+   Enter your email address on which you have an account created
 
-   Enter your account's password,
+   Enter your account's password
 
    Press the "**Log In**" button.
 
@@ -89,9 +89,9 @@ This lab assumes you have:
 
 5. A pop up "**Authorized Representative of the Company**" will appear where you have to do the following:
 
-   Fill out the "**Company Name**",
+   Fill out the "**Company Name**"
 
-   Read the terms of use and check the checkbox if you agree,
+   Read the terms of use and check the checkbox if you agree
 
    Click the "**Save**" button.
 
@@ -105,17 +105,17 @@ This lab assumes you have:
 
    **Application Name**: LiveLabs - ASCVD Risk Calculator,
 
-   **Application Type**: You can leave it as **Provider**,
+   **Application Type**: You can leave it as **Provider**
 
-   **Type of Access**: You can leave it as **Online**,
+   **Type of Access**: You can leave it as **Online**
 
-   **Application Privacy**: You can leave it as **Public**,
+   **Application Privacy**: You can leave it as **Public**
 
-   **Redirect URI**: If you use [apex.oracle.com](apex.oracle.com), make sure  to update the following link with the required data **[https://apex.oracle.com/pls/apex/r/YOUR-WORKSPACE/YOUR-APP-ALIAS/INDEX-PAGE-ALIAS](https://apex.oracle.com/pls/apex/r/YOUR-WORKSPACE/YOU-APP-ALIAS/INDEX-PAGE-ALIAS)**, it should result in a link like this: **[https://apex.oracle.com/pls/apex/r/livelabstutorials/ascvd-risk/index](https://apex.oracle.com/pls/apex/r/livelabstutorials/ascvd-risk/index)**,
+   **Redirect URI**: If you use [apex.oracle.com](apex.oracle.com), make sure  to update the following link with the required data **[https://apex.oracle.com/pls/apex/r/YOUR-WORKSPACE/YOUR-APP-ALIAS/INDEX-PAGE-ALIAS](https://apex.oracle.com/pls/apex/r/YOUR-WORKSPACE/YOU-APP-ALIAS/INDEX-PAGE-ALIAS)**, it should result in a link like this: **[https://apex.oracle.com/pls/apex/r/livelabstutorials/ascvd-risk/index](https://apex.oracle.com/pls/apex/r/livelabstutorials/ascvd-risk/index)**
 
-   **SMART® Launch URI**: If you use [apex.oracle.com](apex.oracle.com), make sure  to update the following link with the required data **[https://apex.oracle.com/pls/apex/r/YOUR-WORKSPACE/YOUR-APP-ALIAS/LAUNCH-PAGE-ALIAS](https://apex.oracle.com/pls/apex/r/YOUR-WORKSPACE/YOUR-APP-ALIAS/LAUNCH-PAGE-ALIAS)**, it should result in a link like this: **[https://apex.oracle.com/pls/apex/r/livelabstutorials/ascvd-risk/launch](https://apex.oracle.com/pls/apex/r/livelabstutorials/ascvd-risk/launch)**,
+   **SMART® Launch URI**: If you use [apex.oracle.com](apex.oracle.com), make sure  to update the following link with the required data **[https://apex.oracle.com/pls/apex/r/YOUR-WORKSPACE/YOUR-APP-ALIAS/LAUNCH-PAGE-ALIAS](https://apex.oracle.com/pls/apex/r/YOUR-WORKSPACE/YOUR-APP-ALIAS/LAUNCH-PAGE-ALIAS)**, it should result in a link like this: **[https://apex.oracle.com/pls/apex/r/livelabstutorials/ascvd-risk/launch](https://apex.oracle.com/pls/apex/r/livelabstutorials/ascvd-risk/launch)**
 
-   **Default FHIR® Version**: R4,
+   **Default FHIR® Version**: R4
 
    Click **Next**.
 
@@ -123,9 +123,9 @@ This lab assumes you have:
 
 8. Fill out the form as follows:
 
-   **Select a Product Family**: Millennium,
+   **Select a Product Family**: Millennium
 
-   **Select Products**: Ignite APIs for Millennium: FHIR R4, All,
+   **Select Products**: Ignite APIs for Millennium: FHIR R4, All
 
    Click **Next**.
 
