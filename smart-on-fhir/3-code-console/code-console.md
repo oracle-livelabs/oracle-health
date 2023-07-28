@@ -145,7 +145,7 @@ This lab assumes you have:
 
    ![New App fourth step](images/new-app-fourth-step.png)
 
-11. **Congratulations**! You now have your first Code Console application created. After its creation you should be able to see it on t he **My Applications** tab.
+11. **Congratulations**! You now have your first Code Console application created. After its creation you should be able to see it on the **My Applications** tab.
 
    ![New App created](images/new-app-created.png)
 
