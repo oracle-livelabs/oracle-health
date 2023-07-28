@@ -38,13 +38,13 @@ This lab assumes you have:
 
 ## Task 2: Launch Page
 
-1. Return to the Application Home Page.
+1. Return to the Application **Home Page**.
 
-   Click Home Page..
+   Click **Home Page**..
 
    ![Click on Home Page](images/edit-home-page.png)
 
-2. Rename Home Page to Launch Page.
+2. Rename Home Page to **Launch** Page.
 
     ![Click on Create Application](images/rename-home-page.png)
 
