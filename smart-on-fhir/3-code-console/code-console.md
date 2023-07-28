@@ -131,7 +131,7 @@ This lab assumes you have:
 
    ![New App second step](images/new-app-second-step.png)
 
-9. Check the following **User Product APIs**:
+9. Check the following **Patient Product APIs**:
 
    **APIs**: Patient, **Access level**: Read
 
