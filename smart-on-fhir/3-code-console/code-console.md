@@ -29,11 +29,11 @@ This lab assumes you have:
 
 2. Click on "**Log In**", either from the header or the main page:
 
-   ![Login buttons](images/login-buttons.png)
+   ![Login buttons located in the header on in the card from the main page](images/login-buttons.png)
 
 3. Confirm you are on the following page:
 
-   ![Login buttons](images/login-page.png)
+   ![Login form with login button](images/login-page.png)
 
 4. Click on "**Create an account >>**" button
 
@@ -55,7 +55,7 @@ This lab assumes you have:
 
    Click "**Create Account**" button.
 
-   ![Create account page](images/create-account-page.png)
+   ![Create account page, fill in  the form, click Create Account button](images/create-account-page.png)
 
 6. To finish registration, check your email and follow the instructions that are necessary to confirm your email and account.
 
@@ -67,7 +67,7 @@ This lab assumes you have:
 
 1. Go to [https://code-console.cerner.com/](https://code-console.cerner.com/) and click on "**Log In**", either from the header or the main page:
 
-   ![Login buttons](images/login-buttons.png)
+   ![Login buttons located in the header on in the card from the main page](images/login-buttons.png)
 
 2. Fill out the login form:
 
@@ -77,7 +77,7 @@ This lab assumes you have:
 
    Press the "**Log In**" button.
 
-   ![Login form](images/login-form.png)
+   ![Login form with login button](images/login-form.png)
 
 3. Confirm you are on the following page:
 
@@ -85,7 +85,7 @@ This lab assumes you have:
 
 4. Click on "**My Applications**" tab
 
-   ![My Apps tab](images/my-apps-tab.png)
+   ![My Applications tab](images/my-apps-tab.png)
 
 5. A pop up "**Authorized Representative of the Company**" will appear where you have to do the following:
 
@@ -95,11 +95,11 @@ This lab assumes you have:
 
    Click the "**Save**" button.
 
-   ![Authorized Popup](images/authorized-popup.png)
+   ![Authorized Representative of the Company Popup](images/authorized-popup.png)
 
 6. Click on "**+ New Application**" button
 
-   ![New App](images/new-app.png)
+   ![+New Application button](images/new-app.png)
 
 7. Fill out the form as follows:
 
@@ -119,7 +119,7 @@ This lab assumes you have:
 
    Click **Next**.
 
-   ![New App first step](images/new-app-first-step.png)
+   ![Fill in the first step of the form, click Next](images/new-app-first-step.png)
 
 8. Fill out the form as follows:
 
@@ -129,7 +129,7 @@ This lab assumes you have:
 
    Click **Next**.
 
-   ![New App second step](images/new-app-second-step.png)
+   ![Fill in the second step of the form, click Next](images/new-app-second-step.png)
 
 9. Check the following **Patient Product APIs**:
 
@@ -139,15 +139,15 @@ This lab assumes you have:
 
    Click **Next**.
 
-   ![New App third step](images/new-app-third-step.png)
+   ![Fill in the third step of the form, click Next](images/new-app-third-step.png)
 
 10. Confirm everything is looking as expected. Read the **Terms of Use** and check the checkbox if you agree. Click the **Submit** button.
 
-   ![New App fourth step](images/new-app-fourth-step.png)
+   ![In the fourth step of the form, confirm everything looks good, click Submit](images/new-app-fourth-step.png)
 
 11. **Congratulations**! You now have your first Code Console application created. After its creation you should be able to see it on the **My Applications** tab.
 
-   ![New App created](images/new-app-created.png)
+   ![New Application successfully created](images/new-app-created.png)
 
 ## Task 3: Configure ASCVD Risk Calculator
 
