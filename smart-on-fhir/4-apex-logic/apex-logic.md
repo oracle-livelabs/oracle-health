@@ -75,6 +75,8 @@ This lab assumes you have:
 
   ![Change appearance](images/patient-info-appearance.png)
 
+  *Note: Remember to **Save** the page regularly, to not lose any progress!*
+
 3. Create **Tabs** container
 
   Right click on **Body** and press **Create Region**
@@ -150,6 +152,8 @@ This lab assumes you have:
 
   Change region attributes to show all table rows.
   ![Change report pagination](images/recommendations-attributes.png =50%x*)
+
+  *Note: Remember to **Save** the page regularly, to not lose any progress!*
 
 ## Task 3: Define page objects
 
@@ -347,6 +351,8 @@ This lab assumes you have:
 
   **List of Values > Display Null Value:** Unchecked
 
+  *Note: Remember to **Save** the page regularly, to not lose any progress!*
+
 11. Right click on **Region Body** under Results container and press **Create Button**
 
   ![Create region button](images/create-button.png =50%x*)
@@ -376,6 +382,8 @@ This lab assumes you have:
   ![Branch target](images/branch-target.png =50%x*)
 
   **Server-side Condition > When Button Pressed:** CALCULATE_RISK
+
+  *Note: Remember to **Save** the page regularly, to not lose any progress!*
 
 ## Task 4: Create validations
 
@@ -485,7 +493,8 @@ This lab assumes you have:
 
   ![Create item is not null](images/null-validation.png =50%x*)
 
-  Note: change each time **Validation > Item** and **Error > Associated Item:** to the corresponding item.
+  Note: change each time **Validation > Item** and **Error > Associated Item:** to the corresponding item.  
+  *Remember to **Save** the page regularly, to not lose any progress!*
 
 ## Task 5: Assign values
 
@@ -550,6 +559,8 @@ This lab assumes you have:
   `P3_AGE,P3_GENDER,P3_TOTAL_CHOLESTEROL,P3_HDL,P3_SYSTOLIC_BP,P3_DIABETES,P3_SMOKING,P3_HYPERTENSION`
 
   Note: If you followed the workshop exactly and named all the objects as above then you can copy/paste them, if not change with the according object names.
+
+  *Remember to **Save** the page regularly, to not lose any progress!*
 
 ## Task 6: Represent data
 
@@ -638,6 +649,8 @@ This lab assumes you have:
 
   **Label > Position:** Outside Slice
 
+  *Note: Remember to **Save** the page regularly, to not lose any progress!*
+
 ## Task 7 (Optional): Esthetics and finishing touches
 
 1. Select rendering tab and open page attributes
@@ -676,6 +689,8 @@ This lab assumes you have:
   **Server-side Condition > Type:** Request = Value
 
   **Server-side Condition > Value:** show
+
+  *Note: Remember to **Save** the page regularly, to not lose any progress!*
 
 ## Acknowledgements
 

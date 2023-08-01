@@ -205,7 +205,8 @@ This lab assumes you have:
 
 13. Create 4 similar items, ISS, CODE, LAUNCH, STATE
 
-   Note: They need to have this exact name, these 4 items will be used by SMART on FHIR JavaScript Library.
+   Note: They need to have this exact name, these 4 items will be used by SMART on FHIR JavaScript Library.  
+   *Remember to **Save** the page regularly, to not lose any progress!*
 
    **Identification > Name:** `ISS`
 
@@ -254,6 +255,8 @@ This lab assumes you have:
    ```
 
    ![Edit index page](images/index-page.png)
+
+   *Note: Remember to **Save** the page regularly, to not lose any progress!*
 
 ## Acknowledgements
 
