@@ -48,7 +48,7 @@ This lab assumes you have:
 
     ![Click on Create Application](images/rename-home-page.png)
 
-3. Change page security.
+3. Change page security to be a **Public Page** and page protection as **Unrestricted**, and then **Save** the Page.
 
     ![Edit page security](images/page-security.png)
 
