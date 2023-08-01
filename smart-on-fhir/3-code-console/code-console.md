@@ -183,7 +183,7 @@ This lab assumes you have:
 
    [SMART on FHIR](../0-introduction/files/fhir-client.min.js) official JavaScript library.
 
-   [ASCVD Risk Calculator](../0-introduction/files/fhir-client.min.js) JavaScript library.
+   [ASCVD Risk Calculator](../0-introduction/files/ascvd-risk.min.js) JavaScript library.
 
    ![Import dependencies](images/dependencies.png)
 
