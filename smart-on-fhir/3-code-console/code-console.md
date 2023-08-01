@@ -239,7 +239,7 @@ This lab assumes you have:
 
       #APP_FILES#fhir/fhir-client.min.js
 
-      #APP_FILES#ASCVDRisk#MIN#.js
+      #APP_FILES#ascvd-risk#MIN#.js
 
    **Javascript > Function and Global Variable Declaration:**
 
