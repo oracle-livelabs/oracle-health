@@ -528,18 +528,19 @@ This lab assumes you have:
   **Settings > Code**
     ```js
     <copy>
-    (function() {
-        let patientInfo = JSON.parse(sessionStorage.getItem("ASCVDRisk.patientInfo"));
+      (function() {
+          let patientInfo = JSON.parse(sessionStorage.getItem("ASCVDRisk.patientInfo"));
 
-        apex.item("P3_AGE").setValue(patientInfo.age);
-        apex.item("P3_GENDER").setValue(patientInfo.gender);
-        apex.item("P3_TOTAL_CHOLESTEROL").setValue(patientInfo.totalCholesterol);
-        apex.item("P3_HDL").setValue(patientInfo.hdl);
-        apex.item("P3_SYSTOLIC_BP").setValue(patientInfo.systolicBloodPressure);
-        apex.item("P3_DIABETES").setValue(patientInfo.relatedFactors.diabetic);
-        apex.item("P3_SMOKING").setValue(patientInfo.relatedFactors.smoker);
-        apex.item("P3_HYPERTENSION").setValue(patientInfo.relatedFactors.hypertensive);
-    })()
+          apex.item("P3_AGE").setValue(patientInfo.age);
+          apex.item("P3_GENDER").setValue(patientInfo.gender);
+          apex.item("P3_TOTAL_CHOLESTEROL").setValue(patientInfo.totalCholesterol);
+          apex.item("P3_HDL").setValue(patientInfo.hdl);
+          apex.item("P3_SYSTOLIC_BP").setValue(patientInfo.systolicBloodPressure);
+          apex.item("P3_RACE").setValue(patientInfo.relatedFactors.race);
+          apex.item("P3_DIABETES").setValue(patientInfo.relatedFactors.diabetic);
+          apex.item("P3_SMOKING").setValue(patientInfo.relatedFactors.smoker);
+          apex.item("P3_HYPERTENSION").setValue(patientInfo.relatedFactors.hypertensive);
+      })()
     </copy>
     ```
 
