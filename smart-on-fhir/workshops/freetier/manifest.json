@@ -3,7 +3,7 @@
     "include": {"ASCVDRisk.sql":"../../2-introduction/files/ASCVDRisk.sql",
     "ASCVDRisk.min.js":"../../2-introduction/files/ASCVDRisk.min.js",
     "fhir-client.min.js":"../../2-introduction/files/fhir-client.min.js"},
-    "help": "livelabs-help-**enterarea**_us@oracle.com",
+    "help": "livelabs-help_us@oracle.com",
     "tutorials": [
         {
             "title": "Introduction",
