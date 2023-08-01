@@ -181,9 +181,9 @@ This lab assumes you have:
 
 8. Import the following dependencies:
 
-   [SMART on FHIR](../0-introduction/files/fhir-client.min.js) official JavaScript library.
+   <a href="../0-introduction/files/fhir-client.min.js" download>SMART on FHIR</a> official JavaScript library.
 
-   [ASCVD Risk Calculator](../0-introduction/files/ascvd-risk.min.js) JavaScript library.
+   <a href="../0-introduction/files/ascvd-risk.min.js" download>ASCVD Risk Calculator</a> JavaScript library.
 
    ![Import dependencies](images/dependencies.png)
 
@@ -239,7 +239,7 @@ This lab assumes you have:
 
       #APP_FILES#fhir/fhir-client.min.js
 
-      #APP_FILES#ascvd-risk#MIN#.js
+      #APP_FILES#ascvd-risk.min.js
 
    **Javascript > Function and Global Variable Declaration:**
 

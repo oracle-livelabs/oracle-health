@@ -32,9 +32,9 @@ If the menu is not displayed, you can open by clicking the menu button (![burger
 
 [ASCVD Risk Calculator](files/ascvd-risk.sql) completed application.
 
-[SMART on FHIR](files/fhir-client.min.js) official JavaScript library.
+<a href="files/fhir-client.min.js" download>SMART on FHIR</a> official JavaScript library.
 
-[ASCVD Risk Calculator](files/ascvd-risk.min.js) JavaScript library.
+<a href="files/ascvd-risk.min.js" download>ASCVD Risk Calculator</a> JavaScript library.
 
 ## Learn more - Useful Links
 
