@@ -623,7 +623,7 @@ This lab assumes you have:
 
   **Label > Position:** Outside Slice
 
-1. Create **Lowest Possible Risk** series
+3. Create **Lowest Possible Risk** series
 
    Right Click on **Series** and create a new series
 
@@ -654,6 +654,26 @@ This lab assumes you have:
   **Label > Show:** Checked
 
   **Label > Position:** Outside Slice
+
+4. Under **Axes** select **y** and change the title and value representation
+
+   **Identification > Title:** Percent (%)
+
+   **Value > Minimum:** 0
+
+   **Value > Maximum:** 1
+
+   **Value > Format:** Percent
+
+   **Value > Decimal Places:** 2
+
+   **Value > Format Scaling:** Automatic
+
+   ![Format axes y to represent data correctly](images/change-y-axes.png)
+
+5. Enable charts **Legend** by clicking on the chart region "Chance of heart attack or stroke" and in the Attributes under Legend check **Show**
+
+  ![Enable chart legend](images/enable-legend.png)
 
   *Note: Remember to **Save** the page regularly, to not lose any progress!*
 
