@@ -98,10 +98,10 @@ This lab assumes you have:
 
 ## Acknowledgements
 
-* **Author** - Alexandru Basarab, Software Development Manager, Open Platform
+* **Author** - Alexandru Basarab, Software Development Manager, OHAI - Platform Initiatives
 
 * **Contributors**
-    * Mircea Iordache, Software Engineer, Open Platform
-    * Tudor Dragomir, Software Engineer, Open Platform
+    * Mircea Iordache, Software Engineer, OHAI - Platform Initiatives
+    * Tudor Dragomir, Software Engineer, OHAI - Platform Initiatives
 
 * **Last Updated By/Date** - Basarab Alexandru, July 2023

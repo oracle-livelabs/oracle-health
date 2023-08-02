@@ -265,10 +265,10 @@ This lab assumes you have:
 ## Acknowledgements
 
 * **Author**
-    * Mircea Iordache, Software Engineer, Open Platform
-    * Alexandru Basarab, Alexandru Basarab, Software Development Manager, Open Platform
+    * Mircea Iordache, Software Engineer, OHAI - Platform Initiatives
+    * Alexandru Basarab, Software Development Manager, OHAI - Platform Initiatives
 
 * **Contributors**
-    * Tudor Dragomir, Software Engineer, Open Platform
+    * Tudor Dragomir, Software Engineer, OHAI - Platform Initiatives
 
-- **Last Updated By/Date** - Mircea Iordache, July 2023
+- **Last Updated By/Date** - Alexandru Basarab, July 2023

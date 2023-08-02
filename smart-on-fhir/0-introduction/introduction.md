@@ -50,8 +50,8 @@ If the menu is not displayed, you can open by clicking the menu button (![burger
 
 ## Acknowledgements
 
-* **Author** - Mircea Iordache, Software Engineer, Open Platform
+* **Author** - Mircea Iordache, Software Engineer, OHAI - Platform Initiatives
 
-* **Contributors** - Alexandru Basarab, Software Development Manager, Open Platform
+* **Contributors** - Alexandru Basarab, Software Development Manager, OHAI - Platform Initiatives
 
-* **Last Updated By/Date** - Iordache Mircea, July 2023
+* **Last Updated By/Date** - Alexandru Basarab, July 2023
