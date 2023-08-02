@@ -111,6 +111,8 @@ This lab assumes you have:
 
    **Application Privacy**: You can leave it as **Public**
 
+   *Note: If you named your application ASCVD Risk Calculator then your application alias will be **ASCVD-RISK-CALCULATOR***
+
    **Redirect URI**: If you use [apex.oracle.com](apex.oracle.com), make sure  to update the following link with the required data `https://apex.oracle.com/pls/apex/r/YOUR-WORKSPACE/YOUR-APP-ALIAS/index`, it should result in a link like this: `https://apex.oracle.com/pls/apex/r/livelabstutorials/ascvd-risk/index`
 
    **SMART® Launch URI**: If you use [apex.oracle.com](apex.oracle.com), make sure  to update the following link with the required data `https://apex.oracle.com/pls/apex/r/YOUR-WORKSPACE/YOUR-APP-ALIAS/LAUNCH-PAGE-ALIAS`, it should result in a link like this: `https://apex.oracle.com/pls/apex/r/livelabstutorials/ascvd-risk/launch`
@@ -205,8 +207,8 @@ This lab assumes you have:
 
 13. Create 4 similar items, ISS, CODE, LAUNCH, STATE
 
-   Note: They need to have this exact name, these 4 items will be used by SMART on FHIR JavaScript Library.  
-   *Remember to **Save** the page regularly, to not lose any progress!*
+   *Note: They need to have this exact name, these 4 items will be used by SMART on FHIR JavaScript Library.  
+   Remember to **Save** the page regularly, to not lose any progress!*
 
    **Identification > Name:** `ISS`
 
@@ -214,7 +216,9 @@ This lab assumes you have:
 
    ![Create hidden items](images/hidden-items-settings.png)
 
-14. Edit JavaScript section of **Launch** page and add dependencies
+14. Edit JavaScript section of **Launch** page and add dependencies.
+
+   *Note: Make sure to edit the Client Id in the below Javascript snippet and replace it with Client Id given by Code Console.*
 
    **JavaScript > File URL's:** #APP_FILES#fhir-client.min.js
 
@@ -238,7 +242,7 @@ This lab assumes you have:
 
    **JavaScript > File URL's:**
 
-      #APP_FILES#fhir/fhir-client.min.js
+      #APP_FILES#fhir-client.min.js
 
       #APP_FILES#ascvd-risk.min.js
 

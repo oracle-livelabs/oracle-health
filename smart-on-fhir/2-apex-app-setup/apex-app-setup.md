@@ -66,9 +66,35 @@ This lab assumes you have:
 
    ![Click on Create](images/create-index-page.png)
 
-3. Repeat the process for the **View** Page
+3. Change page security to be a **Public Page** and page protection as **Unrestricted**, and then **Save** the Page.
+
+    ![Edit page security](images/page-security.png)
+
+4. Repeat the process for the **View** Page
 
    ![Click on Create](images/create-view-page.png)
+
+5. Change page security to be a **Public Page** and page protection as **Unrestricted**, and then **Save** the Page.
+
+    ![Edit page security](images/page-security.png)
+
+## Task 4: Change application home page
+
+1. Click on application id to return to application overview.
+
+    *Note: Your application id will be different.*
+
+    ![Click on application id to return to application overview](images/return-to-app-home.png)
+
+2. Click on **Edit Application Definition** button in the top right corner of the the overview page.
+
+    ![Click on edit application definition button](images/edit-app-definition.png)
+
+3. Click on **User Interface** and under **Attributes** change **Home URL** and **Login URL** to point to **View Page**
+
+    **URL:** `f?p=&APP_ID.:VIEW:&APP_SESSION.::&DEBUG.:::`
+
+    ![Click on user interface and under attributes change home url and login url to view page](images/change-home-page.png)
 
 ## Acknowledgements
 

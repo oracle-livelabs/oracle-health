@@ -73,6 +73,10 @@ This lab assumes you have:
 
   ![Change appearance](images/patient-info-appearance.png)
 
+  Move the region to **Breadcrumb Bar**, in region attributes under Layout change region **Position**
+
+  ![Move the region to Breadcrumb Bar](images/move-to-breadcrumb-bar.png)
+
   *Note: Remember to **Save** the page regularly, to not lose any progress!*
 
 3. Create **Tabs** container by right clicking on **Body** and press **Create Region**
@@ -85,6 +89,9 @@ This lab assumes you have:
   Change **Template Options** of tab container by clicking on **Use Template Defaults**
 
   ![Change template options of tab container](images/tabs-template-options.png =50%x*)
+
+  Add a **Static Id** to the Tabs Container with the value **tabs**
+  ![Add a Static Id to the Tabs Container with the value tabs](images/tabs-static-id.png)
 
 4. Create **Results** by right clicking on tabs container and press **Create Sub Region**
 
@@ -678,7 +685,7 @@ This lab assumes you have:
 
     ![Dynamic action attributes](images/show-risck-factors.png =50%x*)
 
-  **Identification > Name:** Show Risck Factors
+  **Identification > Name:** Show Risk Factors
 
   **When > Event:** After Refresh
 
@@ -691,6 +698,28 @@ This lab assumes you have:
   **Server-side Condition > Value:** show
 
   *Note: Remember to **Save** the page regularly, to not lose any progress!*
+
+4. Right click on True under Show Risk Factors Dynamic Action to create a new **True Action**
+
+    ![Create true action](images/create-true-action.png)
+
+5. Change the true action as follows:
+
+  **Identification > Action:** Execute JavaScript Code
+
+  **Settings > Code:**
+
+    ```js
+    <copy>
+      apex.region("tabs").widget().aTabs("getTabs")["#SR_risk-factor"].makeActive();
+    </copy>
+    ```
+
+  **Affected Elements > Section Type:** Region
+
+  **Affected Elements > Region:** ..Results
+
+   ![Create true action](images/show-risk-factors-true-action.png)
 
 ## Acknowledgements
 
