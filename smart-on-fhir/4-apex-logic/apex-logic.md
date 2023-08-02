@@ -149,7 +149,7 @@ This lab assumes you have:
   Add a **Static Id** with the name recommendations and change the **Server-Side Condition** to **Type:** Request = Value and **Value:** show
   ![Change advanced settings](images/recommendations-advanced.png =50%x*)
 
-  Change region attributes to show all table rows.
+  Change region attributes to show all table rows and the **Appearance Template** to **Content Row**.
   ![Change report pagination](images/recommendations-attributes.png =50%x*)
 
   *Note: Remember to **Save** the page regularly, to not lose any progress!*
@@ -314,7 +314,7 @@ This lab assumes you have:
 
   **List of Values > Display Null Value:** Unchecked
 
-10.  Create number field **Systolic Blood Pressure**
+10. Create number field **Systolic Blood Pressure**
 
   **Identification > Name:** `P3_SYSTOLIC_BP`
 
