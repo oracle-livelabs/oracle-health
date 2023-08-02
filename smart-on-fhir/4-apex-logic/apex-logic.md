@@ -55,9 +55,7 @@ This lab assumes you have:
 
   ![Open view page](images/open-view.png)
 
-2. Create patient information container
-
-  Right click on **Body** and press **Create Region**
+2. Create patient information container by right clicking on **Body** and press **Create Region**
 
   ![Create patient info region](images/patient-info-region.png)
 
@@ -77,38 +75,34 @@ This lab assumes you have:
 
   *Note: Remember to **Save** the page regularly, to not lose any progress!*
 
-3. Create **Tabs** container
-
-  Right click on **Body** and press **Create Region**
+3. Create **Tabs** container by right clicking on **Body** and press **Create Region**
 
   ![Create tabs region](images/patient-info-region.png)
 
   Select **Tabs Container** template
   ![Create tabs container](images/tabs-container.png)
 
-  Change template options of tab container
+  Change **Template Options** of tab container by clicking on **Use Template Defaults**
 
   ![Change template options of tab container](images/tabs-template-options.png =50%x*)
 
-1. Create **Results**
+4. Create **Results** by right clicking on tabs container and press **Create Sub Region**
 
-  Right click on tabs container and press **Create Sub Region**
   Name the region: **Results**
 
   ![Create results container](images/create-sub-region.png)
 
-  Change template options of results container
+  Change **Template Options** of results container
 
   ![Change template options of results container](images/results-template-options.png =50%x*)
 
-5. Create **Risk Factors**
+5. Create **Risk Factors** by right clicking on tabs container and press **Create Sub Region**
 
-  Right click on tabs container and press **Create Sub Region**
   Name the region: **Risk Factors**
 
   ![Create risk factors container](images/create-sub-region.png)
 
-  Change template options of risk factors container
+  Change **Template Options** of risk factors container
 
   ![Change template options of risk factors container](images/risk-factors-options.png =50%x*)
 
@@ -120,9 +114,7 @@ This lab assumes you have:
 
   ![Show risk factors only on request](images/risk-factors-condition.png)
 
-6. Create **Recommendations**
-
-  Right click on tabs container and press **Create Sub Region**
+6. Create **Recommendations** by right clicking on tabs container and press **Create Sub Region**
 
   ![Create recommendations container](images/create-sub-region.png)
 
@@ -144,7 +136,7 @@ This lab assumes you have:
     </copy>
     ```
 
-  Change template options of header to **Hidden but accessible**
+  Change **Template Options** of header to **Hidden but accessible**
   ![Change template options](images/recommendations-template-options.png =50%x*)
 
   Add a static id and server-side conditioning
