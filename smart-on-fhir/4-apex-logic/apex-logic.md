@@ -157,9 +157,11 @@ This lab assumes you have:
 
 ## Task 3: Define page objects
 
-1. Right click on **Results** container and press **Create Page Item**
+1. Right click on **Results** container and press **Create Page Item**  
 
-   ![Create page item](images/create-page-item.png =50%x*)
+  *Note: For each item you will create you need to repeat this step or follow step 3.*
+
+  ![Create page item](images/create-page-item.png =50%x*)
 
 2. Create radio group **Gender**
 
@@ -177,7 +179,7 @@ This lab assumes you have:
 
   **Appearance > Template Option > Item Group Display:** Display as Pill Button
 
-  ![Create gender item](images/radio-group.png =50%x*)
+  ![Create gender item](images/gender-radio-group.png =50%x*)
 
   Select static values under type of **List of Values** and add the following values
 
@@ -187,7 +189,13 @@ This lab assumes you have:
 
   **List of Values > Display Null Value:** Unchecked
 
-3. Create number field **Total Cholesterol (mg/dL)**
+3. (Optional) Duplicate a previously created item by right clicking on the item and click **Duplicate**
+
+  Note: For items that have the same type "Radio Group, Number Field" you can right click on the previews item created and click on **Duplicate**, this will allow you to create a new item with all the attributes of the duplicated item, only needing you to change the item name.
+
+  ![Duplicate page item](images/duplicate-item.png =50%x*)
+
+4. Create number field **Total Cholesterol (mg/dL)**
 
   **Identification > Name:** `P3_TOTAL_CHOLESTEROL`
 
@@ -203,7 +211,7 @@ This lab assumes you have:
 
   **Appearance > Value Placeholder:** 130 - 320
 
-4. Create radio group **Diabetes**
+5. Create radio group **Diabetes**
 
   **Identification > Name:** `P3_DIABETES`
 
@@ -229,7 +237,7 @@ This lab assumes you have:
 
   **List of Values > Display Null Value:** Unchecked
 
-5. Create number field **Age**
+6. Create number field **Age**
 
   **Identification > Name:** `P3_AGE`
 
@@ -241,7 +249,7 @@ This lab assumes you have:
 
   **Appearance > Template Option > Required Indicator:** Asterisk
 
-6. Create number field **HDL - Cholesterol (mg/dL)**
+7. Create number field **HDL - Cholesterol (mg/dL)**
 
   **Identification > Name:** `P3_HDL`
 
@@ -257,7 +265,7 @@ This lab assumes you have:
 
   **Appearance > Value Placeholder:** 20 - 100
 
-7. Create radio group **Current Smoking**
+8. Create radio group **Current Smoking**
 
   **Identification > Name:** `P3_SMOKING`
 
@@ -283,7 +291,7 @@ This lab assumes you have:
 
   **List of Values > Display Null Value:** Unchecked
 
-8. Create radio group **Race**
+9. Create radio group **Race**
 
   **Identification > Name:** `P3_RACE`
 
@@ -309,7 +317,7 @@ This lab assumes you have:
 
   **List of Values > Display Null Value:** Unchecked
 
-9. Create number field **Systolic Blood Pressure**
+10. Create number field **Systolic Blood Pressure**
 
   **Identification > Name:** `P3_SYSTOLIC_BP`
 
@@ -325,7 +333,7 @@ This lab assumes you have:
 
   **Appearance > Value Placeholder:** 90 - 200
 
-10. Create radio group **Treatment for Hypertension**
+11. Create radio group **Treatment for Hypertension**
 
   **Identification > Name:** `P3_HYPERTENSION`
 
@@ -353,11 +361,11 @@ This lab assumes you have:
 
   *Note: Remember to **Save** the page regularly, to not lose any progress!*
 
-11. Right click on **Region Body** under Results container and press **Create Button**
+12. Right click on **Region Body** under Results container and press **Create Button**
 
   ![Create region button](images/create-button.png =50%x*)
 
-12. Change button attributes as follows
+13. Change button attributes as follows
 
   **Identification > Button Name:** CALCULATE_RISK
 
@@ -367,11 +375,11 @@ This lab assumes you have:
 
   **Appearance > Template Options > Type:** Primary
 
-13. Create a new branch by selecting processing tab and right click on **Processing** and click **Create Branch**
+14. Create a new branch by selecting processing tab and right click on **Processing** and click **Create Branch**
 
   ![Create branch](images/create-branch.png =50%x*)
 
-14. Change branch attributes
+15. Change branch attributes
 
   **Identification > Name:** Go To Page view
 
