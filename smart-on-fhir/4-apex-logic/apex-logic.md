@@ -4,7 +4,7 @@
 
 This lab walks you through the steps to build a fully functional ASCVD (Atherosclerotic Cardiovascular Disease) Risk Calculator.
 
-Estimated Lab Time: -- minutes
+Estimated Lab Time: 60 minutes
 
 ### Objectives
 

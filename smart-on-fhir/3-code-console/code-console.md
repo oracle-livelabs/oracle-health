@@ -4,7 +4,7 @@
 
 This lab walks you through the steps to sign up for Code Console, register a new application and configure the ASCVD Risk Calculator Apex App.
 
-Estimated Time: 5 minutes
+Estimated Time: 20 minutes
 
 ### Objectives
 
