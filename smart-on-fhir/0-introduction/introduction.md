@@ -38,13 +38,13 @@ If the menu is not displayed, you can open by clicking the menu button (![burger
 
 ## Learn more - Useful Links
 
-* [fhir.cerner.com](https://fhir.cerner.com/)
-* [hl7 fhir](https://www.hl7.org/fhir/)
-* [authentication/authorization standard](https://fhir.cerner.com/authorization/)
-* [smart on fhir](https://docs.smarthealthit.org/)
+* [Oracle Health FHIR Documentation](https://fhir.cerner.com/)
+* [HL7 FHIR](https://www.hl7.org/fhir/)
+* [Authentication/Authorization Standard](https://fhir.cerner.com/authorization/)
+* [SMART on FHIR](https://docs.smarthealthit.org/)
 * [APEX on Autonomous](https://apex.oracle.com/autonomous)
 * [APEX Collateral](https://apex.oracle.com/)
-* [Tutorials](https://apex.oracle.com/en/learn/tutorials)
+* [Oracle APEX Tutorials](https://apex.oracle.com/en/learn/tutorials)
 * [Community](https://apex.oracle.com/community)
 * [External Site + Slack](http://apex.world/)
 
