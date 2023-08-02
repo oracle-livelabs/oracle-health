@@ -33,7 +33,7 @@ prompt APPLICATION 104 - ASCVD Risk Calculator
 -- Application Export:
 --   Application:     104
 --   Name:            ASCVD Risk Calculator
---   Date and Time:   11:51 Tuesday August 1, 2023
+--   Date and Time:   12:15 Wednesday August 2, 2023
 --   Exported By:     OAHAHA
 --   Flashback:       0
 --   Export Type:     Application Export
@@ -123,7 +123,7 @@ wwv_imp_workspace.create_flow(
 ,p_substitution_string_01=>'APP_NAME'
 ,p_substitution_value_01=>'ASCVD Risk Calculator'
 ,p_last_updated_by=>'OAHAHA'
-,p_last_upd_yyyymmddhh24miss=>'20230801115115'
+,p_last_upd_yyyymmddhh24miss=>'20230802121153'
 ,p_file_prefix => nvl(wwv_flow_application_install.get_static_app_file_prefix,'')
 ,p_files_version=>357
 ,p_print_server_type=>'NATIVE'
@@ -30394,7 +30394,7 @@ wwv_flow_imp_page.create_page(
 ,p_page_is_public_y_n=>'Y'
 ,p_page_component_map=>'12'
 ,p_last_updated_by=>'OAHAHA'
-,p_last_upd_yyyymmddhh24miss=>'20230801111302'
+,p_last_upd_yyyymmddhh24miss=>'20230802121153'
 );
 wwv_flow_imp_page.create_page_plug(
  p_id=>wwv_flow_imp.id(22934900838219927)
@@ -31686,16 +31686,17 @@ wwv_flow_imp_page.create_page_da_action(
 ,p_attribute_01=>wwv_flow_string.join(wwv_flow_t_varchar2(
 '(function() {',
 '    let patientInfo = JSON.parse(sessionStorage.getItem("ASCVDRisk.patientInfo"));',
-'',
-'    apex.item("P3_AGE").setValue(patientInfo.age);',
-'    apex.item("P3_GENDER").setValue(patientInfo.gender);',
-'    apex.item("P3_TOTAL_CHOLESTEROL").setValue(patientInfo.totalCholesterol);',
-'    apex.item("P3_HDL").setValue(patientInfo.hdl);',
-'    apex.item("P3_SYSTOLIC_BP").setValue(patientInfo.systolicBloodPressure);',
-'    apex.item("P3_RACE").setValue(patientInfo.relatedFactors.race);',
-'    apex.item("P3_DIABETES").setValue(patientInfo.relatedFactors.diabetic);',
-'    apex.item("P3_SMOKING").setValue(patientInfo.relatedFactors.smoker);',
-'    apex.item("P3_HYPERTENSION").setValue(patientInfo.relatedFactors.hypertensive);',
+'    if (patientInfo !== null) {',
+'        apex.item("P3_AGE").setValue(patientInfo.age);',
+'        apex.item("P3_GENDER").setValue(patientInfo.gender);',
+'        apex.item("P3_TOTAL_CHOLESTEROL").setValue(patientInfo.totalCholesterol);',
+'        apex.item("P3_HDL").setValue(patientInfo.hdl);',
+'        apex.item("P3_SYSTOLIC_BP").setValue(patientInfo.systolicBloodPressure);',
+'        apex.item("P3_RACE").setValue(patientInfo.relatedFactors.race);',
+'        apex.item("P3_DIABETES").setValue(patientInfo.relatedFactors.diabetic);',
+'        apex.item("P3_SMOKING").setValue(patientInfo.relatedFactors.smoker);',
+'        apex.item("P3_HYPERTENSION").setValue(patientInfo.relatedFactors.hypertensive);',
+'    }',
 '})()'))
 ,p_server_condition_type=>'REQUEST_EQUALS_CONDITION'
 ,p_server_condition_expr1=>'INIT'
