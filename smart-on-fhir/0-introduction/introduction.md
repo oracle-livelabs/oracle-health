@@ -52,6 +52,6 @@ If the menu is not displayed, you can open by clicking the menu button (![burger
 
 * **Author** - Mircea Iordache, Software Engineer, Open Platform
 
-* **Contributors** - Alexandru Basarab, Senior Software Engineer, Open Platform
+* **Contributors** - Alexandru Basarab, Software Development Manager, Open Platform
 
 * **Last Updated By/Date** - Iordache Mircea, July 2023
