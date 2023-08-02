@@ -125,7 +125,7 @@ This lab assumes you have:
 
   ![Create recommendations container](images/create-sub-region.png)
 
-  Select Classic Report and name the region: **Recommendations**
+  Select **Classic Report** and name the region: **Recommendations**
 
   ![Create recommendations container](images/recommendations-source.png =50%x*)
 
@@ -146,7 +146,7 @@ This lab assumes you have:
   Change **Template Options** of header to **Hidden but accessible**
   ![Change template options](images/recommendations-template-options.png =50%x*)
 
-  Add a static id and server-side conditioning
+  Add a **Static Id** with the name recommendations and change the **Server-Side Condition** to **Type:** Request = Value and **Value:** show
   ![Change advanced settings](images/recommendations-advanced.png =50%x*)
 
   Change region attributes to show all table rows.
@@ -298,15 +298,13 @@ This lab assumes you have:
 
   **Label:** Race
 
-  **Settings > Number of Columns:** 2
+  **Settings > Number of Columns:** 1
 
   **Layout > Start New Row:** Checked
 
   **Appearance > Template:** Required - Above
 
   **Appearance > Template Option > Required Indicator:** Asterisk
-
-  **Appearance > Template Option > Item Group Display:** Display as Pill Button
 
   Select static values under type of **List of Values** and add the following values
 
@@ -316,7 +314,7 @@ This lab assumes you have:
 
   **List of Values > Display Null Value:** Unchecked
 
-10. Create number field **Systolic Blood Pressure**
+10.  Create number field **Systolic Blood Pressure**
 
   **Identification > Name:** `P3_SYSTOLIC_BP`
 
@@ -541,21 +539,22 @@ This lab assumes you have:
 
   **Identification > Action:** Execute JavaScript Code
 
-  **Settings > Code**
+  **Settings > Code:**
     ```js
     <copy>
       (function() {
           let patientInfo = JSON.parse(sessionStorage.getItem("ASCVDRisk.patientInfo"));
-
-          apex.item("P3_AGE").setValue(patientInfo.age);
-          apex.item("P3_GENDER").setValue(patientInfo.gender);
-          apex.item("P3_TOTAL_CHOLESTEROL").setValue(patientInfo.totalCholesterol);
-          apex.item("P3_HDL").setValue(patientInfo.hdl);
-          apex.item("P3_SYSTOLIC_BP").setValue(patientInfo.systolicBloodPressure);
-          apex.item("P3_RACE").setValue(patientInfo.relatedFactors.race);
-          apex.item("P3_DIABETES").setValue(patientInfo.relatedFactors.diabetic);
-          apex.item("P3_SMOKING").setValue(patientInfo.relatedFactors.smoker);
-          apex.item("P3_HYPERTENSION").setValue(patientInfo.relatedFactors.hypertensive);
+          if (patientInfo !== null) {
+              apex.item("P3_AGE").setValue(patientInfo.age);
+              apex.item("P3_GENDER").setValue(patientInfo.gender);
+              apex.item("P3_TOTAL_CHOLESTEROL").setValue(patientInfo.totalCholesterol);
+              apex.item("P3_HDL").setValue(patientInfo.hdl);
+              apex.item("P3_SYSTOLIC_BP").setValue(patientInfo.systolicBloodPressure);
+              apex.item("P3_RACE").setValue(patientInfo.relatedFactors.race);
+              apex.item("P3_DIABETES").setValue(patientInfo.relatedFactors.diabetic);
+              apex.item("P3_SMOKING").setValue(patientInfo.relatedFactors.smoker);
+              apex.item("P3_HYPERTENSION").setValue(patientInfo.relatedFactors.hypertensive);
+          }
       })()
     </copy>
     ```
