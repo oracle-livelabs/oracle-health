@@ -10,13 +10,14 @@ Estimated Lab Time: 60 minutes
 
 In this lab, you will:
 
-* Create page structure
-* Create page items
-* Create item validations
-* Assign values to items
-* Create charts to represent data
+* Import supporting objects
+* Create application structure
+* Define page objects
+* Create validations
+* Assign values
+* Represent data
 * Display database data in your application
-* Esthetics and finishing touches
+* (Optional) Esthetics and finishing touches
 
 ### Prerequisites
 
@@ -27,39 +28,39 @@ This lab assumes you have:
 
 ## Task 1: Import supporting objects
 
-1. In the main menu, select SQL Workshop, click SQL Scripts
+1. [Click here](files/supporting_objects.sql) to download the supporting objects SQL file.
+
+2. In the main menu, select **SQL Workshop**, click **SQL Scripts**.
 
    ![Open SQL Scripts](images/open-sql-scripts.png)
 
-2. Click **Upload** and select previously downloaded supporting objects, then press **Upload**
+3. Click **Upload** choose `supporting_objects.sql` file press **Upload**.
 
-    [Click here](files/supporting_objects.sql) to download the supporting objects SQL file.
+    ![Upload supporting objects by choosing supporting_objects.sql and press Upload](images/upload-supporting-objects.png)
 
-    ![Upload supporting objects](images/upload-supporting-objects.png)
-
-3. Run uploaded script
+4. Press run icon to run the uploaded script.
 
    ![Run supporting objects](images/run-script.png)
 
-4. Confirm by clicking on **Run Now**
+5. Confirm by clicking on **Run Now**.
 
    ![Confirm supporting objects](images/run-now.png)
 
-5. Results should show 9 statements processed successfully.
+6. Results should show 9 statements processed successfully.
 
    ![Successful run supporting objects](images/successful-run.png)
 
 ## Task 2: Create application structure
 
-1. Open **View** page
+1. Click on application id in the left corner and open **View** page.
 
   ![Open view page](images/open-view.png)
 
-2. Create patient information container by right clicking on **Body** and press **Create Region**
+2. Create patient information container by right clicking on **Body** and press **Create Region**.
 
   ![Create patient info region](images/patient-info-region.png)
 
-  Name and add html
+  Copy the following code and add it to **Source > HTML Code** and name the region **ASCVD Risk Calculator**.
 
     ```html
     <copy>
@@ -69,29 +70,37 @@ This lab assumes you have:
 
   ![Name and add html](images/patient-info-attr.png)
 
-  Change appearance to **Hero** and add **fa-user** as icon
+  Under **Appearance > Template** select **Hero** and **Appearance > Icon** add **fa-user** as icon.
 
   ![Change appearance](images/patient-info-appearance.png)
 
-  Move the region to **Breadcrumb Bar**, in region attributes under Layout change region **Position**
+  Move the region to **Breadcrumb Bar**, in region attributes under Layout change region **Position**.
 
   ![Move the region to Breadcrumb Bar](images/move-to-breadcrumb-bar.png)
 
-  *Note: Remember to **Save** the page regularly, to not lose any progress!*
+  *Remember to **Save** the page regularly, to not lose any progress!*
 
-3. Create **Tabs** container by right clicking on **Body** and press **Create Region**
+1. Create **Tabs** container by right clicking on **Body** and press **Create Region**
 
   ![Create tabs region](images/patient-info-region.png)
 
-  Select **Tabs Container** template
+  Under **Appearance** select **Tabs Container** template.
   ![Create tabs container](images/tabs-container.png)
 
-  Change **Template Options** of tab container by clicking on **Use Template Defaults**
+  Change **Template Options** of tab container by clicking on **Use Template Defaults**, when you've done the below changes press **Ok**.
+
+  **Common > General:** check Remember Active Tab
+
+  **Common > Layout:** Fill Tab Labels
+
+  **Common > Tab Style:** Pill
+
+  **Common > Tab Size:** Large
 
   ![Change template options of tab container](images/tabs-template-options.png =50%x*)
 
-  Add a **Static Id** to the Tabs Container with the value **tabs**
-  ![Add a Static Id to the Tabs Container with the value tabs](images/tabs-static-id.png)
+  Add a **Static Id** to the **Tabs Container** with the value **tabs**.
+  ![Add a static id to the tabs container with the value tabs](images/tabs-static-id.png)
 
 4. Create **Results** by right clicking on tabs container and press **Create Sub Region**
 
@@ -99,17 +108,21 @@ This lab assumes you have:
 
   ![Create results container](images/create-sub-region.png)
 
-  Change **Template Options** of results container
+  In **Template Options** change **Common > Header** to Hidden but accessible.
 
   ![Change template options of results container](images/results-template-options.png =50%x*)
 
 5. Create **Risk Factors** by right clicking on tabs container and press **Create Sub Region**
 
-  Name the region: **Risk Factors**
+  **Identification > Title:** Risk Factors
 
   ![Create risk factors container](images/create-sub-region.png)
 
-  Change **Template Options** of risk factors container
+  Change **Template Options** of risk factors container and press **Ok**.
+
+  **Common > Header:** Hidden but accessible
+
+  **Common > Style:** Remove UI Decoration
 
   ![Change template options of risk factors container](images/risk-factors-options.png =50%x*)
 
@@ -125,9 +138,17 @@ This lab assumes you have:
 
   ![Create recommendations container](images/create-sub-region.png)
 
-  Select **Classic Report** and name the region: **Recommendations**
+  Set the following attributes.
 
-  ![Create recommendations container](images/recommendations-source.png =50%x*)
+  **Identification > Title:** **Recommendations**
+
+  **Identification > Title:** **Classic Report**
+
+  **Source > Location:** Local Database
+
+  **Source > Type:** SQL Query
+
+  **Source > SQL Query:**
 
     ```sql
     <copy>
@@ -143,16 +164,23 @@ This lab assumes you have:
     </copy>
     ```
 
-  Change **Template Options** of header to **Hidden but accessible**
+  ![Create recommendations container](images/recommendations-source.png =50%x*)
+
+  Go to **Appearance > Template Options** and set **Header** to **Hidden but Accessible**.
   ![Change template options](images/recommendations-template-options.png =50%x*)
 
-  Add a **Static Id** with the name recommendations and change the **Server-Side Condition** to **Type:** Request = Value and **Value:** show
+  Go to **Advanced** and set **Static ID** to **recommendations** and **Server-side Conditions** to **Request = Value** and **Value** to **show**.
   ![Change advanced settings](images/recommendations-advanced.png =50%x*)
 
-  Change region attributes to show all table rows and the **Appearance Template** to **Content Row**.
+  Go to **Attributes** on the right tab and set the following attributes:
+
+  **Appearance > Template:** Content Row
+
+  **Pagination > Type:** No Pagination (Show All Rows)
+
   ![Change report pagination](images/recommendations-attributes.png =50%x*)
 
-  *Note: Remember to **Save** the page regularly, to not lose any progress!*
+  *Remember to **Save** the page regularly, to not lose any progress!*
 
 ## Task 3: Define page objects
 
@@ -356,7 +384,7 @@ This lab assumes you have:
 
   **List of Values > Display Null Value:** Unchecked
 
-  *Note: Remember to **Save** the page regularly, to not lose any progress!*
+  *Remember to **Save** the page regularly, to not lose any progress!*
 
 12. Right click on **Region Body** under Results container and press **Create Button**
 
@@ -372,7 +400,7 @@ This lab assumes you have:
 
   **Appearance > Template Options > Type:** Primary
 
-14. Create a new branch by selecting processing tab and right click on **Processing** and click **Create Branch**
+14. Create a new branch by selecting processing tab (third tab just below of your application id) and right click on **Processing** and click **Create Branch**
 
   ![Create branch](images/create-branch.png =50%x*)
 
@@ -388,7 +416,7 @@ This lab assumes you have:
 
   **Server-side Condition > When Button Pressed:** CALCULATE_RISK
 
-  *Note: Remember to **Save** the page regularly, to not lose any progress!*
+  *Remember to **Save** the page regularly, to not lose any progress!*
 
 ## Task 4: Create validations
 
@@ -675,7 +703,7 @@ This lab assumes you have:
 
   ![Enable chart legend](images/enable-legend.png)
 
-  *Note: Remember to **Save** the page regularly, to not lose any progress!*
+  *Remember to **Save** the page regularly, to not lose any progress!*
 
 ## Task 7 (Optional): Esthetics and finishing touches
 
@@ -702,8 +730,6 @@ This lab assumes you have:
 
 3. Click on dynamic action tab and right click on **Events** and create a **Dynamic Action**
 
-    ![Dynamic action attributes](images/show-risck-factors.png =50%x*)
-
   **Identification > Name:** Show Risk Factors
 
   **When > Event:** After Refresh
@@ -716,7 +742,9 @@ This lab assumes you have:
 
   **Server-side Condition > Value:** show
 
-  *Note: Remember to **Save** the page regularly, to not lose any progress!*
+  ![Dynamic action attributes](images/show-risk-factors.png =50%x*)
+
+  *Remember to **Save** the page regularly, to not lose any progress!*
 
 4. Right click on True under Show Risk Factors Dynamic Action to create a new **True Action**
 
@@ -747,5 +775,6 @@ This lab assumes you have:
 * **Contributors**
     * Mircea Iordache, Software Engineer, OHAI - Platform Initiatives
     * Tudor Dragomir, Software Engineer, OHAI - Platform Initiatives
+    * Ionut Balan, Software Engineer, OHAI - Platform Initiatives
 
 * **Last Updated By/Date** - Basarab Alexandru, July 2023

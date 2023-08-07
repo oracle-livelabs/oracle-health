@@ -58,6 +58,9 @@ This lab assumes you have:
 
 6. Remember username and password and click on **Launch**
 
+    Username: portal
+    Password: portal
+
     ![Launch the application](images/launch-app.png)
 
 ## (Optional) Update the Theme
@@ -84,5 +87,6 @@ This lab assumes you have:
 * **Contributors**
     * Mircea Iordache, Software Engineer, OHAI - Platform Initiatives
     * Tudor Dragomir, Software Engineer, OHAI - Platform Initiatives
+    * Ionut Balan, Software Engineer, OHAI - Platform Initiatives
 
 * **Last Updated By/Date** - Basarab Alexandru, July 2023

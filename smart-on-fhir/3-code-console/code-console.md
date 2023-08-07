@@ -35,11 +35,13 @@ This lab assumes you have:
 
    ![Login form with login button](images/login-page.png)
 
-4. Click on "**Create an account >>**" button
+4. Click on "**Create an account >>**" button, if you don't have an account, you will have to create one.
 
    ![Create account button](images/create-account-button.png)
 
-5. Confirm you are on the "**Create account**" page.
+5. Confirm you are on the "**Create account**" page.  
+
+   *Note: Make sure to save or remember your password, you will need it later.*
 
    Fill out the form. Make sure to fill out the mandatory fields:
 
@@ -57,7 +59,9 @@ This lab assumes you have:
 
    ![Create account page, fill in  the form, click Create Account button](images/create-account-page.png)
 
-6. To finish registration, check your email and follow the instructions that are necessary to confirm your email and account.
+6. To finish registration, check your email and follow the instructions that are necessary to confirm your email and account.  
+
+   *Note: You will need to wait a few minutes*
 
 7. **Congratulations**! You now have a **Code Console** account ready to use.
 
@@ -111,11 +115,17 @@ This lab assumes you have:
 
    **Application Privacy**: You can leave it as **Public**
 
-   *Note: If you named your application ASCVD Risk Calculator then your application alias will be **ASCVD-RISK-CALCULATOR***
+   *Note: Here you will use the application id and workspace name that we previously noted down. If you named your application ASCVD Risk Calculator then your application alias will be **ASCVD-RISK-CALCULATOR***
 
-   **Redirect URI**: If you use [apex.oracle.com](apex.oracle.com), make sure  to update the following link with the required data `https://apex.oracle.com/pls/apex/r/YOUR-WORKSPACE/YOUR-APP-ALIAS/index`, it should result in a link like this: `https://apex.oracle.com/pls/apex/r/livelabstutorials/ascvd-risk/index`
+   **Application Alias:** ASCVD-RISK-CALCULATOR
 
-   **SMART® Launch URI**: If you use [apex.oracle.com](apex.oracle.com), make sure  to update the following link with the required data `https://apex.oracle.com/pls/apex/r/YOUR-WORKSPACE/YOUR-APP-ALIAS/LAUNCH-PAGE-ALIAS`, it should result in a link like this: `https://apex.oracle.com/pls/apex/r/livelabstutorials/ascvd-risk/launch`
+   **Index Page Alias:** index
+
+   **Launch Page Alias:** launch
+
+   **Redirect URI**: If you use [apex.oracle.com](apex.oracle.com), make sure  to update the following link with the required data `https://apex.oracle.com/pls/apex/r/YOUR-WORKSPACE/YOUR-APP-ALIAS/INDEX-PAGE-ALIAS`
+
+   **SMART® Launch URI**: If you use [apex.oracle.com](apex.oracle.com), make sure  to update the following link with the required data `https://apex.oracle.com/pls/apex/r/YOUR-WORKSPACE/YOUR-APP-ALIAS/LAUNCH-PAGE-ALIAS`
 
    **Default FHIR® Version**: R4
 
@@ -133,7 +143,7 @@ This lab assumes you have:
 
    ![Fill in the second step of the form, click Next](images/new-app-second-step.png)
 
-9. Check the following **Patient Product APIs**:
+9. Check the following **Patient Product APIs**, make sure to check only patient product api's.
 
    **APIs**: Patient, **Access level**: Read
 
@@ -151,94 +161,107 @@ This lab assumes you have:
 
    ![New Application successfully created](images/new-app-created.png)
 
+12. Click on the newly created application and look for Client Id, note the UUID, you will use it later.
+
+   ![Click on the newly created application and look for Client Id, note the UUID, you will use it later](images/copy-client-id.png)
+
 ## Task 3: Configure ASCVD Risk Calculator
 
 1. If you have not already logged into your Oracle APEX workspace, sign in using the workspace name, email, and password you signed up with.
 
    ![Sign in into Oracle APEX created](images/apex-sign-in.png)
 
-2. At the top left of your workspace, click App Builder.
+2. At the top left of your workspace, click **App Builder**.
 
    ![Click on App Builder](images/open-app-builder.png)
 
-3. Open ASCVD Risk Calculator
+3. Open **ASCVD Risk Calculator**
 
    ![Open ASCVD Risk Calculator](images/open-app.png)
 
-4. Open Shared Components
+4. Open **Shared Components**
 
    ![Open Shared Components](images/go-to-shared-components.png)
 
-5. Select Static Application Files
+5. Under Files and Reports select **Static Application Files**
 
-   ![Select Static Application Files](images/static-application-files.png)
+   ![Under files and reports select static application files](images/static-application-files.png)
 
-6. Click on Create File
+6. Click on **Create File**
 
-   ![Create File](images/create-file.png)
+   *Note: From here you will be able to import needed dependencies.*
 
-7. Click on Drag and Drop
+   ![Click create file](images/create-file.png)
 
-   ![Drag and Drop](images/drag-and-drop.png)
-
-8. Import the following dependencies:
+7. Download the following dependencies.
 
    <a href="../0-introduction/files/fhir-client.min.js" download>SMART on FHIR</a> official JavaScript library.
 
    <a href="../0-introduction/files/ascvd-risk.min.js" download>ASCVD Risk Calculator</a> JavaScript library.
 
-   ![Import dependencies](images/dependencies.png)
+8. Click on Drag and Drop and select step 7 downloaded dependencies.
 
-9. Files should be loaded and you can see the following screen
+   ![Click on drag and drop](images/drag-and-drop.png)
+
+9. Select the dependencies fhir-client.min.js, ascvd-risk.min.js and press **Open**, after selection you need to press **Create** to add them to your application.
+
+   ![Upload fhir-client.min.js and ascvd-risk.min.js dependencies and press create to add them](images/dependencies.png)
+
+10. Press on **Static Application Files** in order to see the files.
+
+11. Files should be loaded and you can see the following screen.
 
    ![File path](images/file-path.png)
 
-10. Go back to application definition
+12. To go back to application overview press on the application id in the top left corner, in the breadcrumb.
 
-   ![Go back to application definition](images/back-to-app-definition.png)
+   ![To go back to application overview press on the application id in the top left corner, in the breadcrumb](images/back-to-app-definition.png)
 
-11. Click on **Global Page** to edit it
+13. Click on **Global Page** to edit it.
 
    ![Go to global page](images/go-to-global-page.png)
 
-12. Right click on **Body** and press **Create Page Item**
+14. Right click on **Body** and press **Create Page Item**
 
    ![Create page item](images/create-hidden-items.png)
 
-13. Create 4 similar items, ISS, CODE, LAUNCH, STATE
+15. Create four similar items, ISS, CODE, LAUNCH and STATE.
 
-   *Note: They need to have this exact name, these 4 items will be used by SMART on FHIR JavaScript Library.  
-   Remember to **Save** the page regularly, to not lose any progress!*
+      *Note: They need to have this exact names (ISS, CODE, LAUNCH, STATE), these four items will be used by SMART on FHIR JavaScript Library. Below is an example of how to create item ISS, leave the rest of the settings as they defaulted*
 
-   **Identification > Name:** `ISS`
+      **Identification > Name:** `ISS`
 
-   **Identification > Type:** Hidden
+      **Identification > Type:** Hidden
 
-   ![Create hidden items](images/hidden-items-settings.png)
+      ![Create hidden items](images/hidden-items-settings.png)
 
-14. Edit JavaScript section of **Launch** page and add dependencies.
+      *Remember to **Save** the page regularly, to not lose any progress!*
 
-   *Note: Make sure to edit the Client Id in the below Javascript snippet and replace it with Client Id given by Code Console.*
+16. Click on the application id in the top left corner and then look for  **Launch** page and open it, in page attributes edit then JavaScript section to add dependencies.
+
+   *Note: Make sure to edit the code-console-client-id in the below Javascript snippet and replace it with Client Id given by Code Console.*
 
    **JavaScript > File URL's:** #APP_FILES#fhir-client.min.js
 
    **Javascript > Function and Global Variable Declaration:**
 
-   ```js
-   <copy>
-   apex.widget.waitPopup();
+      ```js
+      <copy>
+      apex.widget.waitPopup();
 
-   FHIR.oauth2.authorize({
-      'clientId': 'Code Console Client ID',
-      'scope': 'patient/Patient.read patient/Observation.read launch online_access openid profile',
-      'redirectUri': 'index'
-   });
-   </copy>
-   ```
+      FHIR.oauth2.authorize({
+         'clientId': 'code-console-client-id',
+         'scope': 'patient/Patient.read patient/Observation.read launch online_access openid profile',
+         'redirectUri': 'index'
+      });
+      </copy>
+      ```
 
-   ![Edit launch page](images/launch-page.png)
+   ![Edit launch page javascript section and add the above sniped, replace code console client id with your actual client id](images/launch-page.png)
 
-15. Edit JavaScript section of **Index** page and add dependencies
+   *Remember to **Save** the page regularly, to not lose any progress!*
+
+17. Click on the application id in the top left corner and then look for **Index** page and edit JavaScript section to add dependencies.
 
    **JavaScript > File URL's:**
 
@@ -248,19 +271,19 @@ This lab assumes you have:
 
    **Javascript > Function and Global Variable Declaration:**
 
-   ```js
-   <copy>
-   apex.widget.waitPopup();
+      ```js
+      <copy>
+      apex.widget.waitPopup();
 
-   ASCVDRisk.fetchPatientData().then(() => {
-      ASCVDRisk.display('view');
-   });
-   </copy>
-   ```
+      ASCVDRisk.fetchPatientData().then(() => {
+         ASCVDRisk.display('view');
+      });
+      </copy>
+      ```
 
    ![Edit index page](images/index-page.png)
 
-   *Note: Remember to **Save** the page regularly, to not lose any progress!*
+   *Remember to **Save** the page regularly, to not lose any progress!*
 
 ## Acknowledgements
 
@@ -270,5 +293,6 @@ This lab assumes you have:
 
 * **Contributors**
     * Tudor Dragomir, Software Engineer, OHAI - Platform Initiatives
+    * Ionut Balan, Software Engineer, OHAI - Platform Initiatives
 
-- **Last Updated By/Date** - Alexandru Basarab, July 2023
+* **Last Updated By/Date** - Alexandru Basarab, July 2023

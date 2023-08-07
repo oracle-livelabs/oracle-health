@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This lab walks you through creation and initial setup of Oracle APEX application.
+This lab walks you through creation and initial setup of Oracle APEX application. You will create an new Oracle APEX application and three pages. Two of the pages (Launch, Index) will handle authentications and authorization in SMART on FHIR and the third one (View) will contain the application objects and logic.
 
 Estimated Time: 5 minutes
 
@@ -30,9 +30,10 @@ This lab assumes you have:
 
     ![Click on Create](images/new-app.png)
 
-3. On the Create an Application page, for Name, enter **ASCVD Risk Calculator**.
+3. On the Create an Application page, for Name, enter **ASCVD Risk Calculator**, in the Appearance, you can change it to **Redwood Light** or leave it as it is and change it later in lab five.  
+    *Note: the icon is random each time you create a new application.*
 
-    Click **Create Application**.
+    Click **Create Application**, and wait a few seconds for the application to be created.
 
     ![Click on Create Application](images/app-details.png)
 
@@ -44,39 +45,44 @@ This lab assumes you have:
 
    ![Click on Home Page](images/edit-home-page.png)
 
-2. Rename Home Page to **Launch** Page.
+2. Select the page and open page attributes, rename Home Page to **Launch** Page under Identification and change the page **Alias**.
 
-    ![Click on Create Application](images/rename-home-page.png)
+    **Identification > Name:** Launch
 
-3. Change page security to be a **Public Page** and page protection as **Unrestricted**, and then **Save** the Page.
+    **Identification > Alias:** launch
 
-    ![Edit page security](images/page-security.png)
+    ![Select the page and open page attributes, rename Home Page to Launch Page under Identification and change the page Alias](images/rename-home-page.png)
+
+3. Look for Security tab and change Authentication to be a **Public Page** and Page Access Protection as **Unrestricted**, and then **Save** the Page.
+
+    ![Look for Security tab and change Authentication to be a Public Page and Page Access Protection as Unrestricted, and then Save the Page](images/page-security.png)
 
 ## Task 3: Use the Create Page Wizard
 
-1. Return to the Application **Home Page**.
+1. Return to the Application **Home Page** by pressing the application id in the top left corner.
 
    Click **Create Page**..
 
-   On the Create a Page dialog, click **Blank Page**.
+   On the Create a Page dialog, click **Blank Page** and press **Next**.
 
-   ![Click on Create](images/create-new-page.png)
+   ![Select blank page and click Next](images/create-new-page.png)
 
-2. Create **Index Page** by clicking on **Create** button.
+2. In the Create Blank Page dialog make sure you uncheck **Use Breadcrumb** and **Use Navigation**, name the page **Index** and then click on **Create** button.
 
-   ![Click on Create](images/create-index-page.png)
+   ![Name the page Index uncheck use breadcrumb and navigation then press create](images/create-index-page.png)
 
-3. Change page security to be a **Public Page** and page protection as **Unrestricted**, and then **Save** the Page.
+3. Change Authentication to **Page is Public**, Page Access Protection to **Unrestricted**. Those settings are available in the page security tab, you will need to scroll down.
 
-    ![Edit page security](images/page-security.png)
+    ![Scroll down to page security tab and change authentication to page is public and page access protection to unrestricted](images/page-security.png)
 
-4. Repeat the process for the **View** Page
+4. Repeat the process of step one and two and create a new blank page with the name **View**.  
+   *Note: Don't forget to uncheck Use Breadcrumb and Use Navigation.*
 
-   ![Click on Create](images/create-view-page.png)
+   ![Repeat the process of step one and two and create a new blank page with the name View](images/create-view-page.png)
 
-5. Change page security to be a **Public Page** and page protection as **Unrestricted**, and then **Save** the Page.
+5. Change page security authentication to **Public Page** and page access protection to **Unrestricted**, and then **Save** the Page.
 
-    ![Edit page security](images/page-security.png)
+    ![Scroll down to page security tab and change authentication to page is public and page access protection to unrestricted](images/page-security.png)
 
 ## Task 4: Change application home page
 
@@ -90,11 +96,21 @@ This lab assumes you have:
 
     ![Click on edit application definition button](images/edit-app-definition.png)
 
-3. Click on **User Interface** and under **Attributes** change **Home URL** and **Login URL** to point to **View Page**
+3. Note down your **Application Alias**, can be found in **Definition** section **Name** tab
+
+    ![Under definition section and name tab you can find application alias](images/app-alias.png)
+
+4. Click on **User Interface** and under **Attributes** change **Home URL** and **Login URL** to point to **View Page**, use the below URL and then press **Apply Changes** to save.
 
     **URL:** `f?p=&APP_ID.:VIEW:&APP_SESSION.::&DEBUG.:::`
 
     ![Click on user interface and under attributes change home url and login url to view page](images/change-home-page.png)
+
+5. Before going forward, note down your workspace, this can be found by clicking on your **Account** in right corner and search for **WORKSPACE**
+
+    ![Note down the workspace, we will use it later](images/user-workspace.png)
+
+6. You can keep opened Oracle APEX Workspace in your browser or close it but remember to note or bookmark it.
 
 ## Acknowledgements
 
@@ -103,5 +119,6 @@ This lab assumes you have:
 * **Contributors**
     * Mircea Iordache, Software Engineer, OHAI - Platform Initiatives
     * Tudor Dragomir, Software Engineer, OHAI - Platform Initiatives
+    * Ionut Balan, Software Engineer, OHAI - Platform Initiatives
 
 * **Last Updated By/Date** - Basarab Alexandru, July 2023
