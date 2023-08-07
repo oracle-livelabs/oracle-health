@@ -12,7 +12,6 @@ In this lab, you will:
 
 - Sign up for Code Console
 - Register a new application
-- Configure ASCVD Risk Calculator Oracle APEX App
 
 ### Prerequisites
 

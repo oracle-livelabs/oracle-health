@@ -12,6 +12,7 @@ In this lab, you will:
 
 * Run in Standalone
 * Run via Code Console
+* (Optional) Update the Theme
 
 ### Prerequisites
 
