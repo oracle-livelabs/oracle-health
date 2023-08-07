@@ -10,6 +10,7 @@ Estimated Lab Time: 60 minutes
 
 In this lab, you will:
 
+* Configure ASCVD Risk Calculator
 * Import supporting objects
 * Create application structure
 * Define page objects
@@ -26,7 +27,127 @@ This lab assumes you have:
 * An Oracle Cloud account
 * All previous labs successfully completed
 
-## Task 1: Import supporting objects
+## Task 1: Configure ASCVD Risk Calculator
+
+1. If you have not already logged into your Oracle APEX workspace, sign in using the workspace name, email, and password you signed up with.
+
+   ![Sign in into Oracle APEX created](images/apex-sign-in.png)
+
+2. At the top left of your workspace, click **App Builder**.
+
+   ![Click on App Builder](images/open-app-builder.png)
+
+3. Open **ASCVD Risk Calculator**
+
+   ![Open ASCVD Risk Calculator](images/open-app.png)
+
+4. Open **Shared Components**
+
+   ![Open Shared Components](images/go-to-shared-components.png)
+
+5. Under Files and Reports select **Static Application Files**
+
+   ![Under files and reports select static application files](images/static-application-files.png)
+
+6. Click on **Create File**
+
+   *Note: From here you will be able to import needed dependencies.*
+
+   ![Click create file](images/create-file.png)
+
+7. Download the following dependencies.
+
+   <a href="../0-introduction/files/fhir-client.min.js" download>SMART on FHIR</a> official JavaScript library.
+
+   <a href="../0-introduction/files/ascvd-risk.min.js" download>ASCVD Risk Calculator</a> JavaScript library.
+
+8. Click on Drag and Drop and select step 7 downloaded dependencies.
+
+   ![Click on drag and drop](images/drag-and-drop.png)
+
+9. Select the dependencies fhir-client.min.js, ascvd-risk.min.js and press **Open**, after selection you need to press **Create** to add them to your application.
+
+   ![Upload fhir-client.min.js and ascvd-risk.min.js dependencies and press create to add them](images/dependencies.png)
+
+10. Press on **Static Application Files** in order to see the files.
+
+11. Files should be loaded and you can see the following screen.
+
+   ![File path](images/file-path.png)
+
+12. To go back to application overview press on the application id in the top left corner, in the breadcrumb.
+
+   ![To go back to application overview press on the application id in the top left corner, in the breadcrumb](images/back-to-app-definition.png)
+
+13. Click on **Global Page** to edit it.
+
+   ![Go to global page](images/go-to-global-page.png)
+
+14. Right click on **Body** and press **Create Page Item**
+
+   ![Create page item](images/create-hidden-items.png)
+
+15. Create four similar items, ISS, CODE, LAUNCH and STATE.
+
+      *Note: They need to have this exact names (ISS, CODE, LAUNCH, STATE), these four items will be used by SMART on FHIR JavaScript Library. Below is an example of how to create item ISS, leave the rest of the settings as they defaulted*
+
+      **Identification > Name:** `ISS`
+
+      **Identification > Type:** Hidden
+
+      ![Create hidden items](images/hidden-items-settings.png)
+
+      *Remember to **Save** the page regularly, to not lose any progress!*
+
+16. Click on the application id in the top left corner and then look for  **Launch** page and open it, in page attributes edit then JavaScript section to add dependencies.
+
+   *Note: Make sure to edit the code-console-client-id in the below Javascript snippet and replace it with Client Id given by Code Console.*
+
+   **JavaScript > File URL's:** #APP_FILES#fhir-client.min.js
+
+   **Javascript > Function and Global Variable Declaration:**
+
+      ```js
+      <copy>
+      apex.widget.waitPopup();
+
+      FHIR.oauth2.authorize({
+         'clientId': 'code-console-client-id',
+         'scope': 'patient/Patient.read patient/Observation.read launch online_access openid profile',
+         'redirectUri': 'index'
+      });
+      </copy>
+      ```
+
+   ![Edit launch page javascript section and add the above sniped, replace code console client id with your actual client id](images/launch-page.png)
+
+   *Remember to **Save** the page regularly, to not lose any progress!*
+
+17. Click on the application id in the top left corner and then look for **Index** page and edit JavaScript section to add dependencies.
+
+   **JavaScript > File URL's:**
+
+      #APP_FILES#fhir-client.min.js
+
+      #APP_FILES#ascvd-risk.min.js
+
+   **Javascript > Function and Global Variable Declaration:**
+
+      ```js
+      <copy>
+      apex.widget.waitPopup();
+
+      ASCVDRisk.fetchPatientData().then(() => {
+         ASCVDRisk.display('view');
+      });
+      </copy>
+      ```
+
+   ![Edit index page](images/index-page.png)
+
+   *Remember to **Save** the page regularly, to not lose any progress!*
+
+## Task 2: Import supporting objects
 
 1. [Click here](files/supporting_objects.sql) to download the supporting objects SQL file.
 
@@ -50,7 +171,7 @@ This lab assumes you have:
 
    ![Successful run supporting objects](images/successful-run.png)
 
-## Task 2: Create application structure
+## Task 3: Create application structure
 
 1. Click on application id in the left corner and open **View** page.
 
@@ -182,7 +303,7 @@ This lab assumes you have:
 
   *Remember to **Save** the page regularly, to not lose any progress!*
 
-## Task 3: Define page objects
+## Task 4: Define page objects
 
 1. Right click on **Results** container and press **Create Page Item**  
 
@@ -418,7 +539,7 @@ This lab assumes you have:
 
   *Remember to **Save** the page regularly, to not lose any progress!*
 
-## Task 4: Create validations
+## Task 5: Create validations
 
 1. Go to processing and right click on **Validating** and select **Create Validation**
 
@@ -529,7 +650,7 @@ This lab assumes you have:
   Note: change each time **Validation > Item** and **Error > Associated Item:** to the corresponding item.  
   *Remember to **Save** the page regularly, to not lose any progress!*
 
-## Task 5: Assign values
+## Task 6: Assign values
 
 1. Under Dynamic Actions right click on Page Load and click **Create Dynamic Action**
 
@@ -596,7 +717,7 @@ This lab assumes you have:
 
   *Remember to **Save** the page regularly, to not lose any progress!*
 
-## Task 6: Represent data
+## Task 7: Represent data
 
 1. Right click on **Region Body** under Risk Factors container and press **Create Region**
    ![Create chart region](images/create-chart.png =50%x*)
@@ -705,7 +826,7 @@ This lab assumes you have:
 
   *Remember to **Save** the page regularly, to not lose any progress!*
 
-## Task 7 (Optional): Esthetics and finishing touches
+## Task 8 (Optional): Esthetics and finishing touches
 
 1. Select rendering tab and open page attributes
 
