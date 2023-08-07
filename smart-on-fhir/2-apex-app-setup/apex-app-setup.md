@@ -22,15 +22,19 @@ This lab assumes you have:
 
 ## Task 1: Create the Application
 
-1. In the App Builder toolbar, click **App Builder**, and click **Create**.
+1. If you have not already logged into your Oracle APEX workspace, sign in using the workspace name, email, and password you signed up with.
+
+   ![Sign in into Oracle APEX created](images/apex-sign-in.png)
+
+2. In the App Builder toolbar, click **App Builder**, and click **Create**.
 
     ![Click on App Builder](images/app-builder.png)
 
-2. On the Create Application page, click **New Application**.
+3. On the Create Application page, click **New Application**.
 
     ![Click on Create](images/new-app.png)
 
-3. On the Create an Application page, for Name, enter **ASCVD Risk Calculator**, in the Appearance, you can change it to **Redwood Light** or leave it as it is and change it later in lab five.  
+4. On the Create an Application page, for Name, enter **ASCVD Risk Calculator**, in the Appearance, you can change it to **Redwood Light** or leave it as it is and change it later in lab five.  
     *Note: the icon is random each time you create a new application.*
 
     Click **Create Application**, and wait a few seconds for the application to be created.
