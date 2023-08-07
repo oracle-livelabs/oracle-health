@@ -19,7 +19,7 @@ whenever sqlerror exit sql.sqlcode rollback
 begin
 wwv_flow_imp.import_begin (
  p_version_yyyy_mm_dd=>'2023.04.28'
-,p_release=>'23.1.0'
+,p_release=>'23.1.2'
 ,p_default_workspace_id=>7462512519366746
 ,p_default_application_id=>104
 ,p_default_id_offset=>10210524024111793
@@ -33,7 +33,7 @@ prompt APPLICATION 104 - ASCVD Risk Calculator
 -- Application Export:
 --   Application:     104
 --   Name:            ASCVD Risk Calculator
---   Date and Time:   12:15 Wednesday August 2, 2023
+--   Date and Time:   12:08 Monday August 7, 2023
 --   Exported By:     OAHAHA
 --   Flashback:       0
 --   Export Type:     Application Export
@@ -74,7 +74,7 @@ prompt APPLICATION 104 - ASCVD Risk Calculator
 --       E-Mail:
 --     Supporting Objects:  Included
 --       Install scripts:          3
---   Version:         23.1.0
+--   Version:         23.1.2
 --   Instance ID:     7462336502976769
 --
 
@@ -123,7 +123,7 @@ wwv_imp_workspace.create_flow(
 ,p_substitution_string_01=>'APP_NAME'
 ,p_substitution_value_01=>'ASCVD Risk Calculator'
 ,p_last_updated_by=>'OAHAHA'
-,p_last_upd_yyyymmddhh24miss=>'20230802121153'
+,p_last_upd_yyyymmddhh24miss=>'20230807100541'
 ,p_file_prefix => nvl(wwv_flow_application_install.get_static_app_file_prefix,'')
 ,p_files_version=>357
 ,p_print_server_type=>'NATIVE'
@@ -30394,7 +30394,7 @@ wwv_flow_imp_page.create_page(
 ,p_page_is_public_y_n=>'Y'
 ,p_page_component_map=>'12'
 ,p_last_updated_by=>'OAHAHA'
-,p_last_upd_yyyymmddhh24miss=>'20230802121153'
+,p_last_upd_yyyymmddhh24miss=>'20230807100540'
 );
 wwv_flow_imp_page.create_page_plug(
  p_id=>wwv_flow_imp.id(22934900838219927)
@@ -31703,7 +31703,7 @@ wwv_flow_imp_page.create_page_da_action(
 );
 wwv_flow_imp_page.create_page_da_event(
  p_id=>wwv_flow_imp.id(13378862041666021)
-,p_name=>'Show Risck Factors'
+,p_name=>'Show Risk Factors'
 ,p_event_sequence=>40
 ,p_triggering_element_type=>'REGION'
 ,p_triggering_region_id=>wwv_flow_imp.id(13027051579367610)
@@ -31722,11 +31722,7 @@ wwv_flow_imp_page.create_page_da_action(
 ,p_action=>'NATIVE_JAVASCRIPT_CODE'
 ,p_affected_elements_type=>'REGION'
 ,p_affected_region_id=>wwv_flow_imp.id(33055709167737984)
-,p_attribute_01=>wwv_flow_string.join(wwv_flow_t_varchar2(
-'// apex.region("tabs").widget().aTabs("getTabs")["#SR_risk-factor"].show();',
-'// apex.region("tabs").widget().aTabs("getTabs")["#SR_recommendations"].show();',
-'',
-'apex.region("tabs").widget().aTabs("getTabs")["#SR_risk-factor"].makeActive();'))
+,p_attribute_01=>'apex.region("tabs").widget().aTabs("getTabs")["#SR_risk-factor"].makeActive();'
 );
 end;
 /
