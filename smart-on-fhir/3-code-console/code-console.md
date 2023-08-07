@@ -4,7 +4,7 @@
 
 This lab walks you through the steps to sign up for Code Console, register a new application and configure the ASCVD Risk Calculator Apex App.
 
-Estimated Time: 20 minutes
+Estimated Time: 15 minutes
 
 ### Objectives
 
@@ -22,15 +22,15 @@ This lab assumes you have:
 
 ## Task 1: Sign up for Code Console
 
-1. Go to [https://code-console.cerner.com/](https://code-console.cerner.com/). You should see the following page:
+1. Go to [https://code-console.cerner.com/](https://code-console.cerner.com/). You should see the following page.
 
    ![Code console landing page](images/code-console-landing-page.png)
 
-2. Click on "**Log In**", either from the header or the main page:
+2. Click on "**Log In**", either from the header or the main page.
 
    ![Login buttons located in the header on in the card from the main page](images/login-buttons.png)
 
-3. Confirm you are on the following page:
+3. Confirm you are on the following page.
 
    ![Login form with login button](images/login-page.png)
 
@@ -68,11 +68,11 @@ This lab assumes you have:
 
 **Note**: If you just registered and followed the steps provided in the confirmation email, after you confirm your email you should be automatically logged in to Code Console. If that's the case you can skip to **Step 3**.
 
-1. Go to [https://code-console.cerner.com/](https://code-console.cerner.com/) and click on "**Log In**", either from the header or the main page:
+1. Go to [https://code-console.cerner.com/](https://code-console.cerner.com/) and click on "**Log In**", either from the header or the main page.
 
    ![Login buttons located in the header on in the card from the main page](images/login-buttons.png)
 
-2. Fill out the login form:
+2. Fill out the login form.
 
    Enter your email address on which you have an account created
 
@@ -82,15 +82,15 @@ This lab assumes you have:
 
    ![Login form with login button](images/login-form.png)
 
-3. Confirm you are on the following page:
+3. Confirm you are on the following page.
 
    ![Code Console logged in landing page](images/logged-in-landing-page.png)
 
-4. Click on "**My Applications**" tab
+4. Click on "**My Applications**" tab.
 
    ![My Applications tab](images/my-apps-tab.png)
 
-5. A pop up "**Authorized Representative of the Company**" will appear where you have to do the following:
+5. A pop up "**Authorized Representative of the Company**" will appear where you have to do the following.
 
    Fill out the "**Company Name**"
 
@@ -100,11 +100,11 @@ This lab assumes you have:
 
    ![Authorized Representative of the Company Popup](images/authorized-popup.png)
 
-6. Click on "**+ New Application**" button
+6. Click on "**+ New Application**" button.
 
    ![+New Application button](images/new-app.png)
 
-7. Fill out the form as follows:
+7. Fill out the form as follows.
 
    **Application Name**: LiveLabs - ASCVD Risk Calculator,
 
@@ -132,7 +132,7 @@ This lab assumes you have:
 
    ![Fill in the first step of the form, click Next](images/new-app-first-step.png)
 
-8. Fill out the form as follows:
+8. Fill out the form as follows.
 
    **Select a Product Family**: Millennium
 
@@ -173,4 +173,4 @@ This lab assumes you have:
     * Tudor Dragomir, Software Engineer, OHAI - Platform Initiatives
     * Ionut Balan, Software Engineer, OHAI - Platform Initiatives
 
-* **Last Updated By/Date** - Alexandru Basarab, July 2023
+* **Last Updated By/Date** - Alexandru Basarab, August 2023

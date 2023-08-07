@@ -4,7 +4,7 @@
 
 This lab walks you through creation and initial setup of Oracle APEX application. You will create an new Oracle APEX application and three pages. Two of the pages (Launch, Index) will handle authentications and authorization in SMART on FHIR and the third one (View) will contain the application objects and logic.
 
-Estimated Time: 5 minutes
+Estimated Time: 10 minutes
 
 ### Objectives
 
@@ -45,11 +45,17 @@ This lab assumes you have:
 
 1. Return to the Application **Home Page**.
 
-   Click **Home Page**..
+   Click **Home Page**.
 
    ![Click on Home Page](images/edit-home-page.png)
 
-2. Select the page and open page attributes, rename Home Page to **Launch** Page under Identification and change the page **Alias**.
+2. Move **Layout** tab by dragging the tab to the right panel and move the **Page** tab to the middle panel, this way you will always see the attributes of what you are editing in the middle panel.
+
+    *Note: All tabs can be moved, but keep in mind that the workshop uses this layout.*
+
+    ![Move layout tab by dragging the tab to the right panel and move the page tab to the middle panel](images/apex-tabs.png)
+
+3. Select the page and open page attributes, rename Home Page to **Launch** Page under Identification and change the page **Alias**.
 
     **Identification > Name:** Launch
 
@@ -57,7 +63,7 @@ This lab assumes you have:
 
     ![Select the page and open page attributes, rename Home Page to Launch Page under Identification and change the page Alias](images/rename-home-page.png)
 
-3. Look for Security tab and change Authentication to be a **Public Page** and Page Access Protection as **Unrestricted**, and then **Save** the Page.
+4. Look for Security tab and change Authentication to be a **Public Page** and Page Access Protection as **Unrestricted**, and then **Save** the Page.
 
     ![Look for Security tab and change Authentication to be a Public Page and Page Access Protection as Unrestricted, and then Save the Page](images/page-security.png)
 
@@ -100,9 +106,11 @@ This lab assumes you have:
 
     ![Click on edit application definition button](images/edit-app-definition.png)
 
-3. Note down your **Application Alias**, can be found in **Definition** section **Name** tab
+3. Note down your **Application Alias**, can be found in **Definition** section **Name** tab.
 
     ![Under definition section and name tab you can find application alias](images/app-alias.png)
+
+    **Note: You will need the application alias later on in the workshop to register the app in Code Console.**
 
 4. Click on **User Interface** and under **Attributes** change **Home URL** and **Login URL** to point to **View Page**, use the below URL and then press **Apply Changes** to save.
 
@@ -110,9 +118,11 @@ This lab assumes you have:
 
     ![Click on user interface and under attributes change home url and login url to view page](images/change-home-page.png)
 
-5. Before going forward, note down your workspace, this can be found by clicking on your **Account** in right corner and search for **WORKSPACE**
+5. Before going forward, note down your workspace, this can be found by clicking on your **Account** in right corner and search for **WORKSPACE**.
 
     ![Note down the workspace, we will use it later](images/user-workspace.png)
+
+    **Note: You will need the workspace alias later on in the workshop to register the app in Code Console.**
 
 6. You can keep opened Oracle APEX Workspace in your browser or close it but remember to note or bookmark it.
 
@@ -125,4 +135,4 @@ This lab assumes you have:
     * Tudor Dragomir, Software Engineer, OHAI - Platform Initiatives
     * Ionut Balan, Software Engineer, OHAI - Platform Initiatives
 
-* **Last Updated By/Date** - Basarab Alexandru, July 2023
+* **Last Updated By/Date** - Basarab Alexandru, August 2023

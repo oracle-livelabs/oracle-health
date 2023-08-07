@@ -4,7 +4,7 @@
 
 This lab walks you through the steps to build a fully functional ASCVD (Atherosclerotic Cardiovascular Disease) Risk Calculator.
 
-Estimated Lab Time: 60 minutes
+Estimated Lab Time: 80 minutes
 
 ### Objectives
 
@@ -201,7 +201,7 @@ This lab assumes you have:
 
   *Remember to **Save** the page regularly, to not lose any progress!*
 
-1. Create **Tabs** container by right clicking on **Body** and press **Create Region**
+1. Create **Tabs** container by right clicking on **Body** and press **Create Region**.
 
   ![Create tabs region](images/patient-info-region.png)
 
@@ -223,7 +223,7 @@ This lab assumes you have:
   Add a **Static Id** to the **Tabs Container** with the value **tabs**.
   ![Add a static id to the tabs container with the value tabs](images/tabs-static-id.png)
 
-4. Create **Results** by right clicking on tabs container and press **Create Sub Region**
+4. Create **Results** by right clicking on tabs container and press **Create Sub Region**.
 
   Name the region: **Results**
 
@@ -233,7 +233,7 @@ This lab assumes you have:
 
   ![Change template options of results container](images/results-template-options.png =50%x*)
 
-5. Create **Risk Factors** by right clicking on tabs container and press **Create Sub Region**
+5. Create **Risk Factors** by right clicking on tabs container and press **Create Sub Region**.
 
   **Identification > Title:** Risk Factors
 
@@ -255,7 +255,7 @@ This lab assumes you have:
 
   ![Show risk factors only on request](images/risk-factors-condition.png)
 
-6. Create **Recommendations** by right clicking on tabs container and press **Create Sub Region**
+6. Create **Recommendations** by right clicking on tabs container and press **Create Sub Region**.
 
   ![Create recommendations container](images/create-sub-region.png)
 
@@ -305,13 +305,13 @@ This lab assumes you have:
 
 ## Task 4: Define page objects
 
-1. Right click on **Results** container and press **Create Page Item**  
+1. Right click on **Results** container and press **Create Page Item**.  
 
   *Note: For each item you will create you need to repeat this step or follow step 3.*
 
   ![Create page item](images/create-page-item.png =50%x*)
 
-2. Create radio group **Gender**
+2. Create radio group **Gender**.
 
   **Identification > Name:** `P3_GENDER`
 
@@ -337,13 +337,13 @@ This lab assumes you have:
 
   **List of Values > Display Null Value:** Unchecked
 
-3. (Optional) Duplicate a previously created item by right clicking on the item and click **Duplicate**
+3. (Optional) Duplicate a previously created item by right clicking on the item and click **Duplicate**.
 
   Note: For items that have the same type "Radio Group, Number Field" you can right click on the previews item created and click on **Duplicate**, this will allow you to create a new item with all the attributes of the duplicated item, only needing you to change the item name.
 
   ![Duplicate page item](images/duplicate-item.png =50%x*)
 
-4. Create number field **Total Cholesterol (mg/dL)**
+4. Create number field **Total Cholesterol (mg/dL)**.
 
   **Identification > Name:** `P3_TOTAL_CHOLESTEROL`
 
@@ -359,7 +359,7 @@ This lab assumes you have:
 
   **Appearance > Value Placeholder:** 130 - 320
 
-5. Create radio group **Diabetes**
+5. Create radio group **Diabetes**.
 
   **Identification > Name:** `P3_DIABETES`
 
@@ -385,7 +385,7 @@ This lab assumes you have:
 
   **List of Values > Display Null Value:** Unchecked
 
-6. Create number field **Age**
+6. Create number field **Age**.
 
   **Identification > Name:** `P3_AGE`
 
@@ -397,7 +397,7 @@ This lab assumes you have:
 
   **Appearance > Template Option > Required Indicator:** Asterisk
 
-7. Create number field **HDL - Cholesterol (mg/dL)**
+7. Create number field **HDL - Cholesterol (mg/dL)**.
 
   **Identification > Name:** `P3_HDL`
 
@@ -413,7 +413,7 @@ This lab assumes you have:
 
   **Appearance > Value Placeholder:** 20 - 100
 
-8. Create radio group **Current Smoking**
+8. Create radio group **Current Smoking**.
 
   **Identification > Name:** `P3_SMOKING`
 
@@ -439,7 +439,7 @@ This lab assumes you have:
 
   **List of Values > Display Null Value:** Unchecked
 
-9. Create radio group **Race**
+9. Create radio group **Race**.
 
   **Identification > Name:** `P3_RACE`
 
@@ -463,7 +463,7 @@ This lab assumes you have:
 
   **List of Values > Display Null Value:** Unchecked
 
-10. Create number field **Systolic Blood Pressure**
+10. Create number field **Systolic Blood Pressure**.
 
   **Identification > Name:** `P3_SYSTOLIC_BP`
 
@@ -479,7 +479,7 @@ This lab assumes you have:
 
   **Appearance > Value Placeholder:** 90 - 200
 
-11. Create radio group **Treatment for Hypertension**
+11. Create radio group **Treatment for Hypertension**.
 
   **Identification > Name:** `P3_HYPERTENSION`
 
@@ -507,11 +507,11 @@ This lab assumes you have:
 
   *Remember to **Save** the page regularly, to not lose any progress!*
 
-12. Right click on **Region Body** under Results container and press **Create Button**
+12. Right click on **Region Body** under Results container and press **Create Button**.
 
   ![Create region button](images/create-button.png =50%x*)
 
-13. Change button attributes as follows
+13. Change button attributes as follows.
 
   **Identification > Button Name:** CALCULATE_RISK
 
@@ -521,11 +521,11 @@ This lab assumes you have:
 
   **Appearance > Template Options > Type:** Primary
 
-14. Create a new branch by selecting processing tab (third tab just below of your application id) and right click on **Processing** and click **Create Branch**
+14. Create a new branch by selecting processing tab (third tab just below of your application id) and right click on **Processing** and click **Create Branch**.
 
   ![Create branch](images/create-branch.png =50%x*)
 
-15. Change branch attributes
+15. Change branch attributes.
 
   **Identification > Name:** Go To Page view
 
@@ -541,11 +541,11 @@ This lab assumes you have:
 
 ## Task 5: Create validations
 
-1. Go to processing and right click on **Validating** and select **Create Validation**
+1. Go to processing and right click on **Validating** and select **Create Validation**.
 
   ![Go to validations](images/go-to-processing.png)
 
-2. Create **Age** validation
+2. Create **Age** validation.
 
   **Identification > Name:** `P3_AGE` range plsql
 
@@ -572,13 +572,13 @@ This lab assumes you have:
 
   ![Create age validation](images/create-validation.png =50%x*)
 
-3. Create the rest of the validations by right click on `P3_AGE` range plsql and select duplicate
+3. Create the rest of the validations by right click on `P3_AGE` range plsql and select duplicate.
 
   Change Name, PL/SQL Code, Error Message and Associated Item
 
   ![Duplicate age validation](images/duplicate-validation.png =50%x*)
 
-4. Total Cholesterol (mg/dL) validation
+4. Total Cholesterol (mg/dL) validation.
 
   **Identification > Name:** `P3_TOTAL_CHOLESTEROL` range plsql
 
@@ -599,7 +599,7 @@ This lab assumes you have:
 
   **Error > Associated Item:** `P3_TOTAL_CHOLESTEROL`
 
-5. HDL - Cholesterol (mg/dL) validation
+5. HDL - Cholesterol (mg/dL) validation.
 
     **Identification > Name:** `P3_HDL` range plsql
 
@@ -620,7 +620,7 @@ This lab assumes you have:
 
     **Error > Associated Item:** `P3_HDL`
 
-6. Systolic Blood Pressure validation
+6. Systolic Blood Pressure validation.
 
     **Identification > Name:** `P3_SYSTOLIC_BP` range plsql
 
@@ -641,7 +641,7 @@ This lab assumes you have:
 
     **Error > Associated Item:** `P3_SYSTOLIC_BP`
 
-7. Create Item is not null validation for the following items
+7. Create Item is not null validation for the following items.
 
   `P3_DIABETES, P3_SMOKING, P3_HYPERTENSION, P3_RACE, P3_GENDER`
 
@@ -652,13 +652,13 @@ This lab assumes you have:
 
 ## Task 6: Assign values
 
-1. Under Dynamic Actions right click on Page Load and click **Create Dynamic Action**
+1. Under Dynamic Actions right click on Page Load and click **Create Dynamic Action**.
 
   Name the Dynamic Action: **Show Patient Info**
 
   ![Create dynamic action](images/create-da.png)
 
-2. Change the Show action under True into **Execute JavaScript Code**
+2. Change the Show action under True into **Execute JavaScript Code**.
 
     ![Open view page](images/create-da.png)
 
@@ -680,7 +680,7 @@ This lab assumes you have:
 
     **Execution > Fire on Initialization:** Checked
 
-3. Click on True and add a new Action
+3. Click on True and add a new Action.
 
    ![Create true action](images/create-true-action.png =50%x*)
 
@@ -719,14 +719,14 @@ This lab assumes you have:
 
 ## Task 7: Represent data
 
-1. Right click on **Region Body** under Risk Factors container and press **Create Region**
+1. Right click on **Region Body** under Risk Factors container and press **Create Region**.
    ![Create chart region](images/create-chart.png =50%x*)
 
   **Identification > Name:** Chance of heart attack or stroke
 
   **Identification > Type:** Chart
 
-2. Create **Current Risk** series
+2. Create **Current Risk** series.
 
    Click under **Series** on New and change the following attributes
 
@@ -772,7 +772,7 @@ This lab assumes you have:
 
   **Label > Position:** Outside Slice
 
-3. Create **Lowest Possible Risk** series
+3. Create **Lowest Possible Risk** series.
 
    Right Click on **Series** and create a new series
 
@@ -804,7 +804,7 @@ This lab assumes you have:
 
   **Label > Position:** Outside Slice
 
-4. Under **Axes** select **y** and change the title and value representation
+4. Under **Axes** select **y** and change the title and value representation.
 
    **Identification > Title:** Percent (%)
 
@@ -820,7 +820,7 @@ This lab assumes you have:
 
    ![Format axes y to represent data correctly](images/change-y-axes.png)
 
-5. Enable charts **Legend** by clicking on the chart region "Chance of heart attack or stroke" and in the Attributes under Legend check **Show**
+5. Enable charts **Legend** by clicking on the chart region "Chance of heart attack or stroke" and in the Attributes under Legend check **Show**.
 
   ![Enable chart legend](images/enable-legend.png)
 
@@ -828,11 +828,11 @@ This lab assumes you have:
 
 ## Task 8 (Optional): Esthetics and finishing touches
 
-1. Select rendering tab and open page attributes
+1. Select rendering tab and open page attributes.
 
   ![Go to page rendering](images/page-rendering.png)
 
-2. Change the following attributes
+2. Change the following attributes.
 
   **Appearance > Page Template:** Minimal (No Navigation)
 
@@ -849,7 +849,7 @@ This lab assumes you have:
     </copy>
     ```
 
-3. Click on dynamic action tab and right click on **Events** and create a **Dynamic Action**
+3. Click on dynamic action tab and right click on **Events** and create a **Dynamic Action**.
 
   **Identification > Name:** Show Risk Factors
 
@@ -867,11 +867,11 @@ This lab assumes you have:
 
   *Remember to **Save** the page regularly, to not lose any progress!*
 
-4. Right click on True under Show Risk Factors Dynamic Action to create a new **True Action**
+4. Right click on True under Show Risk Factors Dynamic Action to create a new **True Action**.
 
     ![Create true action](images/create-true-action.png)
 
-5. Change the true action as follows:
+5. Change the true action as follows.
 
   **Identification > Action:** Execute JavaScript Code
 
@@ -898,4 +898,4 @@ This lab assumes you have:
     * Tudor Dragomir, Software Engineer, OHAI - Platform Initiatives
     * Ionut Balan, Software Engineer, OHAI - Platform Initiatives
 
-* **Last Updated By/Date** - Basarab Alexandru, July 2023
+* **Last Updated By/Date** - Basarab Alexandru, August 2023
