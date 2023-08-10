@@ -446,7 +446,7 @@ create or replace package body ascvd_risk_calculator as
         if round((computedscore - reducedtotalscore), 1) <= lowestscore then
             return round((computedscore - lowestscore), 1);
         end if;
-        return round(reducedtotalscore, 1);
+        return abs(round(reducedtotalscore, 1));
     end; ---
     function lowestpossiblerisk(
         age in number,
