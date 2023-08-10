@@ -106,7 +106,7 @@ This lab assumes you have:
 
 7. Fill out the form as follows.
 
-   **Application Name**: LiveLabs - ASCVD Risk Calculator,
+   **Application Name**: LiveLabs - ASCVD Risk Calculator
 
    **Application Type**: You can leave it as **Provider**
 
@@ -116,15 +116,15 @@ This lab assumes you have:
 
    *Note: Here you will use the application id and workspace name that we previously noted down. If you named your application ASCVD Risk Calculator then your application alias will be **ASCVD-RISK-CALCULATOR***
 
+   **Redirect URI**: If you use [apex.oracle.com](apex.oracle.com), make sure  to update the following link with the required data `https://apex.oracle.com/pls/apex/r/YOUR-WORKSPACE/YOUR-APP-ALIAS/INDEX-PAGE-ALIAS`
+
    **Application Alias:** ASCVD-RISK-CALCULATOR
 
    **Index Page Alias:** index
 
-   **Launch Page Alias:** launch
-
-   **Redirect URI**: If you use [apex.oracle.com](apex.oracle.com), make sure  to update the following link with the required data `https://apex.oracle.com/pls/apex/r/YOUR-WORKSPACE/YOUR-APP-ALIAS/INDEX-PAGE-ALIAS`
-
    **SMART® Launch URI**: If you use [apex.oracle.com](apex.oracle.com), make sure  to update the following link with the required data `https://apex.oracle.com/pls/apex/r/YOUR-WORKSPACE/YOUR-APP-ALIAS/LAUNCH-PAGE-ALIAS`
+
+   **Launch Page Alias:** launch
 
    **Default FHIR® Version**: R4
 
@@ -160,9 +160,9 @@ This lab assumes you have:
 
    ![New Application successfully created](images/new-app-created.png)
 
-12. Click on the newly created application and look for Client Id, note the UUID, you will use it later.
+12. Click on the newly created application and look for Client Id, write down the UUID, you will use it later in the APEX Application to authenticate/authorize.
 
-   ![Click on the newly created application and look for Client Id, note the UUID, you will use it later](images/copy-client-id.png)
+   ![Click on the newly created application and look for Client Id, write down the UUID](images/copy-client-id.png)
 
 ## Acknowledgements
 

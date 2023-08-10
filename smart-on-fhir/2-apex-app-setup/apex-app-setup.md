@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This lab walks you through creation and initial setup of Oracle APEX application. You will create an new Oracle APEX application and three pages. Two of the pages (Launch, Index) will handle authentications and authorization in SMART on FHIR and the third one (View) will contain the application objects and logic.
+This lab walks you through creation and initial setup of Oracle APEX application. You will create an new Oracle APEX application and three pages. Two of the pages (Launch and Index) will handle authentications and authorization in SMART on FHIR and the third one (View) will contain the application objects and logic.
 
 Estimated Time: 10 minutes
 
@@ -17,7 +17,7 @@ In this lab, you will:
 
 This lab assumes you have:
 
-* An Oracle Cloud account or Free Workspace in apex.oracle.com
+* An Oracle Cloud account or Free Workspace in apex.oracle.com, see previews lab.
 * All previous labs successfully completed
 
 ## Task 1: Create the Application
@@ -55,7 +55,7 @@ This lab assumes you have:
 
     ![Move layout tab by dragging the tab to the right panel and move the page tab to the middle panel](images/apex-tabs.png)
 
-3. Select the page and open page attributes, rename Home Page to **Launch** Page under Identification and change the page **Alias**.
+3. From the left window, select the page name (e.g. Page 1: Home) and navigate, in the middle window, to the Identification tab, change then name of Home Page to **Launch** and Alias to **launch**.
 
     **Identification > Name:** Launch
 
@@ -63,7 +63,7 @@ This lab assumes you have:
 
     ![Select the page and open page attributes, rename Home Page to Launch Page under Identification and change the page Alias](images/rename-home-page.png)
 
-4. Look for Security tab and change Authentication to be a **Public Page** and Page Access Protection as **Unrestricted**, and then **Save** the Page.
+4. Look for Security tab and change Authentication to **Page is Public** and Page Access Protection to **Unrestricted**, and then **Save** the Page. Those settings are available in the page security tab, you will need to scroll down.
 
     ![Look for Security tab and change Authentication to be a Public Page and Page Access Protection as Unrestricted, and then Save the Page](images/page-security.png)
 
@@ -81,7 +81,7 @@ This lab assumes you have:
 
    ![Name the page Index uncheck use breadcrumb and navigation then press create](images/create-index-page.png)
 
-3. Change Authentication to **Page is Public**, Page Access Protection to **Unrestricted**. Those settings are available in the page security tab, you will need to scroll down.
+3. Look for Security tab and change Authentication to **Page is Public** and Page Access Protection to **Unrestricted**, and then **Save** the Page. Those settings are available in the page security tab, you will need to scroll down.
 
     ![Scroll down to page security tab and change authentication to page is public and page access protection to unrestricted](images/page-security.png)
 
@@ -90,7 +90,7 @@ This lab assumes you have:
 
    ![Repeat the process of step one and two and create a new blank page with the name View](images/create-view-page.png)
 
-5. Change page security authentication to **Public Page** and page access protection to **Unrestricted**, and then **Save** the Page.
+5. Look for Security tab and change Authentication to **Page is Public** and Page Access Protection to **Unrestricted**, and then **Save** the Page. Those settings are available in the page security tab, you will need to scroll down.
 
     ![Scroll down to page security tab and change authentication to page is public and page access protection to unrestricted](images/page-security.png)
 
@@ -106,13 +106,13 @@ This lab assumes you have:
 
     ![Click on edit application definition button](images/edit-app-definition.png)
 
-3. Note down your **Application Alias**, can be found in **Definition** section **Name** tab.
+3. Note down your **Application Alias**. This can be found under the Definition section, under the Name tab.
 
     ![Under definition section and name tab you can find application alias](images/app-alias.png)
 
     **Note: You will need the application alias later on in the workshop to register the app in Code Console.**
 
-4. Click on **User Interface** and under **Attributes** change **Home URL** and **Login URL** to point to **View Page**, use the below URL and then press **Apply Changes** to save.
+4. Select then **User Interface** section and under **Attributes** tab change **Home URL** and **Login URL** to point to **View Page**, use the below URL and then press **Apply Changes** to save.
 
     **URL:** `f?p=&APP_ID.:VIEW:&APP_SESSION.::&DEBUG.:::`
 
