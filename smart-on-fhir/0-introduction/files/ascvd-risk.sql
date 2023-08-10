@@ -33,12 +33,12 @@ prompt APPLICATION 104 - ASCVD Risk Calculator
 -- Application Export:
 --   Application:     104
 --   Name:            ASCVD Risk Calculator
---   Date and Time:   12:08 Monday August 7, 2023
+--   Date and Time:   08:10 Thursday August 10, 2023
 --   Exported By:     OAHAHA
 --   Flashback:       0
 --   Export Type:     Application Export
 --     Pages:                      4
---       Items:                   13
+--       Items:                   14
 --       Validations:              9
 --       Processes:                2
 --       Regions:                 11
@@ -123,7 +123,7 @@ wwv_imp_workspace.create_flow(
 ,p_substitution_string_01=>'APP_NAME'
 ,p_substitution_value_01=>'ASCVD Risk Calculator'
 ,p_last_updated_by=>'OAHAHA'
-,p_last_upd_yyyymmddhh24miss=>'20230807100541'
+,p_last_upd_yyyymmddhh24miss=>'20230810080947'
 ,p_file_prefix => nvl(wwv_flow_application_install.get_static_app_file_prefix,'')
 ,p_files_version=>357
 ,p_print_server_type=>'NATIVE'
@@ -30294,7 +30294,7 @@ wwv_flow_imp_page.create_page(
 'apex.widget.waitPopup();',
 '',
 'FHIR.oauth2.authorize({',
-'    ''clientId'': ''7466a18a-a9f8-4e6c-96b3-f5a5fa6c63e0'',',
+'    ''clientId'': ''code-console-client-id'',',
 '    ''scope'': ''patient/Patient.read patient/Observation.read launch online_access openid profile'',',
 '    ''redirectUri'': ''index''',
 '});'))
@@ -30303,7 +30303,7 @@ wwv_flow_imp_page.create_page(
 ,p_page_is_public_y_n=>'Y'
 ,p_page_component_map=>'11'
 ,p_last_updated_by=>'OAHAHA'
-,p_last_upd_yyyymmddhh24miss=>'20230628110110'
+,p_last_upd_yyyymmddhh24miss=>'20230810080947'
 );
 wwv_flow_imp_page.create_page_process(
  p_id=>wwv_flow_imp.id(12777622452093310)
@@ -30394,7 +30394,7 @@ wwv_flow_imp_page.create_page(
 ,p_page_is_public_y_n=>'Y'
 ,p_page_component_map=>'12'
 ,p_last_updated_by=>'OAHAHA'
-,p_last_upd_yyyymmddhh24miss=>'20230807100540'
+,p_last_upd_yyyymmddhh24miss=>'20230810080348'
 );
 wwv_flow_imp_page.create_page_plug(
  p_id=>wwv_flow_imp.id(22934900838219927)
@@ -30404,7 +30404,9 @@ wwv_flow_imp_page.create_page_plug(
 ,p_plug_template=>wwv_flow_imp.id(19979730394904979)
 ,p_plug_display_sequence=>20
 ,p_plug_display_point=>'REGION_POSITION_01'
-,p_plug_source=>'<div id="patient-info"></div>'
+,p_plug_source=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'<span class="u-color-9-text">Please be aware the application is an example and should not be used to calculate real risk factors!</span>',
+'<div id="patient-info"></div>'))
 ,p_attribute_01=>'N'
 ,p_attribute_02=>'HTML'
 );
@@ -31388,6 +31390,23 @@ wwv_flow_imp_page.create_page_branch(
 ,p_branch_type=>'REDIRECT_URL'
 ,p_branch_when_button_id=>wwv_flow_imp.id(12813963906464603)
 ,p_branch_sequence=>10
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(16658084999541511)
+,p_name=>'P3_WARNING'
+,p_item_sequence=>110
+,p_item_plug_id=>wwv_flow_imp.id(33055709167737984)
+,p_source=>'Please be aware the application is an example and should not be used to calculate real risk factors.'
+,p_source_type=>'STATIC'
+,p_display_as=>'NATIVE_DISPLAY_ONLY'
+,p_begin_on_new_line=>'N'
+,p_begin_on_new_field=>'N'
+,p_field_template=>wwv_flow_imp.id(20065937399905026)
+,p_item_template_options=>'#DEFAULT#'
+,p_attribute_01=>'Y'
+,p_attribute_02=>'VALUE'
+,p_attribute_04=>'Y'
+,p_attribute_05=>'PLAIN'
 );
 wwv_flow_imp_page.create_page_item(
  p_id=>wwv_flow_imp.id(31357815825742518)

@@ -185,6 +185,7 @@ This lab assumes you have:
 
     ```html
     <copy>
+    <<span class="u-color-9-text">Please be aware the application is an example and should not be used to calculate real risk factors!</span>
     <div id="patient-info"></div>
     </copy>
     ```

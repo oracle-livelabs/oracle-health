@@ -30,6 +30,8 @@ If the menu is not displayed, you can open by clicking the menu button (![burger
 
 ## Downloads
 
+*Note: If you decide to use the below complete application, be aware that you still need to follow Sign up for Code Console lab and Task 1 from Create ASCVD Risk Calculator lab!*
+
 [ASCVD Risk Calculator](files/ascvd-risk.sql) completed application.
 
 <a href="files/fhir-client.min.js" download>SMART on FHIR</a> official JavaScript library.
