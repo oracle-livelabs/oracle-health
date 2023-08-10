@@ -898,5 +898,6 @@ This lab assumes you have:
     * Mircea Iordache, Software Engineer, OHAI - Platform Initiatives
     * Tudor Dragomir, Software Engineer, OHAI - Platform Initiatives
     * Ionut Balan, Software Engineer, OHAI - Platform Initiatives
+    * Cornel Porosnicu, Software Engineer, OHAI - Platform Initiatives
 
 * **Last Updated By/Date** - Basarab Alexandru, August 2023
