@@ -537,7 +537,7 @@ This lab assumes you have:
   **Behavior > Type:** Page or URL (Redirect)
 
   **Behavior > Target:** view
-  
+
   **Advanced > Request:** show
 
   ![Change branch target](images/branch-target.png =50%x*)
