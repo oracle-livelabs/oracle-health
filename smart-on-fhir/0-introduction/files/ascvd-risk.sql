@@ -33,7 +33,7 @@ prompt APPLICATION 104 - ASCVD Risk Calculator
 -- Application Export:
 --   Application:     104
 --   Name:            ASCVD Risk Calculator
---   Date and Time:   09:35 Thursday August 10, 2023
+--   Date and Time:   08:53 Friday August 11, 2023
 --   Exported By:     OAHAHA
 --   Flashback:       0
 --   Export Type:     Application Export
@@ -123,7 +123,7 @@ wwv_imp_workspace.create_flow(
 ,p_substitution_string_01=>'APP_NAME'
 ,p_substitution_value_01=>'ASCVD Risk Calculator'
 ,p_last_updated_by=>'OAHAHA'
-,p_last_upd_yyyymmddhh24miss=>'20230810093526'
+,p_last_upd_yyyymmddhh24miss=>'20230811085337'
 ,p_file_prefix => nvl(wwv_flow_application_install.get_static_app_file_prefix,'')
 ,p_files_version=>357
 ,p_print_server_type=>'NATIVE'
@@ -30247,7 +30247,7 @@ wwv_flow_imp_page.create_page(
 ,p_protection_level=>'D'
 ,p_page_component_map=>'14'
 ,p_last_updated_by=>'OAHAHA'
-,p_last_upd_yyyymmddhh24miss=>'20230621091631'
+,p_last_upd_yyyymmddhh24miss=>'20230811081314'
 );
 wwv_flow_imp_page.create_page_item(
  p_id=>wwv_flow_imp.id(20336932956867128)
@@ -30261,7 +30261,7 @@ wwv_flow_imp_page.create_page_item(
 ,p_name=>'CODE'
 ,p_item_sequence=>20
 ,p_display_as=>'NATIVE_HIDDEN'
-,p_attribute_01=>'Y'
+,p_attribute_01=>'N'
 );
 wwv_flow_imp_page.create_page_item(
  p_id=>wwv_flow_imp.id(20337147519867130)
@@ -30275,7 +30275,7 @@ wwv_flow_imp_page.create_page_item(
 ,p_name=>'STATE'
 ,p_item_sequence=>40
 ,p_display_as=>'NATIVE_HIDDEN'
-,p_attribute_01=>'Y'
+,p_attribute_01=>'N'
 );
 end;
 /
@@ -30303,7 +30303,7 @@ wwv_flow_imp_page.create_page(
 ,p_page_is_public_y_n=>'Y'
 ,p_page_component_map=>'11'
 ,p_last_updated_by=>'OAHAHA'
-,p_last_upd_yyyymmddhh24miss=>'20230810080947'
+,p_last_upd_yyyymmddhh24miss=>'20230811085337'
 );
 wwv_flow_imp_page.create_page_process(
  p_id=>wwv_flow_imp.id(22988146476205103)
@@ -30394,7 +30394,7 @@ wwv_flow_imp_page.create_page(
 ,p_page_is_public_y_n=>'Y'
 ,p_page_component_map=>'12'
 ,p_last_updated_by=>'OAHAHA'
-,p_last_upd_yyyymmddhh24miss=>'20230810093356'
+,p_last_upd_yyyymmddhh24miss=>'20230810145132'
 );
 wwv_flow_imp_page.create_page_plug(
  p_id=>wwv_flow_imp.id(33145424862331720)
@@ -30412,7 +30412,7 @@ wwv_flow_imp_page.create_page_plug(
 );
 wwv_flow_imp_page.create_page_plug(
  p_id=>wwv_flow_imp.id(43266174191849776)
-,p_plug_name=>'{tabs}'
+,p_plug_name=>'Tabs'
 ,p_region_name=>'tabs'
 ,p_region_template_options=>'#DEFAULT#:js-useLocalStorage:t-TabsRegion-mod--fillLabels:t-TabsRegion-mod--pill:t-TabsRegion-mod--large'
 ,p_plug_template=>wwv_flow_imp.id(30215912704016783)
@@ -32389,7 +32389,7 @@ wwv_flow_imp_shared.create_install_script(
 '      RETURN ROUND((computedScore - lowestScore), 1);',
 '    END IF;',
 '    ',
-'    RETURN abs(ROUND(reducedTotalScore, 1));',
+'    RETURN ROUND(reducedTotalScore, 1);',
 '  END;',
 '  ---',
 '  FUNCTION lowestPossibleRisk(age IN NUMBER,',

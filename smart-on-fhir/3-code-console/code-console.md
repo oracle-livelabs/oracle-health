@@ -114,15 +114,15 @@ This lab assumes you have:
 
    **Application Privacy**: You can leave it as **Public**
 
-   *Note: Here you will use the application id and workspace name that we previously noted down. If you named your application ASCVD Risk Calculator then your application alias will be **ASCVD-RISK-CALCULATOR***
+   *Note: Here you will use the application alias and workspace name that we previously noted down. If you named your application ASCVD Risk Calculator then your application alias will be **ascvd-risk-calculator**. Please make sure to use everything in lowercase.*
 
-   **Redirect URI**: If you use [apex.oracle.com](apex.oracle.com), make sure  to update the following link with the required data `https://apex.oracle.com/pls/apex/r/YOUR-WORKSPACE/YOUR-APP-ALIAS/INDEX-PAGE-ALIAS`
+   **Redirect URI**: If you use [apex.oracle.com](apex.oracle.com), make sure  to update the following link with the required data `https://apex.oracle.com/pls/apex/r/your-workspace/your-app-alias/index-page-alias`
 
-   **Application Alias:** ASCVD-RISK-CALCULATOR
+   **Application Alias:** ascvd-risk-calculator
 
    **Index Page Alias:** index
 
-   **SMART® Launch URI**: If you use [apex.oracle.com](apex.oracle.com), make sure  to update the following link with the required data `https://apex.oracle.com/pls/apex/r/YOUR-WORKSPACE/YOUR-APP-ALIAS/LAUNCH-PAGE-ALIAS`
+   **SMART® Launch URI**: If you use [apex.oracle.com](apex.oracle.com), make sure  to update the following link with the required data `https://apex.oracle.com/pls/apex/r/your-workspace/your-app-alias/launch-page-alias`
 
    **Launch Page Alias:** launch
 

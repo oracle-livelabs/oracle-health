@@ -95,6 +95,8 @@ This lab assumes you have:
 
       **Identification > Type:** Hidden
 
+      *Note: All other fields might differ, but they are not relevant for building our current application. They can be left as they default.*
+
       ![Create hidden items](images/hidden-items-settings.png)
 
       *Remember to **Save** the page regularly, to not lose any progress!*
@@ -185,7 +187,7 @@ This lab assumes you have:
 
     ```html
     <copy>
-    <<span class="u-color-9-text">Please be aware the application is an example and should not be used to calculate real risk factors!</span>
+    <span class="u-color-9-text">Please be aware the application is an example and should not be used to calculate real risk factors!</span>
     <div id="patient-info"></div>
     </copy>
     ```
@@ -202,7 +204,7 @@ This lab assumes you have:
 
   *Remember to **Save** the page regularly, to not lose any progress!*
 
-1. Create **Tabs** container by right clicking on **Body** and press **Create Region**.
+3. Create **Tabs** container by right clicking on **Body** and press **Create Region**.
 
   ![Create tabs region](images/patient-info-region.png)
 
@@ -262,9 +264,9 @@ This lab assumes you have:
 
   Set the following attributes.
 
-  **Identification > Title:** **Recommendations**
+  **Identification > Title:** Recommendations
 
-  **Identification > Title:** **Classic Report**
+  **Identification > Type:** Classic Report
 
   **Source > Location:** Local Database
 
@@ -308,11 +310,11 @@ This lab assumes you have:
 
 1. Right click on **Results** container and press **Create Page Item**.  
 
-  *Note: For each item you will create you need to repeat this step or follow step 3.*
+  *Note: For each item you will create you need to repeat this step or follow step 3. Please create items in the order as described below.*
 
   ![Create page item](images/create-page-item.png =50%x*)
 
-2. Create radio group **Gender**.
+1. Create radio group **Gender**.
 
   **Identification > Name:** `P3_GENDER`
 
@@ -393,6 +395,8 @@ This lab assumes you have:
   **Identification > Type:** Number Field
 
   **Label:** Age
+
+  **Layout > Start New Row:** Checked
 
   **Appearance > Template:** Required - Above
 
@@ -533,8 +537,10 @@ This lab assumes you have:
   **Behavior > Type:** Page or URL (Redirect)
 
   **Behavior > Target:** view
+  
+  **Advanced > Request:** show
 
-  ![Branch target](images/branch-target.png =50%x*)
+  ![Change branch target](images/branch-target.png =50%x*)
 
   **Server-side Condition > When Button Pressed:** CALCULATE_RISK
 
@@ -720,14 +726,15 @@ This lab assumes you have:
 
 ## Task 7: Represent data
 
-1. Right click on **Region Body** under Risk Factors container and press **Create Region**.
-   ![Create chart region](images/create-chart.png =50%x*)
+1. Right click on **Risk Factors** container and press **Create Sub Region**, change Name and Type as follows.
 
   **Identification > Name:** Chance of heart attack or stroke
 
   **Identification > Type:** Chart
 
-2. Create **Current Risk** series.
+   ![Create chart region](images/create-chart.png =50%x*)
+
+1. Create **Current Risk** series.
 
    Click under **Series** on New and change the following attributes
 
@@ -850,7 +857,7 @@ This lab assumes you have:
     </copy>
     ```
 
-3. Click on dynamic action tab and right click on **Events** and create a **Dynamic Action**.
+3. Click on Dynamic Action tab and right click on **Events** and create a **Dynamic Action**.
 
   **Identification > Name:** Show Risk Factors
 
@@ -869,6 +876,8 @@ This lab assumes you have:
   *Remember to **Save** the page regularly, to not lose any progress!*
 
 4. Right click on True under Show Risk Factors Dynamic Action to create a new **True Action**.
+
+    *Note: A true action will be created automatically when you create the Dynamic Action, you can change that one.*
 
     ![Create true action](images/create-true-action.png)
 
