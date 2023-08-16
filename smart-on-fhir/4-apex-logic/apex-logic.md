@@ -11,14 +11,13 @@ Estimated Time: 80 minutes
 In this lab, you will:
 
 * Configure ASCVD Risk Calculator
-* Import supporting objects
-* Create application structure
-* Define page objects
-* Create validations
-* Assign values
-* Represent data
-* Display database data in your application
-* (Optional) Esthetics and finishing touches
+* Import Supporting Objects
+* Create Application Structure
+* Define Page Objects
+* Create Validations
+* Assign Values
+* Represent Data
+* (Optional) Esthetics and Finishing Touches
 
 ### Prerequisites
 
@@ -588,7 +587,7 @@ This lab assumes you have:
 
 * Note: Update the Validation > Item and Error > Associated Item values to the corresponding item for all of the above.
 
-## Task 6: Assign values
+## Task 6: Assign Values
 
 1. In the Dynamic Actions tab, right-click on Page Load and then select **Create Dynamic Action**.
 
