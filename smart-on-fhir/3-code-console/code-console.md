@@ -1,8 +1,8 @@
-# Sign up for Code Console
+# Sign Up for Code Console
 
 ## Introduction
 
-This lab walks you through the steps to sign up for Code Console, register a new application and configure the ASCVD Risk Calculator Apex App.
+This lab walks you through the steps to sign up for Code Console, register a new application and configure the ASCVD Risk Calculator APEX app.
 
 Estimated Time: 15 minutes
 
@@ -10,7 +10,7 @@ Estimated Time: 15 minutes
 
 In this lab, you will:
 
-- Sign up for Code Console
+- Sign Up for Code Console
 - Register a new application
 
 ### Prerequisites
@@ -20,41 +20,33 @@ This lab assumes you have:
 - An Oracle Cloud account
 - All previous labs successfully completed
 
-## Task 1: Sign up for Code Console
+## Task 1: Sign Up for Code Console
 
-1. Go to [https://code-console.cerner.com/](https://code-console.cerner.com/). You should see the following page.
+1. Go to [https://code-console.cerner.com/](https://code-console.cerner.com/). You should see the following page:
 
    ![Code console landing page](images/code-console-landing-page.png)
 
-2. Click on "**Log In**", either from the header or the main page.
+2. Click **Log In** on the main page or in the header.
 
    ![Login buttons located in the header on in the card from the main page](images/login-buttons.png)
 
-3. Confirm you are on the following page.
+3. Confirm you are on the following page:
 
    ![Login form with login button](images/login-page.png)
 
-4. Click on "**Create an account >>**" button, if you don't have an account, you will have to create one.
+4. If you don’t already have a CernerCare account, click **Create an Account**.
 
    ![Create account button](images/create-account-button.png)
 
-5. Confirm you are on the "**Create account**" page.  
+5. Complete the following steps on the Create Account page:
+      - Enter the email with which you will log in.
+      - Enter a strong password with 6 characters and at least one number or symbol.
+      - Select security questions you will know the answers to.
+      - Confirm that you are not a robot.
+      - Read the Cerner Terms of Use and Cerner Privacy Policy and then select the consent check box.
+      - Click Create Account.
 
-   *Note: Make sure to save or remember your password, you will need it later.*
-
-   Fill out the form. Make sure to fill out the mandatory fields:
-
-   **Email**: your email with which you will login
-
-   **Password**: a strong password of 6 characters and at least one number or symbol
-
-   **Security questions and answers**: pick an appropriate question that you will know the answer to
-
-   Check that you are not a robot
-
-   Read the **Cerner Terms of Use** and **Cerner Privacy Policy** and check the consent checkbox
-
-   Click "**Create Account**" button.
+   *Note: Save or remember your password as you will need it later.*
 
    ![Create account page, fill in  the form, click Create Account button](images/create-account-page.png)
 
@@ -62,97 +54,67 @@ This lab assumes you have:
 
    *Note: You will need to wait a few minutes*
 
-7. **Congratulations**! You now have a **Code Console** account ready to use.
+7. Congratulations! You now have a Code Console account ready to use.
 
 ## Task 2: Register a new application
 
-**Note**: If you just registered and followed the steps provided in the confirmation email, after you confirm your email you should be automatically logged in to Code Console. If that's the case you can skip to **Step 3**.
+*Note: If you just registered and followed the steps provided in the confirmation email, after you confirm your email you should be automatically logged in to Code Console. If that's the case you can skip to Step 3.*
 
-1. Go to [https://code-console.cerner.com/](https://code-console.cerner.com/) and click on "**Log In**", either from the header or the main page.
+1. Go to [https://code-console.cerner.com/](https://code-console.cerner.com/) and click Log In on the main page or in the header.
 
    ![Login buttons located in the header on in the card from the main page](images/login-buttons.png)
 
-2. Fill out the login form.
-
-   Enter your email address on which you have an account created
-
-   Enter your account's password
-
-   Press the "**Log In**" button.
+2. Log in to Code Console using your CernerCare account.
 
    ![Login form with login button](images/login-form.png)
 
-3. Confirm you are on the following page.
+3. Confirm you are on the following page:
 
    ![Code Console logged in landing page](images/logged-in-landing-page.png)
 
-4. Click on "**My Applications**" tab.
+4. Click on My Applications tab.
 
    ![My Applications tab](images/my-apps-tab.png)
 
-5. A pop up "**Authorized Representative of the Company**" will appear where you have to do the following.
-
-   Fill out the "**Company Name**"
-
-   Read the terms of use and check the checkbox if you agree
-
-   Click the "**Save**" button.
+5. In the Authorized Representative of the Company dialog that’s displayed, enter the company name, read the terms of use and select the check box if you agree, and then click Save.
 
    ![Authorized Representative of the Company Popup](images/authorized-popup.png)
 
-6. Click on "**+ New Application**" button.
+6. Click + New Application.
 
    ![+New Application button](images/new-app.png)
 
-7. Fill out the form as follows.
+7. Complete the following fields on the Application Information page and then click **Next**:
 
-   **Application Name**: LiveLabs - ASCVD Risk Calculator
-
-   **Application Type**: You can leave it as **Provider**
-
-   **Type of Access**: You can leave it as **Online**
-
-   **Application Privacy**: You can leave it as **Public**
-
-   *Note: Here you will use the application alias and workspace name that we previously noted down. If you named your application ASCVD Risk Calculator then your application alias will be **ascvd-risk-calculator**. Please make sure to use everything in lowercase.*
-
-   **Redirect URI**: If you use [apex.oracle.com](https://apex.oracle.com), make sure  to update the following link with the required data `https://apex.oracle.com/pls/apex/r/your-workspace/your-app-alias/index-page-alias`
-
-   **Application Alias:** ascvd-risk-calculator
-
-   **Index Page Alias:** index
-
-   **SMART® Launch URI**: If you use [apex.oracle.com](https://apex.oracle.com), make sure  to update the following link with the required data `https://apex.oracle.com/pls/apex/r/your-workspace/your-app-alias/launch-page-alias`
-
-   **Launch Page Alias:** launch
-
-   **Default FHIR® Version**: R4
-
-   Click **Next**.
+      - **Application Name:** LiveLabs – ASCVD Risk Calculator
+      - **Application Type:** Leave as Provider
+      - **Type of Access:** Leave as Online
+      - **Application Privacy:** Leave as Public
+      - *Note: Here you will use the application alias and workspace name that you previously noted. If you named your application ASCVD Risk Calculator then your application alias will be ascvd-risk-calculator. Ensure that everything is lowercase.*
+      - **Redirect URI:** If you use apex.oracle.com, update the following link with the required data: https://apex.oracle.com/pls/apex/r/your-workspace/your-app-alias/index-page-alias
+      - **Application Alias:** ascvd-risk-calculator
+      - **Index Page Alias:** index
+      - **SMART® Launch URI:** If you use apex.oracle.com, update the following link with the required data: https://apex.oracle.com/pls/apex/r/your-workspace/your-app-alias/launch-page-alias
+      - **Launch Page Alias:** launch
+      - **Default FHIR® Version:** R4
 
    ![Fill in the first step of the form, click Next](images/new-app-first-step.png)
 
-8. Fill out the form as follows.
+8. Complete the following fields on the Product Selection page and then click **Next**:
 
-   **Select a Product Family**: Millennium
-
-   **Select Products**: Ignite APIs for Millennium: FHIR R4, All
-
-   Click **Next**.
+      - **Select a Product Family:** Millennium
+      - **Select Products:** Ignite APIs for Millennium: FHIR R4, All
 
    ![Fill in the second step of the form, click Next](images/new-app-second-step.png)
 
-9. Check the following **Patient Product APIs**, make sure to check only patient product api's.
+9. On the API Access page, review the following information in the Patient Product APIs section and then click Next:
 
-   **APIs**: Patient, **Access level**: Read
-
-   **APIs**: Observation; **Access Level**: Read
-
-   Click **Next**.
+      - For the Observation API, ensure that Access Level is Read.
+      - For the Patient API, ensure that Access Level is Read.
 
    ![Fill in the third step of the form, click Next](images/new-app-third-step.png)
 
-10. Confirm everything is looking as expected. Read the **Terms of Use** and check the checkbox if you agree. Click the **Submit** button.
+10. Confirm everything is looking as expected. Read the terms of use and select the check box if you agree and then click **Submit**.
 
    ![In the fourth step of the form, confirm everything looks good, click Submit](images/new-app-fourth-step.png)
 
@@ -166,12 +128,12 @@ This lab assumes you have:
 
 ## Acknowledgements
 
-* **Author** - Mircea Iordache, Software Engineer, OHAI - Platform Initiatives
+- **Author** - Mircea Iordache, Software Engineer, OHAI - Platform Initiatives
 
-* **Contributors**
-    * Alexandru Basarab, Software Development Manager, OHAI - Platform Initiatives
-    * Tudor Dragomir, Software Engineer, OHAI - Platform Initiatives
-    * Ionut Balan, Software Engineer, OHAI - Platform Initiatives
-    * Cornel Porosnicu, Software Engineer, OHAI - Platform Initiatives
+- **Contributors**
+  - Alexandru Basarab, Software Development Manager, OHAI - Platform Initiatives
+  - Tudor Dragomir, Software Engineer, OHAI - Platform Initiatives
+  - Ionut Balan, Software Engineer, OHAI - Platform Initiatives
+  - Cornel Porosnicu, Software Engineer, OHAI - Platform Initiatives
 
-* **Last Updated By/Date** - Alexandru Basarab, August 2023
+- **Last Updated By/Date** - Alexandru Basarab, August 2023

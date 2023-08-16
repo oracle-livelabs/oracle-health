@@ -4,7 +4,7 @@
 
 This lab walks you through the steps to run ASCVD (Atherosclerotic Cardiovascular Disease) Risk Calculator.
 
-Estimated Lab Time: 5 minutes
+Estimated Time: 5 minutes
 
 ### Objectives
 
@@ -23,7 +23,7 @@ This lab assumes you have:
 
 ## Option 1: Standalone
 
-1. Click on **App Builder** and open your application.
+1. Click **App Builder** and open your application.
 
     ![Navigate to APP Builder](images/app-builder.png)
 
@@ -31,7 +31,7 @@ This lab assumes you have:
 
     ![Open your application](images/open-app.png)
 
-3. Run the application.
+3. Click **Run Application**.
 
     ![Run your application](images/run-the-app.png)
 
