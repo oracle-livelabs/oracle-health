@@ -298,7 +298,7 @@ This lab assumes you have:
         * **Appearance > Template:** Content Row
         * **Pagination > Type:** No Pagination (Show All Rows)
 
-    ![Change report pagination](images/recommendations-attributes.png =50%x*)
+        ![Change report pagination](images/recommendations-attributes.png =50%x*)
 
   *Save the page frequently so you do not lose any progress.*
 
@@ -487,7 +487,7 @@ This lab assumes you have:
           * **Advanced > Request:** show
           * **Server-side Condition > When Button Pressed:** CALCULATE_RISK
 
-    ![Change branch target](images/branch-target.png =50%x*)
+        ![Change branch target](images/branch-target.png =50%x*)
 
 ## Task 5: Create Validations
 
@@ -647,7 +647,7 @@ This lab assumes you have:
           * **Affected Elements > Item(s):**
               `P3_AGE,P3_GENDER,P3_TOTAL_CHOLESTEROL,P3_HDL,P3_SYSTOLIC_BP,P3_DIABETES,P3_SMOKING,P3_HYPERTENSION`
 
-      *Note: If you followed the workshop exactly and named all the objects as above then you can copy/paste them, if not change with the according object names.*
+    *Note: If you followed the workshop exactly and named all the objects as above then you can copy/paste them, if not change with the according object names.*
 
 ## Task 7: Represent Data
 
@@ -736,7 +736,7 @@ This lab assumes you have:
      * **Value > Decimal Places:** 2
      * **Value > Format Scaling:** Automatic
 
-   ![Format axes y to represent data correctly](images/change-y-axes.png)
+    ![Format axes y to represent data correctly](images/change-y-axes.png)
 
 5. To enable the chart legend, click the chart region **Chance of Heart Attack or Stroke** and then click the Show switch to the on position in the Legend section.
 
