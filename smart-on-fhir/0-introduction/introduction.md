@@ -1,12 +1,12 @@
 # Introduction
 
-## Workshop Overview
+## About this Workshop
 
 Welcome to the Oracle LiveLabs Workshop: Building an ASCVD Risk Calculator! In this hands-on session, we will guide you through the process of creating a powerful application using Oracle Application Express (APEX) and FHIR APIs. By the end of this workshop, you will have a fully functional ASCVD (Atherosclerotic Cardiovascular Disease) Risk Calculator at your disposal.
 
-Estimated Time: 2 hours
+Estimated Workshop Time: 2 hours
 
-### During this workshop, we will cover the following steps:
+### Objectives and Prerequisites
 
 * Introduction: We will provide an overview of the workshop's objectives, discuss the importance of ASCVD risk assessment, and explain the tools and technologies we'll be using.
 * Signing up for an APEX Workspace: Before we dive into application development, we'll walk you through the process of signing up for an APEX workspace, which will serve as your development environment for building the ASCVD Risk Calculator.
@@ -38,7 +38,7 @@ If the menu is not displayed, you can open by clicking the menu button (![burger
 
 <a href="files/ascvd-risk.min.js" download>ASCVD Risk Calculator</a> JavaScript library.
 
-## Learn More - Useful Links
+## Learn More
 
 * [APEX Collateral](https://apex.oracle.com/)
 * [APEX on Autonomous](https://apex.oracle.com/autonomous)
