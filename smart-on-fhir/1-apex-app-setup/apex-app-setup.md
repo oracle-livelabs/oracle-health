@@ -127,9 +127,9 @@ This lab assumes you have:
 * **Author** - Alexandru Basarab, Software Development Manager, OHAI - Platform Initiatives
 
 * **Contributors**
-    * Mircea Iordache, Software Engineer, OHAI - Platform Initiatives
-    * Tudor Dragomir, Software Engineer, OHAI - Platform Initiatives
-    * Ionut Balan, Software Engineer, OHAI - Platform Initiatives
-    * Cornel Porosnicu, Software Engineer, OHAI - Platform Initiatives
+      * Mircea Iordache, Software Engineer, OHAI - Platform Initiatives
+      * Tudor Dragomir, Software Engineer, OHAI - Platform Initiatives
+      * Ionut Balan, Software Engineer, OHAI - Platform Initiatives
+      * Cornel Porosnicu, Software Engineer, OHAI - Platform Initiatives
 
 * **Last Updated By/Date** - Basarab Alexandru, August 2023
