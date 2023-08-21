@@ -6,7 +6,7 @@ Welcome to the Oracle LiveLabs Workshop: Building an ASCVD Risk Calculator! In t
 
 Estimated Workshop Time: 2 hours
 
-### Objectives and Prerequisites
+### Objectives
 
 * Introduction: We will provide an overview of the workshop's objectives, discuss the importance of ASCVD risk assessment, and explain the tools and technologies we'll be using.
 * Signing up for an APEX Workspace: Before we dive into application development, we'll walk you through the process of signing up for an APEX workspace, which will serve as your development environment for building the ASCVD Risk Calculator.

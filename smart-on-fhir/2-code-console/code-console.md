@@ -128,12 +128,12 @@ This lab assumes you have:
 
 ## Acknowledgements
 
-- **Author** - Mircea Iordache, Software Engineer, OHAI - Platform Initiatives
+* **Author** - Mircea Iordache, Software Engineer, OHAI - Platform Initiatives
 
-- **Contributors**
-  - Alexandru Basarab, Software Development Manager, OHAI - Platform Initiatives
-  - Tudor Dragomir, Software Engineer, OHAI - Platform Initiatives
-  - Ionut Balan, Software Engineer, OHAI - Platform Initiatives
-  - Cornel Porosnicu, Software Engineer, OHAI - Platform Initiatives
+* **Contributors**
+      * Alexandru Basarab, Software Development Manager, OHAI - Platform Initiatives
+      * Tudor Dragomir, Software Engineer, OHAI - Platform Initiatives
+      * Ionut Balan, Software Engineer, OHAI - Platform Initiatives
+      * Cornel Porosnicu, Software Engineer, OHAI - Platform Initiatives
 
-- **Last Updated By/Date** - Alexandru Basarab, August 2023
+* **Last Updated By/Date** - Alexandru Basarab, August 2023
