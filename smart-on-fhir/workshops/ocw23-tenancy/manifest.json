@@ -1,8 +1,8 @@
 {
     "workshoptitle": "Build a SMART on FHIR Application with Oracle Autonomous Cloud Services",
-    "include": {"ascvd-risk.sql":"../../2-introduction/files/ascvd-risk.sql",
-    "ascvd-risk.min.js":"../../2-introduction/files/ascvd-risk.min.js",
-    "fhir-client.min.js":"../../2-introduction/files/fhir-client.min.js"},
+    "include": {"ascvd-risk.sql":"../../0-introduction/files/ascvd-risk.sql",
+    "ascvd-risk.min.js":"../../0-introduction/files/ascvd-risk.min.js",
+    "fhir-client.min.js":"../../0-introduction/files/fhir-client.min.js"},
     "help": "livelabs-help_us@oracle.com",
     "tutorials": [
         {
