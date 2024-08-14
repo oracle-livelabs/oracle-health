@@ -27,9 +27,7 @@ In this workshop, you will learn how to:
 * Effective prompting to generate query outputs from OCI Gen AI LLM
 * Using a pre-canned template to generate a compliance form
 
-### Prerequisites (Optional)
-
-*List the prerequisites for this lab using the format below. Fill in whatever knowledge, accounts, etc. is needed to complete the lab. **Do NOT list** each previous lab as a prerequisite.*
+### Prerequisites
 
 This lab assumes you have:
 * Basic familiarity with OCI Generative AI Services and Toolsets
@@ -51,6 +49,6 @@ In general, the Introduction does not have Steps.
 * [URL text 2](http://docs.oracle.com)
 
 ## Acknowledgements
-* **Author** - <Name, Title, Group>
+* **Author** - <Rajib Ghosh, Master Principal Cloud Architect, OCI GenAI Center of excellence>
 * **Contributors** -  <Name, Group> -- optional
 * **Last Updated By/Date** - <Name, Month Year>
