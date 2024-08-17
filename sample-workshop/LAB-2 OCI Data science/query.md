@@ -14,147 +14,158 @@ OCI Data science is a managed Python based Jupyter lab based notebook developmen
 
 In this lab, you will:
 
-* Use OCI Data science console to create a project and notebook session.
-* Learn to deploy connectivity with OCI Object store
-* Find and deploy a pre-built langchain based conda environment
-* Test out connectivity to OCI Generative AI services
-* Download and install libraries required for generation
+* Deploy a pre-built langchain based conda environment
+* Test connectivity to OCI Generative AI services
+* Test connectivity with OCI Opensearch services
+* Deploy OCI CLI connectivity with OCI Object store
+* Download and install required pip libraries
+* Install Compliance Document Generation Notebooks
 
 ### Prerequisites
-
-*List the prerequisites for this lab using the format below. Fill in whatever knowledge, accounts, etc. is necessary to complete the lab. Do NOT list each previous lab as a prerequisite.*
 
 This lab assumes you have:
 
 * An Oracle Cloud account with admin privileges in the Chicago region
-* Required Networking setup (i,e VCN and subnets) for provisioning the data science environment
-* Required Data science policies deployed successfully.
-* Required service limits to provision a CPU shape
-* A compartment (i,e clinical-trials or any preferred name) be created to host Data science services
+* A running Data science notebook session environment
+* A running OCI Opensearch service
 
 *This is the "fold" - below items are collapsed by default*
 
-## Task 1: Create data science project and notebook session
-
-In this section, we will create an OCI Data science project and a notebook session environment for python based development with an appropriate compute shape.
-
-1.Navigate to OCI Data science and switch to the compartment you have created
-
- ![Navigate to OCI Data Science](images/Lab2-1.png)
-  ![Set your compartment](images/LAB2-11.png)
-
-2.Create a Data science project in your compartment
-
-  ![Image alt text](images/Lab2-2.png)
-
-3.Create a Notebook session
-
-Create a notebook session with the specification as marked.
-  ![Image alt text](images/Lab2-3.png)
-Create the networking configuration as "Custom networking" and enter the VCN and the subnet name you have created before for this purpose.
- ![Image alt text](images/Lab2-4.png)
- Click the Create button to initiate the notebook session creation. *NOTE: This can take a few minutes to provision and the status to come in an Active state*.
-
-4.Open and login to the notebook session
- ![Image alt text](images/Lab2-5.png)
-
-4. Example with inline navigation icon ![Image alt text](images/sample2.png) click **Navigation**.
-
-5. Example with bold **text**.
-
-   If you add another paragraph, add 3 spaces before the line.
-
-## Task 2: Setup conda environment with langchain
+## Task 1: Deploy a pre-built langchain conda environment
 
 1. From the Launcher (File-->New Launcher if needed), click on the Environment explorer to view the list of conda environments
-  ![Image alt text](images/Lab2-6.png)
+  ![Install pre-built conda](images/LAB2-DS-CND-1.png)
 
 2. Filter the conda environment to view the ones containing the langchain libraries and select the one marked below
-  ![Image alt text](images/Lab2-7.png)
+
+  ![Install pre-built conda](images/LAB2-DS-CND-2.png)
 
 3. Copy the command command below to run in a terminal session
 
-  ![Image alt text](images/Lab2-8.png)
+  ![Install pre-built conda](images/LAB2-DS-CND-2-1.png)
+
 4. Open up a Terminal session as shown from the Launcher
-  ![Image alt text](images/Lab2-9.png)
-5. Paste and run the *odsc..* command as shown. It would take a few minutes to install pytorch21_p39_gpu_v1 conda environment. Make sure it is successfully completed and installed.
-  ![Image alt text](images/Lab2-10.png)
 
-## Task 3: Setup required libraries
-1. Click on the conda/notebooks folder on left pane
-  ![Image alt text](images/Lab2-12.png)
-2. Create an empty notebook file as shown
-  ![Image alt text](images/Lab2-13.png)
-3. Change to the pytorch21_p39_gpu_v1 you have just installed
-  ![Image alt text](images/Lab2-14.png)
-4. Install the pip libraries as shown below in the cell one by one. You may have some errors while installing the opensearch-py library, but it is ok to ignore it and does not affect any libraries used in this workshop. Press Shift+Enter to execute the cell.
-  ![Image alt text](images/Lab2-15.png)
-5. Comment the *pip install <library>* texts in the notebook cell as shown below
-  ![Image alt text](images/Lab2-16.png)
+  ![Install pre-built conda](images/LAB2-DS-CND-3.png)
 
-## Task 4: Create the required directories 
-From the notebook session terminal window, create the following additional directories 
+5. Paste and run the ***odsc conda install -s pytorch21_p39_gpu_v1*** command as shown. It may take a few minutes to install the conda environment. Make sure it is successfully completed and installed as shown
+
+  ![Install pre-built conda](images/LAB2-DS-CND-4.png)
+
+## Task 2: Download and install required pip libraries
+
+1. Locate the notebooks in the /home/datascience/conda directory. This directory will be used for creating and running all notebooks for the workshop
+
+  ![Install pip libraries](images/LAB2-DS-NOTE-1.png)
+
+2. Create a new notebook
+  ![Install pip libraries](images/LAB2-DS-NOTE-2.png)
+
+3. Change the kernel to the installed conda environment
+
+  ![Install pip libraries](images/LAB2-DS-NOTE-3.png)
+
+4. Copy and execute to install the pip libraries as shown below in the notebook cell. Press *Shift+Enter* to execute the notebook cell
+
 ```
-mkdir ~/conda/data
-mkdir ~/conda/data/pdfs
-mkdir ~/conda/data/templates
-mkdir ~/conda/data/outputs
+!pip install langchain
+!pip install langchain_community
+!pip install opensearch-py
+!pip install sentence-transformers
+!pip install tabulate
+!pip install pypdf
+!pip install fillpdf
 ```
 
-## Task 5: Copy required workshop notebook files
-1. Download the following notebook files to your laptop and upload it 
-  ![RAG Embeddings Ext](files/demo_vector_search_ext.ipynb)
-  ![RAG Hybrid Search](files/demo_hybrid_search.ipynb)
-  ![Generate Compliance Doc](files/demo_generate_document.ipynb)
-  
-2. Upload these files to the notebook session environment in ~/conda/notebooks folder
-  ![Image alt text](images/Lab2-17.png)
+  ![Install pip libraries](images/LAB2-DS-NOTE-4.png)
 
-## Task 6: Copy workshop source data files
+5. It is possible that some of the libraries are pre-installed in the environment. Ignore if that is so. You may also have incompatibilities with other libraries in the pre-built conda. You may ignore them if that occurs. Comment them as shown below
 
-3. Similarly copy the clinical trials source data files into the notebook session
+  ![Install pip libraries](images/LAB2-DS-NOTE-5.png)
 
-The OCI Data science environment for this workshop is now ready
+## Task 3: Install Workshop Compliance Document Generation code
 
-  Use tables sparingly:
+1. Download ![LAB-2 Conda zip](files/conda.zip) and upload to the home directory /home/datascience in the notebook session as shown below 
 
-  | Column 1 | Column 2 | Column 3 |
-  | --- | --- | --- |
-  | 1 | Some text or a link | More text  |
-  | 2 |Some text or a link | More text |
-  | 3 | Some text or a link | More text |
+  ![Install lab notebooks](images/LAB2-DS-NOTE-6.png)
 
-2. You can also include bulleted lists - make sure to indent 4 spaces:
+2. Open up a terminal session and run *unzip conda.zip* as shown below.
 
-    * List item 1
-    * List item 2
+  ![Install lab notebooks](images/LAB2-DS-NOTE-7.png)
 
-3. Code examples
+## Task 4: Test connectivity with OCI Opensearch services
 
-    ```
-    Adding code examples
-   Indentation is important for the code example to appear inside the step
-    Multiple lines of code
-   <copy>Enclose the text you want to copy in <copy></copy>.</copy>
-    ```
+1. Copy the Opensearch API URL from the console
+  ![Test Opensearch Access](images/LAB2-DS-OS-1.png)
 
-4. Code examples that include variables
+2. Change to *cd /home/datascience/conda/scripts* directory in a data science terminal window and run. Sucecssful connection should display the json as shown below
+```
+curl -k -u <os_userid>:<os_password> <os_api_endpoint>:9200
+```
 
- ```
+  ![Test Opensearch Access](images/LAB2-DS-OS-2.png)
 
-  <copy>ssh -i <ssh-key-file></copy>
+## Task 6: Configure OCI CLI Connectivity to Object store and Generative AI
 
-  ```
+1. Get your user OCID and your Tenancy ID from console as shown below
+  ![Test Opensearch Access](images/LAB2-DS-CLI-1.png)
+  ![Test Opensearch Access](images/LAB2-DS-CLI-2.png)
+  ![Test Opensearch Access](images/LAB2-DS-CLI-3.png)
+
+2. Open up a terminal window and enter *oci os ns get*. Enter values as follows
+```
+Do you want to create a new config file ? Y
+Create logging through a browser? n
+Location of your config: Enter
+Enter user OCID : <copied from console in previous step>
+Enter Tenancy OCID : <copied from console in previous step>
+Region by index or name : us-chicago-1
+Do you want to generate a new RSA key pair? Y
+Enter directory for keys created : Enter
+Enter name of your key : Enter
+Enter passphrase: N/A
+Re-enter passphrase : N/A
+```
+
+  ![Test Opensearch Access](images/LAB2-DS-CLI-4.png)
+  ![Test Opensearch Access](images/LAB2-DS-CLI-5.png)  
+
+3. Move and download your generated public key pem file
+
+  ![Test Opensearch Access](images/LAB2-DS-CLI-7.png)
+
+4. Upload the downloaded public API key to OCI Console  
+
+  ![Test Opensearch Access](images/LAB2-DS-CLI-8.png)
+  ![Test Opensearch Access](images/LAB2-DS-CLI-9.png)
+  ![Test Opensearch Access](images/LAB2-DS-CLI-10.png)
+
+5. Test out the OCI CLI access after from Data science notebook session.
+
+  ![Test Opensearch Access](images/LAB2-DS-CLI-11.png)
+
+## Task 5: Test connectivity to OCI Generative AI services
+
+1. Open up the Generative AI Generation Interface for API code testing. Please note that the *command r* chat interface is not OCI API enabled as of yet and is not required for this workshop. 
+
+  ![Test Opensearch Access](images/LAB2-DS-GAI-1.png)
+
+2. Generate a query and click on the *View Code* button and select *python* as the Language
+
+  ![Test Opensearch Access](images/LAB2-DS-GAI-2.png)
+
+3. Copy the generated code to a notebook cell. You should be able to generate output as shown below
+
+  ![Test Opensearch Access](images/LAB2-DS-GAI-3.png)
 
 ## Learn More
 
-*(optional - include links to docs, white papers, blogs, etc)*
+*(optional - include links to docs, white papers, blogs, etc)* 
 
 * [URL text 1](http://docs.oracle.com)
 * [URL text 2](http://docs.oracle.com)
 
 ## Acknowledgements
 
-* **Author** - <Name, Title, Group>
-* **Contributors** -  <Name, Group> -- optional
-* **Last Updated By/Date** - <Name, Month Year>
+* **Author** - Rajib Ghosh, Master Principal Cloud Architect, OCI AI and Gen AI Center of Excellence
+* **Last Updated By/Date** - Aug 2024
