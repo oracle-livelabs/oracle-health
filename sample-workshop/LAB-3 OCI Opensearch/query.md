@@ -1,8 +1,8 @@
-# Title of the Lab
+# OCI Opensearch Configuration and usage (Optional)
 
 ## Introduction
 
-In this lab, we will setup the Oracle cloud Opensearch service that is used as a vector store to support ML model based vector searches on custom datasets. Opensearch features are only restricted to the features that are required for the workshop. However, user familiarity with OCI Opensearch or its cloud or open source implementation is a plus.
+This is an optional lab, primarily geared for users who are familiar with OCI Opensearch. This lab shows you how to interact with OCI Opensearch console interface and run basic commands such as creating indexes, running queries to view results. It also shows how Machine learning based Neural search can be configured with OCI Opensearch and model creation and deployment for running hybrid search for the clinical-trials workshop
 
 Estimated Lab Time: -- 10 minutes
 
@@ -12,14 +12,15 @@ OCI Search with OpenSearch is a fully managed open source service that makes it 
 
 ### Objectives
 
-*List objectives for this lab using the format below*
-
 In this lab, you will:
 
-* Provision an OCI Opensearch cluster in cloud
-* Access the cluster dashboard from your laptop
-* Access the Opensearch UI such as dashboards and dev tools
+* Access the Opensearch cluster dashboard from your laptop
+* Use Opensearch UI tools such as dashboards and Index Management tools
+* View clinical-trial indexes and indexed data
 * Test Opensearch access from OCI Data science environment
+* Use Opensearch *dev tools* to create neural search models
+* Use ingestion pipelines to create vector embeddings
+* Use search pipelines and indexes to perform custom hybrid search (i,e lexical and neural together)
 
 ### Prerequisites
 
@@ -27,49 +28,64 @@ This lab assumes you have:
 
 * An Oracle Cloud account with US-Chicago region access
 * You have successfully provisioned an OCI Opensearch cluster
-* Related networking resources (i,e VCN, subnets) are already created. 
-* Familiarity with OCI Opensearch is helpful but not required.
+* You have familiarity with Opensearch commands (GET/PUT/POST..)
+* Some familiarity with using ML models is helpful but not required
 
 *This is the "fold" - below items are collapsed by default*
 
-## Task 1: Provisioning OCI Opensearch cluster
+## Task 1: Provision a compute VM
 
-If not already done in your tenancy, provision an OCI Opensearch cluster using the default settings as shown below
+Provision a compute VM in the clinical-trials compartment. The steps are
 
-1. Bring up Opensearch service by searching the OCI Services search as shown
+1. Go to OCI Console menu (left top corner) --> Compute --> Instances
 
- ![Image alt text](images/LAB3OS-1.png)
+2. Click on create instance and enter the following parameters -
+   * Name the instance as *clinical-trials*
+   * Under *Add SSH Keys section* choose "Generate a key pair for me" option
+   * Download both the private and the public keys to your laptop
+   * Click *Create* to create the instance
 
-2. Apply all the policies by substituting your network compartment name and the cluster compartment (i,e clinical_trials)
- ![Image alt text](images/LAB3OS-2.png)
+3. It takes a few minutes for the instance to be created and available
 
-3. Name the cluster (i,e clinical-trials), take the default version of 2.11.0 and enter a valid email address
- ![Image alt text](images/LAB3OS-3.png)
+4. Click on the instance name -
+   * Note down the *Public IPv4" address
+   * Keep the downloaded private key in a directory in the laptop
 
-4. Select the default values (i,e Development option) and the default configuration for Data node, Leader node and Configure dashboards
- ![Image alt text](images/LAB3OS-4.png)
- ![Image alt text](images/LAB3OS-5.png)
+## Task 2: Accessing Opensearch over web from local laptop
 
-5. Select your existing VCN (i,e clinical-trials) and enter the value of the private subnet in the VCN. Please note that this service should not be configured with the public subnet.Intitate creation of the cluster.
- ![Image alt text](images/LAB3OS-6.png)
+1. Go to OCI Console, search for Opensearch and click on Clusters to open the cluster page and click on the *clinical-trials* cluster
 
-4. Once the cluster is created, make a note of the API endpoint, Private IP, Opensearch Dashboard API Endpoint and Opensearch Dashboard Private IP. You will need to login from your local laptop and OCI Data science environment with these credentials
- ![Image alt text](images/LAB3OS-7.png)
+2. Note down the the following into a notepad
+   * API Endpoint private IP
+   * API Endpoint port (i,e 9200)
+   * Opensearch dashboard private IP
+   * Dashboard API Endpoint port (i,e 5601)
 
-## Task 2: Accessing the cluster from local laptop
+3. Create a batch file (windows) or a shell script (Mac) with the following command to create an SSH tunnel to the service through the compute VM created.  Substitute the above noted parameters as shown above in your script and run. For Mac/Linux make sure you change the file execution mode as *chmod +x scriptname*
+```
+ssh -C -v -t -L 127.0.0.1:5601:<os_dashboard_pvt_ip>:5601 -L 127.0.0.1:9200:<os_API_private_ip>:9200 opc@<public ip for compute instance> -i <ssh_key>
+```
 
-In order to access the Opensearch cluster through the Opensearch dashboard, an easy and effective method is to create a Linux compute instance in the public subnet of your VCN, SSH port forwarding from your laptop to the VM to the opensearch cluster dashboard and API IP addresses with the private SSH key. An example SSH script that can be run from either Mac or Windows powershell is included here
+4. Run the above batch file or shell script
 
-1. Create a OCI compute instance, configured with your SSH key in the clinical-trials compartment and clinical-trials VCN and corresponding public subnet
+5. Type in *<https://localhost:5601>* on your browser. Type in your Opensearch userid (i,e *osmaster*) and your password to connect.
+
+  ![Opensearch dashboard][images/LAB3OS-8.png]
 
 2. Run the following command in a shell script (Mac) or windows powershell/batch script
+
 ```
 # Test opensearch connection from external local laptop
 ssh -C -v -t -L localhost:5601:<Opensearch dashboard IP >:5601 -L localhost:9200:<Opensearch API IP>:9200 opc@<compute VM public IP> -i <SSH Private key>
 ```
 
 3. Connect to Opensearch dashboard as shown below
- ![Image alt text](images/LAB3OS-8.png)
+ ![Image alt text][def]
+
+
+## Task 3: Basic Opensearch familiarity
+
+For this workshop, basic familiarity with OCI Opensearch is needed. The following steps can help you quickly get you running queries, view indexes and indexed documents
 
 4. Some OpenSearch commands of relevance (below)
   
@@ -79,68 +95,14 @@ ssh -C -v -t -L localhost:5601:<Opensearch dashboard IP >:5601 -L localhost:9200
   
   **View Indexed data** - Create an index pattern from the dashboard management --> Index pattern with the same name as the Index name and view indexed data through Discover men
 
-## Task 3: Accessing the cluster from OCI Data science
-
-With the data science environment configured in the same clinical-trials VCN and same private subnet as the Opensearch cluster, it can be accessed easily without any networking configuration. You only need to copy the Opensearch API Endpoint from the OCI console
-```
-curl -k -u <os_user>:<os_pass> <Opensearch API Endpoint>
-```
-Successful connection should show
- ![Image alt text](images/LAB3OS-10.png)
-
-
-1. Execute the following shell script in an OCI Data science notebook session environment to test opensearch connectivity
-
-  ![Image alt text](images/sample1.png)
-
-4. Example with inline navigation icon ![Image alt text](images/sample2.png) click **Navigation**.
-
-5. Example with bold **text**.
-
-   If you add another paragraph, add 3 spaces before the line.
-
-## Task 2: Concise Task Description
-
-1. Step 1 - tables sample
-
-  Use tables sparingly:
-
-  | Column 1 | Column 2 | Column 3 |
-  | --- | --- | --- |
-  | 1 | Some text or a link | More text  |
-  | 2 |Some text or a link | More text |
-  | 3 | Some text or a link | More text |
-
-2. You can also include bulleted lists - make sure to indent 4 spaces:
-
-    * List item 1
-    * List item 2
-
-3. Code examples
-
-    ```
-    Adding code examples
-   Indentation is important for the code example to appear inside the step
-    Multiple lines of code
-   <copy>Enclose the text you want to copy in <copy></copy>.</copy>
-    ```
-
-4. Code examples that include variables
-
- ```
-
-  <copy>ssh -i <ssh-key-file></copy>
-
-  ```
-
-## Learn More
-
-*(optional - include links to docs, white papers, blogs, etc)*
-
 * [URL text 1](http://docs.oracle.com)
 * [URL text 2](http://docs.oracle.com)
 
 ## Acknowledgements
+
 * **Author** - <Name, Title, Group>
 * **Contributors** -  <Name, Group> -- optional
 * **Last Updated By/Date** - <Name, Month Year>
+
+
+[def]: images/LAB3OS-8.png

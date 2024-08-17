@@ -1,4 +1,4 @@
-# Title of the Lab
+# OCI Generative AI Playground and Generation
 
 ## Introduction
 
