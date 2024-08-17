@@ -100,9 +100,8 @@ For this workshop, basic familiarity with OCI Opensearch is needed. The followin
 
 ## Acknowledgements
 
-* **Author** - <Name, Title, Group>
-* **Contributors** -  <Name, Group> -- optional
-* **Last Updated By/Date** - <Name, Month Year>
+* **Author** - Rajib Ghosh, Master Principal Cloud Architect, OCI AI and Gen AI Center of Excellence
+* **Last Updated By/Date** - Aug 2024
 
 
 [def]: images/LAB3OS-8.png
