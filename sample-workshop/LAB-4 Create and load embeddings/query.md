@@ -2,38 +2,54 @@
 
 ## Introduction
 
-*Describe the lab in one or two sentences, for example:* This lab walks you through the steps to ...
+This lab focuses on the basics of creating vector embeddings with the help of an open source pre-trained embedding model and also with OCI Generative AI embedding model. The purpose is to show a comparison of the text retrieval and scores between two embedding models. This enables us to plugin the best possible embedding model that is best suited for retrieval searches on a Retrieval Augmented Generation (RAG) scenario
 
-Estimated Lab Time: -- minutes
+Estimated Lab Time: -- 10 minutes
 
-### About <Product/Technology> (Optional)
-Enter background information here about the technology/feature or product used in this lab - no need to repeat what you covered in the introduction. Keep this section fairly concise. If you find yourself needing more than two sections/paragraphs, please utilize the "Learn More" section.
+### About Embedding models
+In this lab, we use a Hugging face pre-trained sentence transformer embedding model all-MiniLM-L6-v2 and Oracle cloud Generative AI Cohere command Embedding model to create vectors from text and store in a vector store such as OCI Opensearch. This provides a framework to compare search scores on retrievals, fine tune and test models that is appropriate for the textual data.
 
 ### Objectives
 
 *List objectives for this lab using the format below*
 
 In this lab, you will:
-* Objective 1
-* Objective 2
-* Objective 3
+* Create vector embeddings on textual clinical data
+* Create vector embeddings on short and long textual data
+* Create vector embeddings with an open source pre-trained model and OCI Generative AI embedding model
+* Test query retrieval scores across various models and various short and long text segments. 
 
-### Prerequisites (Optional)
-
-*List the prerequisites for this lab using the format below. Fill in whatever knowledge, accounts, etc. is necessary to complete the lab. Do NOT list each previous lab as a prerequisite.*
+### Prerequisites
 
 This lab assumes you have:
-* An Oracle Cloud account
-* All previous labs successfully completed
+* Knowledge of Oracle cloud services 
+* Some knowledge of OCI Data science and OCI Opensearch
+* Programmatic understanding of python
+* Some understanding of vector embeddings, Generative AI and Large language models (LLMs)
+* Some understanding of the langchain framework
 
 
 *This is the "fold" - below items are collapsed by default*
 
-## Task 1: Concise Task Description
+## Task 1: Vectorize and load data using open source pre-trained model
 
-(optional) Task 1 opening paragraph.
+1. Open up the notebook demo_vector_search_ext.ipynb
 
-1. Step 1
+2. Execute the notebook cells to run embeddings with all-MiniLM-L6-v2 model.
+
+3. Load Clinical trial title and Description along with their embeddings to an Opensearch Index
+
+4. Execute vector queries against Title and Descriptions and retrieve the scores
+
+5. Execute the rest of the notebook cells to run the above with OCI Generative AI Embedding models
+
+6. Test both the models by putting your own queries to see how retrieval score and results vary with your queries
+
+7. Increase the volume of disease Title, Description text content and volume and check retrieval scores
+
+8. Bring in other sentence transformer models and change the embedding parameters to experiment their effects on the overall score.
+
+9. Execute the notebook across large volumes of textual clinical metadata
 
 	![Image alt text](images/sample1.png)
 
