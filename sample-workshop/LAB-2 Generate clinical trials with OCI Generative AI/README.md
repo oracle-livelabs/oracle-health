@@ -68,10 +68,10 @@ Click on the view code button to see the generated code
 
 ## Learn More
 
-*(optional - include links to docs, white papers, blogs, etc)*
 
-* [URL text 1](http://docs.oracle.com)
-* [URL text 2](http://docs.oracle.com)
+
+* [OCI Generative AI](https://www.oracle.com/artificial-intelligence/generative-ai/generative-ai-service/)
+* [Realize business value by transforming data into action with Generative AI](https://blogs.oracle.com/ai-and-datascience/post/generative-ai-use-cases/)
 
 ## Acknowledgements
 

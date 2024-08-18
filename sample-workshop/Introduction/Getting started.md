@@ -18,11 +18,12 @@ Estimated Workshop Time: -- 60 minutes
 
 ### Objectives
 
-*List objectives for the workshop*
+
 
 In this workshop, you will learn how to:
+
 * Use OCI Generative AI, OCI DataScience and vector embedding processes
-* Emnedding and loading data into a vector store like OCI Opensearch
+* Embedding and loading data into a vector store like OCI Opensearch
 * Implement a Retrieval Augmented Generation (RAG) Interface
 * Effective prompting to generate query outputs from OCI Gen AI LLM
 * Using a pre-canned template to generate a compliance form
@@ -30,25 +31,23 @@ In this workshop, you will learn how to:
 ### Prerequisites
 
 This lab assumes you have:
-* Basic familiarity with OCI Generative AI Services and Toolsets
+
+* Basic familiarity with OCI Generative AI Services and Tool sets
 * Some familiarity with Python programming language.
 * Basic understanding of large language models (LLM)
 * Some familiarity with OCI Opensearch service
 * Some familiarity with open source langchain framework
 * Familiarity with clinical trial and compliance submission process would be helpful but not required
 
-*This is the "fold" - below items are collapsed by default*
 
-In general, the Introduction does not have Steps.
 
 ## Learn More
-
-*(optional - include links to docs, white papers, blogs, etc)*
 
 * [URL text 1](http://docs.oracle.com)
 * [URL text 2](http://docs.oracle.com)
 
 ## Acknowledgements
+
 * **Author** - <Rajib Ghosh, Master Principal Cloud Architect, OCI GenAI Center of excellence>
 * **Contributors** -  <Name, Group> -- optional
 * **Last Updated By/Date** - <Name, Month Year>

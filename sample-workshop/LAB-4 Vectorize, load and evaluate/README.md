@@ -12,7 +12,7 @@ In this lab, we use a Hugging face pre-trained sentence transformer embedding mo
 
 ### Objectives
 
-*List objectives for this lab using the format below*
+
 
 In this lab, you will:
 
@@ -82,7 +82,7 @@ Retriver scores are an indication of how accurately the embedding model can pull
 
 ## Learn More
 
-*(optional - include links to docs, white papers, blogs, etc)*
+
 
 * [OpenSearch provided pre-trained models](https://opensearch.org/docs/latest/ml-commons-plugin/pretrained-models/)
 * [Conversational Search with OCI Generative AI](https://docs.oracle.com/en-us/iaas/Content/search-opensearch/Concepts/ocigenaiconnector.htm)
