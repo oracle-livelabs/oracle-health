@@ -1,4 +1,4 @@
-# OCI Opensearch Configuration and usage (Optional)
+# Evaluating with Opensearch Neural and Hybrid search (Optional)
 
 ## Introduction
 

@@ -1,4 +1,4 @@
-# Vectorize, load and search embeddings
+# Vectorize, load and search and evaluate retrieval
 
 ## Introduction
 
@@ -37,7 +37,7 @@ This lab assumes you have:
 
 1. Get the following information into a notepad or a script
 
-* Compartment OCID for "clinical-trials" compartment. (Search on OCI console for compartments, click your compartment and copy the OCID)
+* Compartment OCID for *clinical-trials* compartment. (Search on OCI console for compartments, click your compartment and copy the OCID)
 * Opensearch username - The username entered while provisioning Opensearch cluster (i,e *osmaster*)
 * Opensearch password - The password entered while provisioning Opensearch cluster
 * API end point Private IP from OCI Opensearch service console
