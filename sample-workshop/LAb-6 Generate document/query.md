@@ -1,4 +1,4 @@
-# Title of the Lab
+# Generate Compliance submission documents
 
 ## Introduction
 

@@ -176,6 +176,7 @@ allow service datascience to use virtual-network-family in tenancy
 allow group Administrators to use virtual-network-family in tenancy
 allow group Administrators to manage data-science-family in tenancy
 allow dynamic-group clinical-trials to manage data-science-family in tenancy
+allow group Administrators to manage generative-ai-family in tenancy
 ```
 
  ![setup OCI Data Science policy](images/LAB0-DS-POL-10.png)
