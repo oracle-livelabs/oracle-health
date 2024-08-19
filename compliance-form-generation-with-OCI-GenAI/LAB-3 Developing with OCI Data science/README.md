@@ -160,8 +160,6 @@ Re-enter passphrase : N/A
 
 ## Learn More
 
-
-
 * [Generative AI made easy with OCI Datascience](https://www.oracle.com/artificial-intelligence/generative-ai/generative-ai-service/)
 * [Data science github repository](https://github.com/oracle-samples/oci-data-science-ai-samples/tree/main/ai-quick-actions)
 
