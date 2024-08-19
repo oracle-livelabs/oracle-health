@@ -1,6 +1,6 @@
 # Introduction
 
-Organizations today are challenged with analyzing large amounts of structured and unstructured data such as tables, invoices, reports for compliance reporting to regulatory authorities accurately.This requires analyzing, filtering and summarizing large volume of textual and tabular data that are typically resident in an enterprise lakehouse, on-premise servers and cloud. Producing outputs accurately and timely that conforms to a form template is a big time and effort consuming task and hence enterprises are looking to Artificial Intelligence to solve this issue.
+Organizations today are challenged with analyzing large amounts of structured and unstructured data such as tables, invoices, reports for compliance reporting to regulatory authorities accurately.This requires analyzing, filtering and summarizing large volume of textual and tabular data that are typically resident in an enterprise lakehouse, on-premise servers and cloud. Producing outputs accurately and timely that conforms to a form template is a big time and effort consuming task and hence enterprises are looking to Artificial Intelligence to solve this issue
 
 ## About this Workshop
 
