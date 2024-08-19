@@ -4,7 +4,7 @@
 
 In this lab, we perform setting the Oracle cloud environment for running the workshop successfully.
 
-Estimated Lab Time: -- 20 minutes
+Estimated Lab Time: -- 15 minutes
 
 ### Objectives
 
@@ -34,29 +34,12 @@ This workshop uses the name ***clinical-trials*** for most of the objects in the
 2. Use same password for accessing all cloud resources
 3. Please note that this is a recommendation for ease working through the workshop
 
-## Task 1: Create an Oracle cloud free-tier tenancy and Login to verify
-
 **REQUIREMENTS:**
 
 * You must have your email address registered with Oracle to provision a cloud tenancy
 * You must have administrator privileges in your tenancy
 
-1. Browse to [Oracle cloud Free Tier](https://www.oracle.com/cloud/free/)
-  ![Start Free trial](images/LAB1-Tenancy-1.png)
-2. Enter your name, email address and validate you are human
-3. Create your Oracle cloud free-tier account
-4. Download [Oracle Mobile Authenticator App](https://docs.oracle.com/en-us/iaas/Content/Identity/mobileauthapp/download-mobile-authenticator-app.htm)
-5. Please follow this page if you need to [Register the OCI authenticator](https://docs.oracle.com/en-us/iaas/Content/Identity/mobileauthapp/registering_mobile_devices_with_oma.htm)
-6. Please NOTE that you MUST use **us-midwest-Chicago** as your Home Region
-  ![Start Free trial](images/LAB1-Tenancy-2-1.png)
-7. Note down your Oracle cloud tenancy name
-8. Note down your sign-in id (your email) and password
-9. [Login to your Oracle cloud tenancy](cloud.oracle.com)
- ![Start Free trial](images/LAB1-Tenancy-2.png)
-10. Upon successful login, your screen should look like
-  ![OCI Cloud successful login](images/LAB1-Tenancy-3.png)
-
-## Task 2: Setup compartment
+## Task 1: Setup compartment
 
 1. Pull down the Oracle cloud hamburger menu and search for compartments
  ![Setup Compartment](images/LAB1-COMP-1.png)
@@ -64,7 +47,7 @@ This workshop uses the name ***clinical-trials*** for most of the objects in the
  ![Setup Compartment](images/LAB1-COMP-2.png)
  ![Setup Compartment](images/LAB1-COMP-3.png)
 
-## Task 3: Setup OCI Networking components
+## Task 2: Setup OCI Networking components
 
 1.Setup a virtual cloud network (VCN) called "clinical-trials" in the clinical-trials compartment with the help of VCN wizard as shown below
 
@@ -87,7 +70,7 @@ This workshop uses the name ***clinical-trials*** for most of the objects in the
  ![setup VCN](images/LAB1-SEC-7.png)
  ![setup VCN](images/LAB1-SEC-8.png)
 
-## Task 4: Set up OCI Object storage buckets
+## Task 3: Set up OCI Object storage buckets
 
 1. Setup an object storage bucket in the clinical-trials compartment as shown below
  ![setup Object storage bucket](images/LAB1-bucket-1.png)
@@ -144,7 +127,7 @@ allow group SearchOpenSearchAdmins to manage vnics in compartment clinical-trial
 
 5.Note down the API endpoint , Private IP , Opensearch Dashboard API endpoint and Dashboard Private IP for later usage
 
-## Task 5: Set up the OCI Data science service policies
+## Task 6: Set up the OCI Data science service policies
 
 Setup the OCI Data science managed service for running the core part of this workshop. This constitutes setting up
 
@@ -180,7 +163,7 @@ allow group Administrators to manage generative-ai-family in tenancy
 
  ![setup OCI Data Science policy](images/LAB1-DS-POL-10.png)
 
-## Task 6: Set up an OCI Data science service project
+## Task 7: Set up an OCI Data science service project
 
 1. Setup an OCI Data science project.
 
@@ -188,7 +171,7 @@ allow group Administrators to manage generative-ai-family in tenancy
  ![setup OCI Data Science project](images/LAB1-DS-2.png)
  ![setup OCI Data Science project](images/LAB1-DS-3.png)
 
-## Task 7: Set up an OCI Data science Notebook session
+## Task 8: Set up an OCI Data science Notebook session
 
 1.In this task, create a notebook session called *clinical-trials* with the compute CPU and memory specifications as shown below. Make sure that you select the *Custom Networking* option with a "private subnet* for the build.
 

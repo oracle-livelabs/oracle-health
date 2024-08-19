@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Generative AI is a fully managed Oracle Cloud Infrastructure service that provides a set of state-of-the-art, customizable large language models (LLMs) that cover a wide range of use cases, including chat, text generation, summarization, and creating text embeddings. Use the Generative AI  playground to try out the ready-to-use pretrained models. It also supports creating your own fine-tuned custom models based on your own data in a secure dedicated cluster environment
+Generative AI is a fully managed Oracle Cloud Infrastructure service that provides a set of state-of-the-art, customizable large language models (LLMs) that cover a wide range of use cases, including chat, text generation, summarization, and creating text embeddings. Use the Generative AI  playground to try out the ready-to-use pre-trained models. It also supports creating your own fine-tuned custom models based on your own data in a secure dedicated cluster environment
 
 Estimated Lab Time: -- 5 minutes
 
