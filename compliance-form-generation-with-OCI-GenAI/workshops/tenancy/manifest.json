@@ -5,7 +5,7 @@
         {
             "title": "Introduction",
             "description": "The Introduction is always first. The title and contents menu title match for the Introduction.",
-            "filename": "../../Introduction/introduction.md"
+            "filename": "../../introduction/introduction.md"
         },
         {
             "title": "Get Started",
@@ -15,27 +15,27 @@
         {
             "title": "Lab 1: Setup OCI Services",
             "description": "In this lab you will setup the required OCI services for running thr workshop",
-            "filename": "../../LAB-1 Setup OCI Services/README.md"
+            "filename": "../../setupociservices/setupociservices.md"
         },
         {
             "title": "Lab 2: Generate Clinical trials with OCI Generative AI",
-            "filename": "../../LAB-2 Generate Clinical trials with OCI Generative AI/README.md"
+            "filename": "../../generate-clinical-trials-with-oci-gai/generate-clinical-trials-with-oci-gai.md"
         },
         {
             "title": "LAB-3 Developing with OCI Data science",
-            "filename": "../../LAB-3 Developing with OCI Data science/README.md"
+            "filename": "../../developing-with-oci-data-science/developing-with-oci-data-science.md"
         },
         {
             "title": "LAB-4 Vectorize, load and evaluate",
-            "filename": "../../LAB-4 Vectorize, load and evaluate/README.md"
+            "filename": "../../vectorize-load-and-evaluate/vectorize-load-and-evaluate.md"
         },
         {
             "title": "LAB-5 Generate Compliance document",
-            "filename": "../../LAB-5 Generate Compliance document/README.md"
+            "filename": "../../generate-compliance-document/generate-compliance-document.md"
         },
         {
             "title": "Lab 6: LAB-6 Using Neural and Hybrid search (Optional)",
-            "filename": "../../LAB-6 Using Neural and Hybrid search (Optional)/README.md"
+            "filename": "../../using-neural-and-hybrid-search/using-neural-and-hybrid-search.md"
         },
         {
             "title": "Need Help?",

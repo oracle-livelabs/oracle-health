@@ -1,8 +1,8 @@
-# Introduction
+# Getting started
 
 OCI Generative AI and associated tools provide a scalable and flexible automation framework for Compliance form generation and related use-cases. Though this workshop do not reflect an actual regulatory authority form, but the principles outlined here can be effectively used for this purpose.
 
-### Objectives
+## Objectives
 
 In this workshop, you will learn how to:
 
@@ -12,7 +12,7 @@ In this workshop, you will learn how to:
 * Effective prompting to generate query outputs from OCI Gen AI LLM
 * Using a pre-canned template to generate a compliance form
 
-### Prerequisites
+## Prerequisites
 
 This lab assumes you have:
 
@@ -28,9 +28,9 @@ This lab assumes you have:
 
 All downloads for this lab are zipped and can be downloaded as part of LAB-3 Developing with OCI data Science
 
-### Provision Oracle cloud tenancy and login
+## Provision Oracle cloud tenancy and login
 
-Provision a new Oracle cloud tenancy and login following the live-lab
+Use the live-lab link below to provision a cloud tenancy and testing your login
   [provision new cloud tenancy account](https://github.com/oracle-livelabs/common/blob/main/labs/cloud-login/event-register-free-tier-account.md)
 
 ## Learn More
