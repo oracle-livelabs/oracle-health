@@ -4,7 +4,7 @@
 
 In this lab, we will generate a sample compliance submission form summarizing the clinical trial data sections from a sample with a pre-canned PDF template. Prompting techniques and formatting has been used to hint the OCI Generative AI large language model to contain sectional summaries in a condensed manner. The process can be extended to summarize across multiple retrieval chunks of data with langchain and vector search.
 
-Estimated Lab Time: -- 5 minutes
+Estimated Lab Time: -- 10 minutes
 
 ### Langchain output parsers and OCI Generative AI
 

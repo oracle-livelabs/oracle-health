@@ -1,4 +1,4 @@
-# OCI Generative AI Playground and Generation
+# OCI Generative AI Playground and Trial Generation
 
 ## Introduction
 
