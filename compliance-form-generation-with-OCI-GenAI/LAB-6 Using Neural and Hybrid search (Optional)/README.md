@@ -37,9 +37,9 @@ This lab assumes you have:
 
 ## Task 2: Create the Opensearch model group
 
-1. Search for an existing clinical-trial model group.
+1.Search for an existing clinical-trial model group.
 
-```
+```text
 #Search for the clinical trials model group
 GET /_plugins/_ml/model_groups/_search
 {
@@ -49,9 +49,9 @@ GET /_plugins/_ml/model_groups/_search
 }
 ```
 
-3. If it does not exist then copy the code below to create it. It should display the model_group_id. Make a note of it
+2.If it does not exist then copy the code below to create it. It should display the model_group_id. Make a note of it
 
-```
+```text
 # create a model group 
 POST /_plugins/_ml/model_groups/_register
 {
@@ -60,19 +60,20 @@ POST /_plugins/_ml/model_groups/_register
 }
 ```
 
-3. To test that the model group is created, run code in step 1. The Id field in the output will contain *model_group_id*
+3.To test that the model group is created, run code in step 1. The Id field in the output will contain *model_group_id*
 
-4. Use the code below if you need to delete the model group. Note that any models in the group must be deleted first.
+4.Use the code below if you need to delete the model group. Note that any models in the group must be deleted first.
 
-```
+```text
 # Grab the model_group_id and delete the model group
 DELETE _plugins/_ml/model_groups/<model_group_id>
 ```
 
 ## Task 2: Create the Opensearch model
 
-1. Substitute the retrieved *model_group_id* in the code below to create the model
-```
+1.Substitute the retrieved *model_group_id* in the code below to create the model
+
+```text
 # Create the model
 POST /_plugins/_ml/models/_register
 {
@@ -107,17 +108,18 @@ POST /_plugins/_ml/models/_register
     }
 }
 ```
-2. Record the *task_id*. Please note that Opensearch *model_id* can be retrieved from the registration *task_id* for the model register job
+
+2.Record the *task_id*. Please note that Opensearch *model_id* can be retrieved from the registration *task_id* for the model register job
   ![Install pip libraries](images/LAB6-OS-8.png)
 
-3. Retrieve the *model_id*
+3.Retrieve the *model_id*
   ![Install pip libraries](images/LAB6-OS-9.png)
 
-4. Deploy and verify the model
+4.Deploy and verify the model
   ![Install pip libraries](images/LAB6-OS-10.png)
   ![Install pip libraries](images/LAB6-OS-11.png)
 
-5. Test the model embeddings created with a query
+5.Test the model embeddings created with a query
   ![Install pip libraries](images/LAB6-OS-12.png)
 
 ## Task 3: Using Hybrid search notebook
@@ -132,15 +134,14 @@ POST /_plugins/_ml/models/_register
 
 4. Note the weight definitions of the search pipeline and how a combination of a match query and neural search query on description embeddings is used to control the retriever outputs
 
-4. Run the notebook cells and view the retrieval score  
+5. Run the notebook cells and view the retrieval score  
   ![Enter OS model_id](images/LAB6-NOTE-OS-3.png)
 
-5. Reverse the weights in the search pipeline and recreate the pipeline 
+6. Reverse the weights in the search pipeline and recreate the pipeline 
   ![Enter OS model_id](images/LAB6-NOTE-OS-4.png)
 
-6. Run your query again to view the results
+7. Run your query again to view the results
   ![Enter OS model_id](images/LAB6-NOTE-OS-5.png)
-
 
 ## Task 3: Analyzing search results
 

@@ -12,13 +12,7 @@ Learn more about the architecture, methodology and the key automation steps that
 
 Estimated Workshop Time: -- 60 minutes
 
-*You may add an option video, using this format: [](youtube:YouTube video id)*
-
-  [](youtube:zNKxJjkq0Pw)
-
 ### Objectives
-
-
 
 In this workshop, you will learn how to:
 
@@ -39,15 +33,7 @@ This lab assumes you have:
 * Some familiarity with open source langchain framework
 * Familiarity with clinical trial and compliance submission process would be helpful but not required
 
-
-
-## Learn More
-
-* [URL text 1](http://docs.oracle.com)
-* [URL text 2](http://docs.oracle.com)
-
 ## Acknowledgements
 
-* **Author** - <Rajib Ghosh, Master Principal Cloud Architect, OCI GenAI Center of excellence>
-* **Contributors** -  <Name, Group> -- optional
-* **Last Updated By/Date** - <Name, Month Year>
+* **Author** - Rajib Ghosh, Master Principal Cloud Architect, OCI GenAI Center of excellence
+* **Last Updated By/Date** - Aug, 2024

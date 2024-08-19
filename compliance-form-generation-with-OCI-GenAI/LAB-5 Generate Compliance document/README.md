@@ -26,7 +26,6 @@ This lab assumes you have:
 * Working knowledge of OCI Data science and conda packs
 * Some knowledge of langchain framework but not required.
 
-
 ## Task 1: Load clinical-trials documents and metadata
 
 1. Get the following information into a notepad or a script
