@@ -44,7 +44,7 @@ This lab assumes you have:
 
 5. Generate page_content and document metadata embeddings using OCI Generative AI
 
-6. Check Opensearch client connectivity. It should show the *<OpenSearch([{'host': 'hostname', 'port': 9200}])* as output
+6. Check Opensearch client connectivity. It should show the *OpenSearch([{'host': 'hostname', 'port': 9200}])* as output
 
 7. Load both text and embeddings data into the *idx_oci_genai_clinical_trials* index
 

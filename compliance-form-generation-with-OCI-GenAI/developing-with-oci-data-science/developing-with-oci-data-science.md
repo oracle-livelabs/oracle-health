@@ -134,7 +134,7 @@ Re-enter passphrase : N/A
 
   ![Test Opensearch Access](images/LAB3-DS-CLI-11.png)
 
-## Task 5: Test connectivity to OCI Generative AI services
+## Task 6: Test connectivity to OCI Generative AI services
 
 1. Open up the Generative AI Generation Interface for API code testing. Please note that the *command r* chat interface is not OCI API enabled as of yet and is not required for this workshop.
   ![Test Opensearch Access](images/LAB3-DS-GAI-1.png)

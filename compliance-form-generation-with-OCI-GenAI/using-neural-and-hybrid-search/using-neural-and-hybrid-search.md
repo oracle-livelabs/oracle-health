@@ -69,7 +69,7 @@ POST /_plugins/_ml/model_groups/_register
 DELETE _plugins/_ml/model_groups/<model_group_id>
 ```
 
-## Task 2: Create the Opensearch model
+## Task 3: Create the Opensearch model
 
 1.Substitute the retrieved *model_group_id* in the code below to create the model
 
@@ -122,7 +122,7 @@ POST /_plugins/_ml/models/_register
 5.Test the model embeddings created with a query
   ![Install pip libraries](images/LAB6-OS-12.png)
 
-## Task 3: Using Hybrid search notebook
+## Task 4: Using Hybrid search notebook
 
 1. Open up to execute the notebook *demo_hybrid_search.ipynb*. You can enter "Shift+enter* to execute the notebook cells one by one
 
@@ -143,7 +143,7 @@ POST /_plugins/_ml/models/_register
 7. Run your query again to view the results
   ![Enter OS model_id](images/LAB6-NOTE-OS-5.png)
 
-## Task 3: Analyzing search results
+## Task 5: Analyzing search results
 
 1. Validating and comparing hybrid search query results is complex and requires experimentation to find the right combination of weights that work for the data. As you see that top record returned is independent of the weights but the other records are affected and different titles with scores are reported. 
 
