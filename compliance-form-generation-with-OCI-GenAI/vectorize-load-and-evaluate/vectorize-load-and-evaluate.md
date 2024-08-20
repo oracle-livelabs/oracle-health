@@ -41,7 +41,7 @@ This lab assumes you have:
 2. Double click to open up the notebook demo_vector_search_ext.ipynb. Run each of the cells one by one from top by using *Shift+Enter* or play button at the top
 
 3. Substitute the following definitions in the cell as shown below
- ![Image alt text](images/LAB4-NOTE-OS-1.png)
+ ![Image alt text](images/lab4-note-os-1.png)
 
 4. Run the next cell to make sure the Opensearch client connectivity works. It should show the *<OpenSearch([{'host': 'hostname', 'port': 9200}])>* as outputs
 
@@ -61,8 +61,8 @@ Retriever scores are an indication of how accurately the embedding model can pul
 
 1. The following shows a retriver score comparison between the *all-minilm-l6-v2* and OCI Generative AI *cohere.embed-english-v3.0* model
 
-   * ![Open source model score](images/LAB4-NOTE-MOD-1.png)
-   * ![OCI GAI model score](images/LAB4-NOTE-OCI-GAI-1.png)
+   * ![Open source model score](images/lab4-note-mod-1.png)
+   * ![OCI GAI model score](images/lab4-note-oci-gai-1.png)
 
 ## Task 4: Testing to find the best retrievers (RAG) for your data
 
