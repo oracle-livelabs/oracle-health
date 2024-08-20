@@ -40,8 +40,8 @@ ssh -C -v -t -L 127.0.0.1:5601:(Opensearch_dashboard_ip):5601 -L 127.0.0.1:9200:
 ```
 
 Refer to the following screenshots for pulling up the above relevant details 
-  ![Install pip libraries](images/LAB6-OS-13.png)
-  ![Install pip libraries](images/LAB6-COMPUTE-3.png)
+  ![Install pip libraries](images/lab6-os-13.png)
+  ![Install pip libraries](images/lab6-compute-3.png)
 
 ## Task 2: Create the Opensearch model group
 
