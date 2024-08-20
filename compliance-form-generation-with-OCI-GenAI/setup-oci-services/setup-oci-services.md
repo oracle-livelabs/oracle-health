@@ -51,13 +51,13 @@ This workshop uses the name ***clinical-trials*** for most of the objects in the
 
 1.Setup a virtual cloud network (VCN) called "clinical-trials" in the clinical-trials compartment with the help of VCN wizard as shown below
 
- ![setup VCN](images/lab1-vcn-0.png)
- ![setup VCN](images/lab1-vcn-1.png)
- ![setup VCN](images/lab1-vcn-2.png)
- ![setup VCN](images/lab1-vcn-3.png)
- ![setup VCN](images/lab1-vcn-4.png)
- ![setup VCN](images/lab1-vcn-5.png)
- ![setup VCN](images/lab1-vcn-6.png)
+ ![setup VCN](images/lab-vcn-0.png)
+ ![setup VCN](images/lab-vcn-1.png)
+ ![setup VCN](images/lab-vcn-2.png)
+ ![setup VCN](images/lab-vcn-3.png)
+ ![setup VCN](images/lab-vcn-4.png)
+ ![setup VCN](images/lab-vcn-5.png)
+ ![setup VCN](images/lab-vcn-6.png)
 
  2.Add two security list ingress entry to the private subnet of the clinical-trials VCN for ports 9200 and 5601 for Opensearch access
 
