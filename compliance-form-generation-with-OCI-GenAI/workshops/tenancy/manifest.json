@@ -1,5 +1,6 @@
 {
     "workshoptitle": "Generate Regulatory documents for Compliance submission Documents with OCI Generative AI",
+    "include": {"conda.zip":"../../developing-with-oci-data-science/files/conda.zip"},
     "help": "livelabs-help-oci_us@oracle.com",
     "tutorials": [
         {
@@ -8,17 +9,17 @@
             "filename": "../../Introduction/introduction.md"
         },
         {
-            "title": "Get Started",
+            "title": "Getting Started",
             "description": "This is the prerequisites for customers using Free Trial and Paid tenancies, and Always Free accounts (if applicable). The title of the lab and the Contents Menu title (the title above) match for Prerequisite lab. This lab is always first.",
             "filename": "../../getting-started/getting-started.md" 
         },
         {
-            "title": "Lab 1: Setup OCI Services",
+            "title": "LAB 1: Setup OCI Services",
             "description": "In this lab you will setup the required OCI services for running thr workshop",
             "filename": "../../setup-oci-services/setup-oci-services.md"
         },
         {
-            "title": "Lab 2: Generate Clinical trials with OCI Generative AI",
+            "title": "LAB 2: Generate Clinical trials with OCI Generative AI",
             "filename": "../../generate-clinical-trials-with-oci-gai/generate-clinical-trials-with-oci-gai.md"
         },
         {
@@ -34,7 +35,7 @@
             "filename": "../../generate-compliance-document/generate-compliance-document.md"
         },
         {
-            "title": "Lab 6: LAB-6 Using Neural and Hybrid search (Optional)",
+            "title": "LAB 6: LAB-6 Using Neural and Hybrid search (Optional)",
             "filename": "../../using-neural-and-hybrid-search/using-neural-and-hybrid-search.md"
         },
         {

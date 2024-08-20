@@ -33,7 +33,15 @@ This lab assumes you have:
 
 ## Task 1: Login into Opensearch instance and invoke Opensearch UI
 
-1. Create a windows batch or shell script subst
+1. Create a windows batch or shell script substituting the following as shown below and execute in your laptop to login to SSH tunnel in opensearch instance
+
+```text
+ssh -C -v -t -L 127.0.0.1:5601:<Opensearch_dashboard_ip>:5601 -L 127.0.0.1:9200:<Opensearch_api_private_ip>:9200 opc@<compute instance_public_ip> -i <ssh_key_to_login_to_compute_instance>
+```
+
+Refer to the following screenshots for pulling up the above relevant details 
+  ![Install pip libraries](images/LAB6-OS-13.png)
+  ![Install pip libraries](images/LAB6-COMPUTE-3.png)
 
 ## Task 2: Create the Opensearch model group
 
@@ -71,7 +79,7 @@ DELETE _plugins/_ml/model_groups/<model_group_id>
 
 ## Task 3: Create the Opensearch model
 
-1.Substitute the retrieved *model_group_id* in the code below to create the model
+1.Substitute the retrieved *model_group_id* in the code below to create the model. This currently pulls the model from a common object store location for OCI compliance that will expire. However, if you have issues pulling this model or running the code below, you may pull the model directly from hugging face or Opensearch pre-trained model documentation as well.
 
 ```text
 # Create the model
@@ -150,7 +158,7 @@ POST /_plugins/_ml/models/_register
 ## Learn More
 
 * [Opensearch hybrid search](https://opensearch.org/docs/latest/search-plugins/hybrid-search/#step-4-configure-a-search-pipeline)
-* [URL text 2](http://docs.oracle.com)
+* [Search Documents stored in Object Storage using Opensearch, Generative AI, Semantic Search, RAG](https://apexapps.oracle.com/pls/apex/r/dbpm/livelabs/view-workshop?wid=3762)
 
 ## Acknowledgements
 
