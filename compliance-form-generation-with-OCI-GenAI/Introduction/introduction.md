@@ -28,7 +28,7 @@ Learn more about the architecture, methodology and the key automation steps that
 
 Following shows the broader comprehensive architecture of the solution blueprint. However, this workshop is implemented on a subset of the architecture.
 
-  ![Solution Architecture](images/solution-architecture.png)
+  ![Solution Architecture](images/SolutionArchitecture.png)
 
 ## Labs
 
