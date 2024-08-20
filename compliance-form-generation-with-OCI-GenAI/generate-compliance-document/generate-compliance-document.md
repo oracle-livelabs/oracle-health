@@ -35,7 +35,7 @@ This lab assumes you have:
    * Opensearch password - The password entered while provisioning Opensearch cluster
    * API end point Private IP from OCI Opensearch service console
 
-2. Double click to open up the notebook *demo_generate_document.ipynb* Run each of the cells one by one from top by using *Shift+Enter* or play button at the top
+2. Double click to open up the notebook *demo-generate-document.ipynb* Run each of the cells one by one from top by using *Shift+Enter* or play button at the top
 
 3. Substitute the following definitions in the cell as shown below
  ![Image alt text](images/lab5-note-os-1.png)
@@ -46,9 +46,9 @@ This lab assumes you have:
 
 6. Check Opensearch client connectivity. It should show the *OpenSearch([{'host': 'hostname', 'port': 9200}])* as output
 
-7. Load both text and embeddings data into the *idx_oci_genai_clinical_trials* index
+7. Load both text and embeddings data into the *idx-oci-genai-clinical-trials* index
 
-8. Paste the title retrieved from the previous lab *demo_vector_search_ext.ipynb* to query based on page_content embeddings
+8. Paste the title retrieved from the previous lab *demo-vector-search-ext.ipynb* to query based on page_content embeddings
 
 9. Report file metadata and the score.
 

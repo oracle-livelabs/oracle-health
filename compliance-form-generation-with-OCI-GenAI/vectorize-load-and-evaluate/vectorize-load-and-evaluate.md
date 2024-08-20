@@ -45,7 +45,7 @@ This lab assumes you have:
 
 4. Run the next cell to make sure the Opensearch client connectivity works. It should show the *<OpenSearch([{'host': 'hostname', 'port': 9200}])>* as outputs
 
-5. Create vector embeddings with the Open source pre-trained model *all-minilm-l6-v2* and load them with the corresponding texts into an index *idx-all-minilm-l6-v2* . Note that vector embeddings are created by the model on the clinical-trial metadata file *clinical_trial_titles.csv* that contains the Filename, Title and Descriptions only
+5. Create vector embeddings with the Open source pre-trained model *all-minilm-l6-v2* and load them with the corresponding texts into an index *idx-all-minilm-l6-v2* . Note that vector embeddings are created by the model on the clinical-trial metadata file *clinical-trial-titles.csv* that contains the Filename, Title and Descriptions only
 
 6. In the next few cells, you can execute your queries against Title and Descriptions embeddings in Opensearch index and retrieve the scores.
 
