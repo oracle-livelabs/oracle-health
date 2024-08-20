@@ -77,7 +77,7 @@ NOTE: It is possible that some of the libraries are pre-installed in the environ
 
 ## Task 3: Install Workshop Compliance Document Generation code
 
-1. Download [LAB-3 Conda zip](https://orasenatdpltintegration03.objectstorage.us-chicago-1.oci.customer-oci.com/p/SfhRh7OEvLj9yR0hAIM3BwT7bCpi3jALfP6NqoCODU7mFe51nl1PeBPWcJj2El9K/n/orasenatdpltintegration03/b/clinical-trials/o/conda.zip) and upload to the home directory */home/datascience* in the notebook session as shown below
+1. Download [LAB-3 Conda zip](https://orasenatdpltintegration03.objectstorage.us-chicago-1.oci.customer-oci.com/p/SfhRh7OEvLj9yR0hAIM3BwT7bCpi3jALfP6NqoCODU7mFe51nl1PeBPWcJj2El9K/n/orasenatdpltintegration03/b/clinical-trials/o/conda.zip) and upload to the home directory */home/datascience* in the notebook session as shown below. You can also directly download in your environment using *wget <download link>* as well from a data science  terminal session.
   ![Install lab notebooks](images/LAB3-DS-NOTE-6.png)
 
 2. Open up a terminal session and run *unzip conda.zip* as shown below.
