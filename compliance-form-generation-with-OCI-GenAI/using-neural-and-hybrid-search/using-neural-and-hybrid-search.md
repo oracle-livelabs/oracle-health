@@ -36,7 +36,7 @@ This lab assumes you have:
 1. Create a windows batch or shell script substituting the following as shown below and execute in your laptop to login to SSH tunnel in opensearch instance
 
 ```text
-ssh -C -v -t -L 127.0.0.1:5601:<Opensearch_dashboard_ip>:5601 -L 127.0.0.1:9200:<Opensearch_api_private_ip>:9200 opc@<compute instance_public_ip> -i <ssh_key_to_login_to_compute_instance>
+ssh -C -v -t -L 127.0.0.1:5601:(Opensearch_dashboard_ip):5601 -L 127.0.0.1:9200:(Opensearch_api_private_ip):9200 opc@(compute instance_public_ip) -i (ssh_key_to_login_to_compute_instance)
 ```
 
 Refer to the following screenshots for pulling up the above relevant details 
@@ -74,7 +74,7 @@ POST /_plugins/_ml/model_groups/_register
 
 ```text
 # Grab the model_group_id and delete the model group
-DELETE _plugins/_ml/model_groups/<model_group_id>
+DELETE _plugins/_ml/model_groups/(model_group_id)
 ```
 
 ## Task 3: Create the Opensearch model
@@ -85,7 +85,7 @@ DELETE _plugins/_ml/model_groups/<model_group_id>
 # Create the model
 POST /_plugins/_ml/models/_register
 {
-  "model_group_id": "<model_group_id>",
+  "model_group_id": "(model_group_id)",
   "name": "sentence-transformers/msmarco-distilbert-base-tas-b",
     "version": "1.0.2",
     "description": "This is a port of the DistilBert TAS-B Model to sentence-transformers model: It maps sentences & paragraphs to a 768 dimensional dense vector space and is optimized for the task of semantic search. This model version automatically truncates to a maximum of 512 tokens.",
@@ -118,38 +118,38 @@ POST /_plugins/_ml/models/_register
 ```
 
 2.Record the *task_id*. Please note that Opensearch *model_id* can be retrieved from the registration *task_id* for the model register job
-  ![Install pip libraries](images/LAB6-OS-8.png)
+  ![Install pip libraries](images/lab6-os-8.png)
 
 3.Retrieve the *model_id*
-  ![Install pip libraries](images/LAB6-OS-9.png)
+  ![Install pip libraries](images/lab6-os-9.png)
 
 4.Deploy and verify the model
-  ![Install pip libraries](images/LAB6-OS-10.png)
-  ![Install pip libraries](images/LAB6-OS-11.png)
+  ![Install pip libraries](images/lab6-os-10.png)
+  ![Install pip libraries](images/lab6-os-11.png)
 
 5.Test the model embeddings created with a query
-  ![Install pip libraries](images/LAB6-OS-12.png)
+  ![Install pip libraries](images/lab6-os-12.png)
 
 ## Task 4: Using Hybrid search notebook
 
 1. Open up to execute the notebook *demo_hybrid_search.ipynb*. You can enter "Shift+enter* to execute the notebook cells one by one
 
 2. Enter the compartment id and the opensearch credentials
-  ![Enter OS credentials](images/LAB6-NOTE-OS-1.png)
+  ![Enter OS credentials](images/lab6-note-os-1.png)
 
 3. Enter the recorded *model_id* retrieved from the Task
-  ![Enter OS model_id](images/LAB6-NOTE-OS-2.png)
+  ![Enter OS model_id](images/lab6-note-os-2.png)
 
 4. Note the weight definitions of the search pipeline and how a combination of a match query and neural search query on description embeddings is used to control the retriever outputs
 
 5. Run the notebook cells and view the retrieval score  
-  ![Enter OS model_id](images/LAB6-NOTE-OS-3.png)
+  ![Enter OS model_id](images/lab6-note-os-3.png)
 
 6. Reverse the weights in the search pipeline and recreate the pipeline 
-  ![Enter OS model_id](images/LAB6-NOTE-OS-4.png)
+  ![Enter OS model_id](images/lab6-note-os-4.png)
 
 7. Run your query again to view the results
-  ![Enter OS model_id](images/LAB6-NOTE-OS-5.png)
+  ![Enter OS model_id](images/lab6-note-os-5.png)
 
 ## Task 5: Analyzing search results
 
