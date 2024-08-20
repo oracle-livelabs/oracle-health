@@ -22,6 +22,8 @@ In this lab, you will:
 
 ### Prerequisites (Optional)
 
+*List the prerequisites for this lab using the format below. Fill in whatever knowledge, accounts, etc. is necessary to complete the lab. Do NOT list each previous lab as a prerequisite.*
+
 This lab assumes you have:
 
 * An Oracle Cloud account in the Chicago or Frankfurt region
