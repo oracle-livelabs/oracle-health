@@ -8,7 +8,7 @@ Estimated Lab Time: -- 10 minutes
 
 ### Oracle cloud Data science
 
-OCI Data science is a managed Python based Jupyter lab based notebook development environment for developing and deploying Machine learning and AI models including Generative AI services. The service supports both CPU and GPU infrastructure, has access to OCI lakehouse storage and processes like Object store, Autonomous database as well as Data flow, catalog and other services.  
+OCI Data science is a managed Python based Jupyter lab based notebook development environment for developing and deploying Machine learning and AI models including Generative AI services. The service supports both CPU and GPU infrastructure, has access to OCI lakehouse storage like Object store, Autonomous database, Data flow, Data catalog and other services.  
 
 ### Objectives
 
@@ -43,7 +43,7 @@ This lab assumes you have:
 4. Open up a Terminal session as shown from the Launcher
   ![Install pre-built conda](images/lab3-ds-cnd-3.png)
 
-5. Paste and run the ***odsc conda install -s pytorch21_p39_gpu_v1*** command as shown. It may take a few minutes to install the conda environment. Make sure it is successfully completed and installed as shown
+5. Paste and run the *odsc conda install -s pytorch21_p39_gpu_v1* command as shown. It may take a few minutes to install the conda environment. Make sure it is successfully completed and installed as shown
   ![Install pre-built conda](images/lab3-ds-cnd-4.png)
 
 ## Task 2: Download and install required pip libraries
@@ -91,10 +91,10 @@ NOTE: It is possible that some of the libraries are pre-installed in the environ
 2. Change to *cd /home/datascience/conda/scripts* directory in a data science terminal window and run. Sucecssful connection should display the json as shown below
 
 ```bash
-curl -k -u <os_userid>:<os_password> <os_api_endpoint>:9200
+curl -k -u (os_userid):(os_password) (os_api_endpoint):9200
 ```
 
-  ![Test Opensearch Access](images/lab2-ds-os-2.png)
+  ![Test Opensearch Access](images/lab3-ds-os-2.png)
 
 ## Task 5: Configure OCI CLI Connectivity to Object store and Generative AI
 
@@ -135,7 +135,7 @@ Re-enter passphrase : N/A
 
 ## Task 6: Test connectivity to OCI Generative AI services
 
-1. Open up the Generative AI Generation Interface for API code testing. Please note that the *command r* chat interface is not OCI API enabled as of yet and is not required for this workshop.
+1. Open up the Generative AI Generation Interface for API code testing. Please note that the *command R* chat interface may not work as of yet and is not required for this workshop. You may test with the cohere chat interface available in the generation interface
   ![Test Opensearch Access](images/lab3-ds-gai-1.png)
 
 2. Generate a query and click on the *View Code* button and select *python* as the Language

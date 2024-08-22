@@ -2,13 +2,13 @@
 
 ## Introduction
 
-This is an optional lab, primarily geared for users who are familiar with OCI Opensearch. This lab shows you how to interact with OCI Opensearch console interface and run basic commands such as creating indexes, running queries to view results. It also shows how Machine learning based Neural search can be configured with OCI Opensearch and model creation and deployment for running hybrid search for the clinical-trials workshop
+This is an optional lab, primarily geared for users who are familiar with OCI Opensearch. This lab shows you how to interact with OCI Opensearch console interface and run basic commands such as creating indexes, running queries to view results. It also shows how Machine learning based Neural search can be configured with OCI Opensearch and hybrid search can be run for this workshop
 
 Estimated Lab Time: -- 10 minutes
 
 ### Oracle cloud Infrastructure Opensearch
 
-OCI Search with OpenSearch is a fully managed open source service that makes it easy to deploy, operate, and scale OpenSearch on customizable infrastructure. The cloud implementation of indexed search product is suitable for both lexical and neural searches based on AI/ML models. The product features creation of vector embeddings within the product as well as support for external embeddings only as a vector store. This flexibility along with its managed service capability makes it a good platform for Retrieval Augmented Generation (RAG) implementation for large language models (LLMs) such as Oracle Generative AI.
+OCI Search with OpenSearch is a fully managed open source service that makes it easy to deploy, operate, and scale OpenSearch on customizable infrastructure. The cloud implementation of indexed search product is suitable for both lexical and neural searches based on AI/ML models. The product features creation of vector embeddings within the product as well as support for external embeddings only as a vector store. It also flexibility in finer model tuning and weight adjustments in a hybrid or combination search scenario. This flexibility along with its managed service capability makes it a good platform for Retrieval Augmented Generation (RAG) implementation for both small or high dimensional indexed searches.
 
 ### Objectives
 
@@ -16,7 +16,7 @@ In this lab, you will:
 
 * Access the Opensearch cluster dashboard from your laptop
 * Use Opensearch UI tools such as dashboards and Index Management tools
-* View clinical-trial indexes and indexed data
+* View clinical trial indexes and indexed data
 * Test Opensearch access from OCI Data science environment
 * Use Opensearch *dev tools* to create neural search models
 * Use ingestion pipelines to create vector embeddings
@@ -29,7 +29,7 @@ This lab assumes you have:
 * An Oracle Cloud account with US-Chicago region access
 * You have successfully provisioned an OCI Opensearch cluster
 * You have familiarity with Opensearch commands (GET/PUT/POST..)
-* Some familiarity with using ML models is helpful but not required
+* Some familiarity with using pre-trained ML models is helpful but not required
 
 ## Task 1: Login into Opensearch instance and invoke Opensearch UI
 
@@ -79,13 +79,13 @@ DELETE _plugins/_ml/model_groups/(model_group_id)
 
 ## Task 3: Create the Opensearch model
 
-1.Substitute the retrieved *model_group_id* in the code below to create the model. This currently pulls the model from a common object store location for OCI compliance that will expire. However, if you have issues pulling this model or running the code below, you may pull the model directly from hugging face or Opensearch pre-trained model documentation as well.
+1.Substitute the retrieved *model-group-id* in the code below to create the model. This currently pulls the model from a common object store location for OCI compliance that will expire. However, if you have issues pulling this model or running the code below, you may pull the model directly from hugging face or Opensearch pre-trained model documentation as well.
 
 ```text
 # Create the model
 POST /_plugins/_ml/models/_register
 {
-  "model_group_id": "(model_group_id)",
+  "model_group_id": "(model-group-id)",
   "name": "sentence-transformers/msmarco-distilbert-base-tas-b",
     "version": "1.0.2",
     "description": "This is a port of the DistilBert TAS-B Model to sentence-transformers model: It maps sentences & paragraphs to a 768 dimensional dense vector space and is optimized for the task of semantic search. This model version automatically truncates to a maximum of 512 tokens.",

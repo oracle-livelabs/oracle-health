@@ -10,9 +10,8 @@ Estimated Lab Time: -- 15 minutes
 
 In this lab, you will:
 
-* Create a Oracle cloud free-tier tenancy and login to verify
 * Set up the workshop compartment
-* Set up required OCI Networking components
+* Set up OCI Networking components
 * Set up OCI object storage buckets
 * Set up OCI Compute instance
 * Set up OCI Opensearch Service
@@ -23,18 +22,18 @@ In this lab, you will:
 This lab assumes you have:
 
 * An Oracle Cloud account with administrative access
-* Familiarity of working in a cloud environment
+* Working familiarity in the OCI cloud environment
 * Familiarity with cloud services, access, networking
 
 ### Recommendations
 
-This workshop uses the name ***clinical-trials*** for most of the objects in the workshop for ease of reference. Some recommendations -
+This workshop uses the name **clinical-trials** for most of the objects in the workshop for ease of reference. Some recommendations -
 
-1. Use ***clinical-trials*** for naming all cloud resources
+1. Use **clinical-trials** for naming all cloud resources
 2. Use same password for accessing all cloud resources
-3. Please note that this is a recommendation for ease working through the workshop
+3. Please note that this is a recommendation for easy working with the workshop
 
-**REQUIREMENTS:**
+### Prerequisites
 
 * You must have your email address registered with Oracle to provision a cloud tenancy
 * You must have administrator privileges in your tenancy
@@ -49,7 +48,7 @@ This workshop uses the name ***clinical-trials*** for most of the objects in the
 
 ## Task 2: Setup OCI Networking components
 
-1.Setup a virtual cloud network (VCN) called "clinical-trials" in the clinical-trials compartment with the help of VCN wizard as shown below
+1.Setup a virtual cloud network (VCN) called "clinical-trials" in the clinical-trials compartment. Use VCN wizard option (shown below)
 
  ![setup VCN](images/lab1-vcn-0.png)
  ![setup VCN](images/lab1-vcn-1.png)
@@ -59,7 +58,7 @@ This workshop uses the name ***clinical-trials*** for most of the objects in the
  ![setup VCN](images/lab1-vcn-5.png)
  ![setup VCN](images/lab1-vcn-6.png)
 
- 2.Add two security list ingress entry to the private subnet of the clinical-trials VCN for ports 9200 and 5601 for Opensearch access
+ 2.Add two Ingress rules entry to the private subnet security list for ports 9200 and 5601 for Opensearch access
 
  ![setup VCN](images/lab1-sec-1.png)
  ![setup VCN](images/lab1-sec-2.png)
@@ -79,14 +78,14 @@ This workshop uses the name ***clinical-trials*** for most of the objects in the
 
 ## Task 4: Set up an OCI Compute instance
 
-1. Setup an OCI compute instance "clinical-trials" in the clinical-trials compartment. This is required for tunneling into the OCI Opensearch instance quickly from your laptop.
+1. Setup an OCI compute instance *clinical-trials* in the *clinical-trials* compartment. This is required for tunneling into the OCI Opensearch instance from your laptop.
  ![setup OCI Compute](images/lab1-compute-0.png)
  ![setup OCI Compute](images/lab1-compute-1.png)
 
 2. Generate a new SSH key pair and download both the private and public key pair to your laptop. You will need this to SSH login to the compute instance
  ![setup OCI Compute](images/lab1-compute-2.png)
 
-3. Make sure that the compute instance is provisioned and is running.
+3. Make sure that your compute instance is provisioned and is running.
  ![setup OCI Compute](images/lab1-compute-3.png)
 
 ## Task 5: Set up an OCI Opensearch service
@@ -129,16 +128,17 @@ allow group SearchOpenSearchAdmins to manage vnics in compartment clinical-trial
 
 ## Task 6: Set up the OCI Data science service policies
 
-Setup the OCI Data science managed service for running the core part of this workshop. This constitutes setting up
+Service policies are required for Data science environment setup. This workshop requires tenancy level policies to be setup at the root compartment level. 
 
-1. Setting up OCI Data science required policies. View the required pre-requisites for setting up the OCI Data science service
-
-2. Locate the Data science policies as shown. You will be eventually creating the Data science service im the clinical-trials compartment. However, the Data science policies called clinical-trials need to be created in the root compartment.
+1. Go to the OCI Data science service. 
 
  ![setup OCI Data Science policy](images/lab1-ds-pol-0.png)
+
+2. Locate the Data science policies as shown to follow the steps
+
  ![setup OCI Data Science policy](images/lab1-ds-pol-1.png)
 
-3.Create a dynamic group for Data science as shown below. The dynamic group provides easier and secure authenticated run-time access to OCI resources during the execution of a data science session
+3.Create a dynamic group for Data science. Dynamic group provides easy and secure authenticated run-time access to OCI resources for data science sessions
 
  ![setup OCI Data Science policy](images/lab1-ds-pol-2.png)
  ![setup OCI Data Science policy](images/lab1-ds-pol-3.png)
@@ -163,9 +163,9 @@ allow group Administrators to manage generative-ai-family in tenancy
 
  ![setup OCI Data Science policy](images/lab1-ds-pol-10.png)
 
-## Task 7: Set up an OCI Data science service project
+## Task 7: Set up an OCI Data science project
 
-1. Setup an OCI Data science project.
+1. Setup an OCI Data science project
 
  ![setup OCI Data Science project](images/lab1-ds-1.png)
  ![setup OCI Data Science project](images/lab1-ds-2.png)
@@ -173,7 +173,7 @@ allow group Administrators to manage generative-ai-family in tenancy
 
 ## Task 8: Set up an OCI Data science Notebook session
 
-1.In this task, create a notebook session called *clinical-trials* with the compute CPU and memory specifications as shown below. Make sure that you select the *Custom Networking* option with a "private subnet* for the build.
+1.Create a notebook session called *clinical-trials* with the compute CPU and memory specifications as shown below. Select the *Custom Networking* option with a *private subnet* for the build.
 
  ![setup OCI Data Science notebook session](images/lab1-ds-4.png)
  ![setup OCI Data Science notebook session](images/lab1-ds-5.png)
@@ -184,7 +184,7 @@ allow group Administrators to manage generative-ai-family in tenancy
  ![setup OCI Data Science notebook session](images/lab1-ds-7.png)
  ![setup OCI Data Science notebook session](images/lab1-ds-8.png)
 
-3.You should be able to login to the data science environment and view the Jupyter Lab notebook session.
+3.Verify that you are able to login to the data science environment and view the Jupyter Lab notebook session.
 
  ![setup OCI Data Science notebook session](images/lab1-ds-9.png)
 

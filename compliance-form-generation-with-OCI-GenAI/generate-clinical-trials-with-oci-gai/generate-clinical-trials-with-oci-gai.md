@@ -2,13 +2,9 @@
 
 ## Introduction
 
-Generative AI is a fully managed Oracle Cloud Infrastructure service that provides a set of state-of-the-art, customizable large language models (LLMs) that cover a wide range of use cases, including chat, text generation, summarization, and creating text embeddings. Use the Generative AI  playground to try out the ready-to-use pre-trained models. It also supports creating your own fine-tuned custom models based on your own data in a secure dedicated cluster environment
+OCI Generative AI Playground allows you chat, generate and summarize content and also show numerical vector embeddings for textual data. It is REST API enabled for programmatic access and allows you to tune the outputs of your query based on certain parameters. It currently allows Cohere command R+ and Meta Llama model. In this workshop, all clinical trials data is generated with Cohere command R+ playground. Clinical trial datasets are generated for Cancer, diabetes and liver diseases.
 
 Estimated Lab Time: -- 5 minutes
-
-### OCI Generative AI Playground
-
-OCI Generative AI Playground allows you chat, generate and summarize content and also show numerical vector embeddings for textual data. It is REST API enabled for programmatic access and allows you to tune the outputs of your query based on certain parameters. It currently allows Cohere command R+ and meta Llama model. In this workshop, all the relevant clinical trials data is generated with Cohere command R+ playground.
 
 ### Objectives
 
@@ -18,18 +14,19 @@ In this lab, you will:
 * Prompt and generate a few clinical trial documents yourself
 * Verify the generated document has no personal information
 * Prompt to try out some summarization examples on your text
-* View generated API code (Python) and get familiarized
+* View generated API code (Python) code 
 
 ### Prerequisites (Optional)
 
 This lab assumes you have:
 
-* An Oracle Cloud account in the Chicago or Frankfurt region
-* You have the required policies for OCI Generative AI setup
+* An Oracle Cloud account in the Chicago region
+* You have completed the required policy setup for this workshop
+* You are part of the administrator group in the tenancy
 
 ## Task 1: Accessing OCI Generative AI Playground
 
-In this section you will get familiarity with using OCI Generative AI playground console
+In this section get familiar with the OCI Generative AI playground console
 
 1. Login to your Oracle cloud tenancy and change your tenancy to US Midwest (chicago)
  ![Connect to US-Midwest Chicago Tenancy](images/lab-11.png)
@@ -42,10 +39,10 @@ In this section you will get familiarity with using OCI Generative AI playground
 1. Click on the Generative AI -> Overview -> Playground -> Chat and Run the example "Generate a job description" with the cohere-command-r-16k model
  ![Test OCI Gen AI Example](images/lab-13.png)
 
-2. Copy the following text in the chat window "Generate a clinical trial report on drug evaluation on Advanced Non-Small Cell Lung Cancer" , change the **Maximum output settings** and the **Temperature** settings. Press Submit button to generate a sample clinical trial for a disease.
+2. Copy the following text in the chat window *Generate a clinical trial report on drug evaluation on Advanced Non-Small Cell Lung Cancer* , change the *Maximum output settings* and the *Temperature* settings as shown. Press Submit to generate a clinical trial report.
  ![Generate trial document](images/lab-14.png)
 
-3. Note that the PII Information is redacted and substituted
+3. Note how the Personal Identifiable Information (PII) is redacted and substituted
  ![PII Redaction](images/lab-15.png)
 
 ## Task 3: Generate a summary and view generated code

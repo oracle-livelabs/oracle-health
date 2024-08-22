@@ -46,7 +46,7 @@ This lab assumes you have:
 
 6. Check Opensearch client connectivity. It should show the *OpenSearch([{'host': 'hostname', 'port': 9200}])* as output
 
-7. Load both text and embeddings data into the *idx_oci_genai_clinical_trials* index
+7. Load both text and embeddings data into the *idx-oci-genai-clinical-trials* index
 
 8. Paste the title retrieved from the previous lab *demo-vector-search-ext.ipynb* to query based on page_content embeddings
 
@@ -54,31 +54,31 @@ This lab assumes you have:
 
 ## Task 2: Generate Compliance document form
 
-1. Selecting the top retrieved document from the query search above.
+1. Select the top retrieved document from the query search above and enter in your query.
 
 2. Run the rest of the cells to generate the compliance form for the trial.
 
-3. View the generated compliance form from */home/datascience/conda/data/outputs* directory
+3. View the generated compliance form in */home/datascience/conda/data/outputs* directory
  ![Image alt text](images/lab5-comp-doc.png)
 
 This involves
 
 1. Defining a pydantic Object base model class called *TrialInfo* to structure document sections and their description instructions. These are formatted instructions that are passed to the OCI Generative AI LLM at runtime.
-2. This *TrialInfo* class is a superset representing sectional headers for all clinical-trial documents.
+2. This *TrialInfo* class is a superset representing sectional headers for all clinical-trial documents in this workshop.
 3. Defining a langchain pydantic output parser object and passing the format instructions.
 4. Defining a chat prompt template with specific instructions to use the format instructions
 5. Using OCI Generative AI chat llm to perform sectional summarization based on the format instructions.
-6. Creating a dictionary based on a pre-built PDF form template
-7. Filling the template with a PDF filler to generate a compliance form document
+6. Mapping the summarized results to the form template fields 
+7. Generating the compliance document with a PDF filler
 
 ## Task 3: Various other ways to customize this notebook
 
-Ways to customize
+Ways to extend and customize
 
 1. Using langchain chunking classes to split document, embed and load to an index
 2. Perform embedding search on chunked documents index
 3. Compare chunked retrievals vs full document retrievals and evaluate scores
-4. Use a different template or use multiple clinical-trial templates by disease
+4. Use a different template or use multiple clinical trial templates by disease
 5. Use other prompting techniques with different format specifications
 6. Use a better PDF form filler.
 
