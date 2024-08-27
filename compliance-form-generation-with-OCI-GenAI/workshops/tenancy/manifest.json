@@ -1,5 +1,5 @@
 {
-    "workshoptitle": "Generate Regulatory documents for Compliance submission Documents with OCI Generative AI",
+    "workshoptitle": "Generate Draft regulatory documents for compliance with OCI Generative AI",
     "include": {"conda.zip":"../../developing-with-oci-data-science/files/conda.zip"},
     "help": "livelabs-help-oci_us@oracle.com",
     "tutorials": [
