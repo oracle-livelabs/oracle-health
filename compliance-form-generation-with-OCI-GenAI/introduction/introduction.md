@@ -10,7 +10,7 @@ In order to maintain generic nature of the lab and data compliance, all source c
 
 Learn more about the architecture, methodology and key automation steps to scale document generation process across your enterprise knowledge bases.
 
-## Solution blueprint
+## Task 1: Solution blueprint and Architecture
 
 Key points covering the solution are
 
@@ -24,8 +24,6 @@ Key points covering the solution are
 * Support for external & in vector store embedding with OCI Opensearch
 * Provision for using Opensearch Hybrid search
 * Easy extensibility to OCI AI vector search or to other vector stores
-
-## Task 1: Architecture
 
 The diagram below shows a comprehensive architecture of the solution blueprint. 
 
