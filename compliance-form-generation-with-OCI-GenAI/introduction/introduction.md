@@ -25,13 +25,13 @@ Key points covering the solution are
 * Provision for using Opensearch Hybrid search
 * Easy extensibility to OCI AI vector search or to other vector stores
 
-## Architecture
+## Task 1: Architecture
 
 The diagram below shows a comprehensive architecture of the solution blueprint. 
 
   ![Solution Architecture](images/solution-architecture.png)
 
-## Labs
+## Task 2: Labs
 
 | Lab | Module | Est. Time |
   | --- | --- | --- |

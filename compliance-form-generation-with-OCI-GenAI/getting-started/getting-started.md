@@ -1,4 +1,4 @@
-# Getting started
+# Get started
 
 Generating templated compliance documents is a complex process that involves understanding of various components services, their interactions and the setup.
 Though this workshop do not reflect an actual form, however the principles outlined here can be effectively used for this purpose.So, let's get started.
