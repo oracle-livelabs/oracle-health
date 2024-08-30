@@ -1,6 +1,6 @@
 # Other LiveLabs you might like
 
-## Learn More
+## Task 1: Learn More
 
 - [Search Documents stored in Object storage with OpenSearch, Generative AI, Semantic search, RAG](https://apexapps.oracle.com/pls/apex/r/dbpm/livelabs/view-workshop?wid=3762)
 
