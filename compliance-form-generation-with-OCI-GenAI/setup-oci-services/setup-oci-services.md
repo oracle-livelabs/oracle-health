@@ -99,13 +99,17 @@ This involves setting up OCI Opensearch policies and creating an Opensearch inst
 2.Issue the following code in the policy builder manual editor below and hit create
 
 ```text
-allow group SearchOpenSearchAdmins to manage vnics in compartment clinical-trials
-allow group SearchOpenSearchAdmins to manage vcns in compartment clinical-trials
-allow group SearchOpenSearchAdmins to manage subnets in compartment clinical-trials
-allow group SearchOpenSearchAdmins to manage network-security-groups in compartment clinical-trials
-allow group SearchOpenSearchAdmins to manage opensearch-family in compartment clinical-trials
-allow group SearchOpenSearchAdmins to manage vnics in compartment clinical-trials
+   <copy>
+    allow group SearchOpenSearchAdmins to manage vnics in compartment clinical-trials
+    allow group SearchOpenSearchAdmins to manage vcns in compartment clinical-trials
+    allow group SearchOpenSearchAdmins to manage subnets in compartment clinical-trials
+    allow group SearchOpenSearchAdmins to manage network-security-groups in compartment clinical-trials
+    allow group SearchOpenSearchAdmins to manage opensearch-family in compartment clinical-trials
+    allow group SearchOpenSearchAdmins to manage vnics in compartment clinical-trials
+   </copy>
 ```
+
+3. Set up the opensearch policies as shown below
 
  ![setup Opensearch policy](images/lab1-pol-3.png)
 
@@ -128,9 +132,9 @@ allow group SearchOpenSearchAdmins to manage vnics in compartment clinical-trial
 
 ## Task 6: Set up the OCI Data science service policies
 
-Service policies are required for Data science environment setup. This workshop requires tenancy level policies to be setup at the root compartment level. 
+Service policies are required for Data science environment setup. This workshop requires tenancy level policies to be setup at the root compartment level.
 
-1. Go to the OCI Data science service. 
+1. Go to the OCI Data science service.
 
  ![setup OCI Data Science policy](images/lab1-ds-pol-0.png)
 
@@ -154,11 +158,13 @@ Service policies are required for Data science environment setup. This workshop 
 5.Use the following policy statements and hit create
 
 ```text
+<copy>
 allow service datascience to use virtual-network-family in tenancy
 allow group Administrators to use virtual-network-family in tenancy
 allow group Administrators to manage data-science-family in tenancy
 allow dynamic-group clinical-trials to manage data-science-family in tenancy
 allow group Administrators to manage generative-ai-family in tenancy
+</copy>
 ```
 
  ![setup OCI Data Science policy](images/lab1-ds-pol-10.png)
