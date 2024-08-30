@@ -14,7 +14,7 @@ In this workshop, you will learn how to:
 * Structure LLM generated outputs with langchain
 * Using a pre-canned template to generate a compliance form
 
-## Prerequisites
+## Task 1: Prerequisites
 
 This lab assumes you have:
 
@@ -26,11 +26,11 @@ This lab assumes you have:
 * Some familiarity with open source langchain framework
 * Familiarity with clinical trial and compliance submission process would be helpful but not required
 
-## Downloads
+## Task 2: Downloads
 
 The zipped notebooks and scripts can be downloaded from [here](https://orasenatdpltintegration03.objectstorage.us-chicago-1.oci.customer-oci.com/p/SfhRh7OEvLj9yR0hAIM3BwT7bCpi3jALfP6NqoCODU7mFe51nl1PeBPWcJj2El9K/n/orasenatdpltintegration03/b/clinical-trials/o/conda.zip). Installation instructions are described in LAB-3 Developing with OCI Data science.
 
-## Provision Oracle cloud tenancy and login
+## Task 3: Provision Oracle cloud tenancy and login
 
 Use the live-lab link below to provision a cloud tenancy and testing your login
   [provision new cloud tenancy account](https://github.com/oracle-livelabs/common/blob/main/labs/cloud-login/event-register-free-tier-account.md)

@@ -59,7 +59,7 @@ This lab assumes you have:
 
 4. Copy and execute to install the pip libraries as shown below in the notebook cell. Press *Shift+Enter* to execute the notebook cell
 
-```bash
+```text
 !pip install langchain
 !pip install langchain_community
 !pip install opensearch-py
@@ -90,7 +90,7 @@ NOTE: It is possible that some of the libraries are pre-installed in the environ
 
 2. Change to *cd /home/datascience/conda/scripts* directory in a data science terminal window and run. Sucecssful connection should display the json as shown below
 
-```bash
+```text
 curl -k -u (os_userid):(os_password) (os_api_endpoint):9200
 ```
 
