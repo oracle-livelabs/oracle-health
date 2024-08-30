@@ -60,6 +60,7 @@ This lab assumes you have:
 4. Copy and execute to install the pip libraries as shown below in the notebook cell. Press *Shift+Enter* to execute the notebook cell
 
 ```text
+<copy>
 !pip install langchain
 !pip install langchain_community
 !pip install opensearch-py
@@ -67,6 +68,7 @@ This lab assumes you have:
 !pip install tabulate
 !pip install pypdf
 !pip install fillpdf
+</copy>
 ```
 
   ![Install pip libraries](images/lab3-ds-note-4.png)
@@ -91,7 +93,9 @@ NOTE: It is possible that some of the libraries are pre-installed in the environ
 2. Change to *cd /home/datascience/conda/scripts* directory in a data science terminal window and run. Sucecssful connection should display the json as shown below
 
 ```text
+<copy>
 curl -k -u (os_userid):(os_password) (os_api_endpoint):9200
+</copy>
 ```
 
   ![Test Opensearch Access](images/lab3-ds-os-2.png)
@@ -106,6 +110,7 @@ curl -k -u (os_userid):(os_password) (os_api_endpoint):9200
 2. Open up a terminal window and enter *oci os ns get*. Enter values as follows
 
 ```text
+<copy>
 Do you want to create a new config file ? Y
 Create logging through a browser? n
 Location of your config: Enter
@@ -117,6 +122,7 @@ Enter directory for keys created : Enter
 Enter name of your key : Enter
 Enter passphrase: N/A
 Re-enter passphrase : N/A
+</copy>
 ```
 
   ![Test Opensearch Access](images/lab3-ds-cli-4.png)

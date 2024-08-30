@@ -99,14 +99,14 @@ This involves setting up OCI Opensearch policies and creating an Opensearch inst
 2.Issue the following code in the policy builder manual editor below and hit create
 
 ```text
-   <copy>
-    allow group SearchOpenSearchAdmins to manage vnics in compartment clinical-trials
-    allow group SearchOpenSearchAdmins to manage vcns in compartment clinical-trials
-    allow group SearchOpenSearchAdmins to manage subnets in compartment clinical-trials
-    allow group SearchOpenSearchAdmins to manage network-security-groups in compartment clinical-trials
-    allow group SearchOpenSearchAdmins to manage opensearch-family in compartment clinical-trials
-    allow group SearchOpenSearchAdmins to manage vnics in compartment clinical-trials
-   </copy>
+<copy>
+allow group SearchOpenSearchAdmins to manage vnics in compartment clinical-trials
+allow group SearchOpenSearchAdmins to manage vcns in compartment clinical-trials
+allow group SearchOpenSearchAdmins to manage subnets in compartment clinical-trials
+allow group SearchOpenSearchAdmins to manage network-security-groups in compartment clinical-trials
+allow group SearchOpenSearchAdmins to manage opensearch-family in compartment clinical-trials
+allow group SearchOpenSearchAdmins to manage vnics in compartment clinical-trials
+</copy>
 ```
 
 3. Set up the opensearch policies as shown below

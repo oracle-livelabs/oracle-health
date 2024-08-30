@@ -32,7 +32,7 @@ The zipped notebooks and scripts can be downloaded from [here](https://orasenatd
 
 ## Task 3: Provision Oracle cloud tenancy and login
 
-Use the live-lab link below to provision a cloud tenancy and testing your login
+Use the live-lab link to provision a cloud tenancy and testing your login
   [provision new cloud tenancy account](https://github.com/oracle-livelabs/common/blob/main/labs/cloud-login/event-register-free-tier-account.md)
 
 ## Learn More

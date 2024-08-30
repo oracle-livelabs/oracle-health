@@ -36,7 +36,9 @@ This lab assumes you have:
 1. Create a windows batch or shell script substituting the following as shown below and execute in your laptop to login to SSH tunnel in opensearch instance
 
 ```text
+<copy>
 ssh -C -v -t -L 127.0.0.1:5601:(Opensearch_dashboard_ip):5601 -L 127.0.0.1:9200:(Opensearch_api_private_ip):9200 opc@(compute instance_public_ip) -i (ssh_key_to_login_to_compute_instance)
+</copy>
 ```
 
 Refer to the following screenshots for pulling up the above relevant details 
@@ -48,6 +50,7 @@ Refer to the following screenshots for pulling up the above relevant details
 1.Search for an existing clinical-trial model group.
 
 ```text
+<copy>
 #Search for the clinical trials model group
 GET /_plugins/_ml/model_groups/_search
 {
@@ -55,17 +58,20 @@ GET /_plugins/_ml/model_groups/_search
     "match": {"name": "Clinical-trials"}
   }
 }
+</copy>
 ```
 
 2.If it does not exist then copy the code below to create it. It should display the model_group_id. Make a note of it
 
 ```text
+<copy>
 # create a model group 
 POST /_plugins/_ml/model_groups/_register
 {
   "name": "Clinical-trials",
   "description": "A model group for clinical trials local models"
 }
+</copy>
 ```
 
 3.To test that the model group is created, run code in step 1. The Id field in the output will contain *model_group_id*
@@ -73,8 +79,10 @@ POST /_plugins/_ml/model_groups/_register
 4.Use the code below if you need to delete the model group. Note that any models in the group must be deleted first.
 
 ```text
+<copy>
 # Grab the model_group_id and delete the model group
 DELETE _plugins/_ml/model_groups/(model_group_id)
+</copy>
 ```
 
 ## Task 3: Create the Opensearch model
@@ -82,6 +90,7 @@ DELETE _plugins/_ml/model_groups/(model_group_id)
 1.Substitute the retrieved *model-group-id* in the code below to create the model. This currently pulls the model from a common object store location for OCI compliance that will expire. However, if you have issues pulling this model or running the code below, you may pull the model directly from hugging face or Opensearch pre-trained model documentation as well.
 
 ```text
+<copy>
 # Create the model
 POST /_plugins/_ml/models/_register
 {
@@ -115,6 +124,7 @@ POST /_plugins/_ml/models/_register
         ]
     }
 }
+</copy>
 ```
 
 2.Record the *task_id*. Please note that Opensearch *model_id* can be retrieved from the registration *task_id* for the model register job
