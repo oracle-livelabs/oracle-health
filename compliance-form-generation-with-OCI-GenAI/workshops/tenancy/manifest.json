@@ -14,28 +14,28 @@
             "filename": "../../getting-started/getting-started.md" 
         },
         {
-            "title": "LAB 1: Setup OCI Services",
+            "title": "Lab 1: Setup OCI Services",
             "description": "In this lab you will setup the required OCI services for running thr workshop",
             "filename": "../../setup-oci-services/setup-oci-services.md"
         },
         {
-            "title": "LAB 2: Generate Clinical trials with OCI Generative AI",
+            "title": "Lab 2: Generate Clinical trials with OCI Generative AI",
             "filename": "../../generate-clinical-trials-with-oci-gai/generate-clinical-trials-with-oci-gai.md"
         },
         {
-            "title": "LAB-3 Develop with OCI Data science",
+            "title": "Lab-3 Develop with OCI Data science",
             "filename": "../../developing-with-oci-data-science/developing-with-oci-data-science.md"
         },
         {
-            "title": "LAB-4 Vectorize, load and evaluate",
+            "title": "Lab-4 Vectorize, load and evaluate",
             "filename": "../../vectorize-load-and-evaluate/vectorize-load-and-evaluate.md"
         },
         {
-            "title": "LAB-5 Generate Compliance document",
+            "title": "Lab-5 Generate Compliance document",
             "filename": "../../generate-compliance-document/generate-compliance-document.md"
         },
         {
-            "title": "LAB 6: Use Neural and Hybrid search (Optional)",
+            "title": "Lab 6: Use Neural and Hybrid search (Optional)",
             "filename": "../../using-neural-and-hybrid-search/using-neural-and-hybrid-search.md"
         },
         {
