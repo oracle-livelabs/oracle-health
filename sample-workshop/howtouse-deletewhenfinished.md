@@ -71,3 +71,4 @@ The manifest.json file needs to know the location of each lab relative to where 
 This [APEX Workshop](https://oracle-livelabs.github.io/apex/spreadsheet/workshops/freetier/) is a good example of a workshop with a single set of labs: [https://github.com/oracle-livelabs/apex/tree/main/spreadsheet](https://github.com/oracle-livelabs/apex/tree/main/spreadsheet).
 
 
+
